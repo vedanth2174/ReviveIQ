@@ -29,7 +29,7 @@ Respond with ONLY a JSON object, nothing else before or after it:
   for (let attempt = 1; attempt <= retries; attempt++) {
     try {
       const completion = await groq.chat.completions.create({
-        model: "openai/gpt-oss-120b",
+        model: "openai/gpt-oss-20b",
         messages: [{ role: "user", content: prompt }],
         max_tokens: 300
       });

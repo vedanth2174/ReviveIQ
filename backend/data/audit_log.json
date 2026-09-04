@@ -4,10 +4,10 @@
     "stage": "diagnosis",
     "output": {
       "category": "user_side",
-      "confidence": 0.97,
-      "reasoning": "The issuer declined due to insufficient funds, which is a condition of the customer's payment method rather than a technical issue with the platform."
+      "confidence": 0.9,
+      "reasoning": "Decline due to insufficient balance is a customer issue."
     },
-    "timestamp": "2026-09-04T10:42:37.895Z"
+    "timestamp": "2026-09-04T19:27:52.384Z"
   },
   {
     "event_id": "cd93e92a-0b5b-42de-abf9-c13dba0a95fc",
@@ -15,59 +15,59 @@
     "output": {
       "category": "user_side",
       "confidence": 0.95,
-      "reasoning": "The error indicates the OTP entered by the customer was incorrect, which is a user action issue."
+      "reasoning": "OTP mismatch is a customer input error."
     },
-    "timestamp": "2026-09-04T10:42:38.683Z"
+    "timestamp": "2026-09-04T19:27:53.079Z"
   },
   {
     "event_id": "12e6ecbf-5f2d-4708-bc95-f42392adb346",
     "stage": "diagnosis",
     "output": {
       "category": "user_side",
-      "confidence": 0.96,
-      "reasoning": "Card expiration is a property of the customer's payment instrument, not a platform error."
+      "confidence": 0.9,
+      "reasoning": "Card expired indicates the customer's card is no longer valid"
     },
-    "timestamp": "2026-09-04T10:42:39.507Z"
+    "timestamp": "2026-09-04T19:27:53.407Z"
   },
   {
     "event_id": "10941c7f-45a0-452d-b98d-5acaa30490c1",
     "stage": "diagnosis",
     "output": {
       "category": "user_side",
-      "confidence": 0.78,
-      "reasoning": "Issuer decline typically reflects customer-related issues such as insufficient funds or card problems, not a platform error."
+      "confidence": 0.9,
+      "reasoning": "Issuer declined the card transaction, which is a user-side issue rather than a payment gateway or infrastructure failure."
     },
-    "timestamp": "2026-09-04T10:42:40.524Z"
+    "timestamp": "2026-09-04T19:27:53.973Z"
   },
   {
     "event_id": "5166e4d5-2701-4ff2-8c82-ae4cc8a3c635",
     "stage": "diagnosis",
     "output": {
       "category": "user_side",
-      "confidence": 0.98,
-      "reasoning": "The issuer explicitly declined due to insufficient funds, a customer-related issue."
+      "confidence": 0.95,
+      "reasoning": "The issuer declined the transaction due to insufficient funds, indicating the issue lies with the customer's account balance."
     },
-    "timestamp": "2026-09-04T10:42:41.444Z"
+    "timestamp": "2026-09-04T19:27:54.692Z"
   },
   {
     "event_id": "66686819-939b-4dd1-8c26-70b27c98af59",
     "stage": "diagnosis",
     "output": {
       "category": "user_side",
-      "confidence": 0.97,
-      "reasoning": "Card expiration is a property of the customer's payment instrument, not a system error"
+      "confidence": 0.9,
+      "reasoning": "Card expired indicates customer card issue."
     },
-    "timestamp": "2026-09-04T10:42:42.265Z"
+    "timestamp": "2026-09-04T19:27:55.392Z"
   },
   {
     "event_id": "297a2d2f-48a5-49c7-b2c6-9d956637807e",
     "stage": "diagnosis",
     "output": {
       "category": "user_side",
-      "confidence": 0.98,
-      "reasoning": "The error indicates the issuer declined the transaction due to insufficient funds, which is a condition of the customer's account rather than a technical issue."
+      "confidence": 0.9,
+      "reasoning": "Card issuer declined the transaction due to insufficient funds, indicating a user-side issue."
     },
-    "timestamp": "2026-09-04T10:42:42.979Z"
+    "timestamp": "2026-09-04T19:27:56.006Z"
   },
   {
     "event_id": "6683a9cc-c35f-4853-9059-b8bb85b62fd5",
@@ -75,49 +75,49 @@
     "output": {
       "category": "user_side",
       "confidence": 0.95,
-      "reasoning": "The error indicates the issuer declined due to insufficient funds, a customer-side issue."
+      "reasoning": "The issuer declined the payment due to insufficient funds, indicating the customer's account balance was insufficient, which is a user-side issue."
     },
-    "timestamp": "2026-09-04T10:42:43.697Z"
+    "timestamp": "2026-09-04T19:27:56.622Z"
   },
   {
     "event_id": "4d22bc89-39fe-40b7-b795-4ff3daf10377",
     "stage": "diagnosis",
     "output": {
       "category": "user_side",
-      "confidence": 0.96,
-      "reasoning": "The error indicates an incorrect OTP entered, which is caused by the customer's input rather than a system or network issue."
+      "confidence": 0.9,
+      "reasoning": "Wrong OTP entered"
     },
-    "timestamp": "2026-09-04T10:42:44.429Z"
+    "timestamp": "2026-09-04T19:27:56.884Z"
   },
   {
     "event_id": "d164f5f8-a879-438a-8142-77160142430a",
     "stage": "diagnosis",
     "output": {
       "category": "user_side",
-      "confidence": 0.96,
-      "reasoning": "The issuer explicitly declined due to insufficient funds, indicating the customer's account lacks enough money, which is a user-side issue."
+      "confidence": 0.95,
+      "reasoning": "The issuer explicitly declined the transaction due to insufficient funds, indicating the customer's account balance is the cause."
     },
-    "timestamp": "2026-09-04T10:42:45.338Z"
+    "timestamp": "2026-09-04T19:27:57.468Z"
   },
   {
     "event_id": "3dffdc92-5ce8-453c-aa6f-0c54d9d44772",
     "stage": "diagnosis",
     "output": {
       "category": "user_side",
-      "confidence": 0.99,
-      "reasoning": "The issuer declined due to insufficient funds, indicating the customer's account lacks the necessary balance, which is a user-side issue."
+      "confidence": 0.95,
+      "reasoning": "Insufficient funds is a customer’s account issue."
     },
-    "timestamp": "2026-09-04T10:42:46.257Z"
+    "timestamp": "2026-09-04T19:27:57.758Z"
   },
   {
     "event_id": "7e4df4ee-610e-443a-8072-bbe7fcbc38ef",
     "stage": "diagnosis",
     "output": {
       "category": "user_side",
-      "confidence": 0.95,
-      "reasoning": "Insufficient funds indicates the customer's account cannot cover the payment, a user‑side issue."
+      "confidence": 0.9,
+      "reasoning": "Insufficient funds is a cardholder-side issue."
     },
-    "timestamp": "2026-09-04T10:42:47.078Z"
+    "timestamp": "2026-09-04T19:27:58.387Z"
   },
   {
     "event_id": "613f84f3-e15e-4ee9-b69c-184dcecac5aa",
@@ -125,89 +125,89 @@
     "output": {
       "category": "user_side",
       "confidence": 0.95,
-      "reasoning": "OTP mismatch indicates customer entered incorrect verification code"
+      "reasoning": "OTP verification failed indicates user entered incorrect OTP, a user-side error."
     },
-    "timestamp": "2026-09-04T10:42:47.791Z"
+    "timestamp": "2026-09-04T19:27:58.948Z"
   },
   {
     "event_id": "20b749d9-5fa9-4518-be3a-cf759f4a1db2",
     "stage": "diagnosis",
     "output": {
       "category": "user_side",
-      "confidence": 0.95,
-      "reasoning": "The error indicates the OTP entered did not match, which is caused by the customer's input rather than a system or gateway issue."
+      "confidence": 0.9,
+      "reasoning": "The error indicates the customer entered an incorrect OTP, which is a user-side issue."
     },
-    "timestamp": "2026-09-04T10:42:48.618Z"
+    "timestamp": "2026-09-04T19:27:59.642Z"
   },
   {
     "event_id": "202c4509-4be7-437f-b62b-a1baffabb616",
     "stage": "diagnosis",
     "output": {
       "category": "user_side",
-      "confidence": 0.96,
-      "reasoning": "Insufficient funds is a customer account issue, not a platform or gateway error"
+      "confidence": 0.95,
+      "reasoning": "Decline due to insufficient funds is customer-side"
     },
-    "timestamp": "2026-09-04T10:42:49.437Z"
+    "timestamp": "2026-09-04T19:28:00.731Z"
   },
   {
     "event_id": "4e55a118-68dd-4300-8b05-1c8555ed2b76",
     "stage": "diagnosis",
     "output": {
       "category": "user_side",
-      "confidence": 0.96,
-      "reasoning": "The error indicates the OTP entered was incorrect, which is a mistake made by the customer."
+      "confidence": 0.95,
+      "reasoning": "OTP failure indicates user entered wrong code"
     },
-    "timestamp": "2026-09-04T10:42:50.154Z"
+    "timestamp": "2026-09-04T19:28:01.170Z"
   },
   {
     "event_id": "b50d9064-762b-48e1-bffd-91340ccbab9d",
     "stage": "diagnosis",
     "output": {
       "category": "user_side",
-      "confidence": 0.98,
-      "reasoning": "The issuer explicitly declined due to insufficient funds, which is a customer-side issue."
+      "confidence": 0.95,
+      "reasoning": "Issuer declined due to insufficient funds."
     },
-    "timestamp": "2026-09-04T10:42:50.866Z"
+    "timestamp": "2026-09-04T19:28:01.842Z"
   },
   {
     "event_id": "eb7d19f8-4999-4e4b-9aa7-f00f2db5d6e3",
     "stage": "diagnosis",
     "output": {
       "category": "user_side",
-      "confidence": 0.99,
-      "reasoning": "Insufficient funds is a customer account issue, not a platform or network problem"
+      "confidence": 0.95,
+      "reasoning": "decline due to insufficient funds"
     },
-    "timestamp": "2026-09-04T10:42:51.653Z"
+    "timestamp": "2026-09-04T19:28:02.518Z"
   },
   {
     "event_id": "43437ab1-3f63-418b-956e-be15a8d00b1f",
     "stage": "diagnosis",
     "output": {
       "category": "user_side",
-      "confidence": 0.96,
-      "reasoning": "Card expiration is a property of the customer's payment method, not a platform issue"
+      "confidence": 0.95,
+      "reasoning": "The error indicates the customer's card has expired, which is a user-side issue."
     },
-    "timestamp": "2026-09-04T10:42:52.399Z"
+    "timestamp": "2026-09-04T19:28:03.092Z"
   },
   {
     "event_id": "67be847d-ec48-4e67-a50e-c99456fb82a4",
     "stage": "diagnosis",
     "output": {
       "category": "user_side",
-      "confidence": 0.97,
-      "reasoning": "Card expiration is a condition of the customer's payment instrument, not a system fault."
+      "confidence": 0.95,
+      "reasoning": "Card expired indicates a user-side issue."
     },
-    "timestamp": "2026-09-04T10:42:53.144Z"
+    "timestamp": "2026-09-04T19:28:03.647Z"
   },
   {
     "event_id": "f65d185a-382e-4b5e-9bd0-7d318daed015",
     "stage": "diagnosis",
     "output": {
       "category": "systemic",
-      "confidence": 0.95,
-      "reasoning": "Gateway timeout indicates a technical issue with the payment gateway, not the customer's fault"
+      "confidence": 0.9,
+      "reasoning": "timeout indicates infrastructure issue"
     },
-    "timestamp": "2026-09-04T10:42:53.937Z"
+    "timestamp": "2026-09-04T19:28:03.950Z"
   },
   {
     "event_id": "f65d185a-382e-4b5e-9bd0-7d318daed015",
@@ -220,25 +220,25 @@
       "recent_count": 0,
       "reason": "11 failures in prior window, 0 in recent window — likely resolved"
     },
-    "timestamp": "2026-09-04T10:42:53.938Z"
+    "timestamp": "2026-09-04T19:28:03.950Z"
   },
   {
     "event_id": "f65d185a-382e-4b5e-9bd0-7d318daed015",
     "stage": "intervention",
     "output": {
       "action": "escalate",
-      "channel": "none",
-      "reasoning": "Systemic issue resolved, high cart value warrants human follow-up"
+      "channel": "sms",
+      "reasoning": "Systemic issue resolved, cart value high, safe to notify and flag for human review"
     },
-    "timestamp": "2026-09-04T10:42:55.329Z"
+    "timestamp": "2026-09-04T19:28:04.786Z"
   },
   {
     "event_id": "f65d185a-382e-4b5e-9bd0-7d318daed015",
     "stage": "message",
     "output": {
-      "message": "Hi! Aapka payment gateway timeout ki wajah se fail ho gaya tha, ab sab theek ho gaya hai. Cart ₹10,466 ka hai – please yahan se dubara try karein: [RETRY_LINK] . Shukriya!"
+      "message": "Payment timeout hua tha, ab fix ho gaya! ₹10,466 ka order complete karne ke liye yahan click karo: [RETRY_LINK] Happy shopping!"
     },
-    "timestamp": "2026-09-04T10:42:55.914Z"
+    "timestamp": "2026-09-04T19:28:05.268Z"
   },
   {
     "event_id": "4cb3b09f-17e4-4545-bc33-d9a4f93f2cab",
@@ -246,9 +246,9 @@
     "output": {
       "category": "systemic",
       "confidence": 0.95,
-      "reasoning": "The error indicates a 503 Service Unavailable from the issuer bank API, a server-side failure not caused by the customer."
+      "reasoning": "503 Service Unavailable indicates server-side issue from issuer bank API, not customer fault."
     },
-    "timestamp": "2026-09-04T10:42:56.702Z"
+    "timestamp": "2026-09-04T19:28:06.111Z"
   },
   {
     "event_id": "4cb3b09f-17e4-4545-bc33-d9a4f93f2cab",
@@ -261,7 +261,7 @@
       "recent_count": 0,
       "reason": "14 failures in prior window, 0 in recent window — likely resolved"
     },
-    "timestamp": "2026-09-04T10:42:56.702Z"
+    "timestamp": "2026-09-04T19:28:06.111Z"
   },
   {
     "event_id": "4cb3b09f-17e4-4545-bc33-d9a4f93f2cab",
@@ -269,27 +269,27 @@
     "output": {
       "action": "notify",
       "channel": "sms",
-      "reasoning": "Systemic issue resolved, safe to notify customer"
+      "reasoning": "Systemic issue resolved, safe to notify customer."
     },
-    "timestamp": "2026-09-04T10:42:57.635Z"
+    "timestamp": "2026-09-04T19:28:06.994Z"
   },
   {
     "event_id": "4cb3b09f-17e4-4545-bc33-d9a4f93f2cab",
     "stage": "message",
     "output": {
-      "message": "Namaste! Aapka ₹6636 ka payment ab sahi ho gaya hai. Kripya is link se dobara try karein: [RETRY_LINK] – ab aapka order turant confirm ho jayega. Shukriya!"
+      "message": "Hey! Payment issue (503) fixed. Cart ₹6636 ready. Just hit the link below to complete your order: [RETRY_LINK] Enjoy shopping!"
     },
-    "timestamp": "2026-09-04T10:42:58.230Z"
+    "timestamp": "2026-09-04T19:28:07.998Z"
   },
   {
     "event_id": "6e3ee4e7-c945-461e-8f4f-36715648a1dd",
     "stage": "diagnosis",
     "output": {
       "category": "systemic",
-      "confidence": 0.95,
-      "reasoning": "5xx error from issuer bank API indicates a technical/service outage, not a user error."
+      "confidence": 0.9,
+      "reasoning": "503 Service Unavailable is a server-side error from the issuer bank API, indicating a systemic issue."
     },
-    "timestamp": "2026-09-04T10:42:59.237Z"
+    "timestamp": "2026-09-04T19:28:08.387Z"
   },
   {
     "event_id": "6e3ee4e7-c945-461e-8f4f-36715648a1dd",
@@ -302,35 +302,35 @@
       "recent_count": 0,
       "reason": "14 failures in prior window, 0 in recent window — likely resolved"
     },
-    "timestamp": "2026-09-04T10:42:59.237Z"
+    "timestamp": "2026-09-04T19:28:08.387Z"
   },
   {
     "event_id": "6e3ee4e7-c945-461e-8f4f-36715648a1dd",
     "stage": "intervention",
     "output": {
       "action": "escalate",
-      "channel": "none",
-      "reasoning": "Systemic failure resolved with high confidence and high cart value, recommend human follow‑up"
+      "channel": "sms",
+      "reasoning": "Systemic error resolved; high cart value warrants human follow‑up."
     },
-    "timestamp": "2026-09-04T10:43:00.742Z"
+    "timestamp": "2026-09-04T19:28:09.068Z"
   },
   {
     "event_id": "6e3ee4e7-c945-461e-8f4f-36715648a1dd",
     "stage": "message",
     "output": {
-      "message": "Namaste! Aapka ₹12,290 ka payment ab theek ho gaya hai. Kripya is link pe click karke checkout complete karein: [RETRY_LINK] Dhanyavaad!"
+      "message": "Hey! Payment ka issue fix ho gaya. Aap ₹12,290 ka order complete kar sakte ho. Click yaha: [RETRY_LINK] Best wishes!"
     },
-    "timestamp": "2026-09-04T10:43:02.639Z"
+    "timestamp": "2026-09-04T19:28:11.558Z"
   },
   {
     "event_id": "ff3e0ede-f029-4c13-853b-10a2eb5cea3d",
     "stage": "diagnosis",
     "output": {
       "category": "systemic",
-      "confidence": 0.95,
-      "reasoning": "Bank API returned a 503 error, indicating a server-side outage or timeout, which is a technical issue beyond the customer's control."
+      "confidence": 0.9,
+      "reasoning": "The 503 Service Unavailable indicates an issue with the issuer bank’s API, not the customer's actions."
     },
-    "timestamp": "2026-09-04T10:43:04.515Z"
+    "timestamp": "2026-09-04T19:28:14.242Z"
   },
   {
     "event_id": "ff3e0ede-f029-4c13-853b-10a2eb5cea3d",
@@ -343,35 +343,35 @@
       "recent_count": 0,
       "reason": "14 failures in prior window, 0 in recent window — likely resolved"
     },
-    "timestamp": "2026-09-04T10:43:04.515Z"
+    "timestamp": "2026-09-04T19:28:14.242Z"
   },
   {
     "event_id": "ff3e0ede-f029-4c13-853b-10a2eb5cea3d",
     "stage": "intervention",
     "output": {
       "action": "escalate",
-      "channel": "none",
-      "reasoning": "High-value cart, systemic issue resolved; human follow‑up recommended"
+      "channel": "whatsapp",
+      "reasoning": "Systemic issue resolved and cart value high—notify and request escalation"
     },
-    "timestamp": "2026-09-04T10:43:09.105Z"
+    "timestamp": "2026-09-04T19:28:18.167Z"
   },
   {
     "event_id": "ff3e0ede-f029-4c13-853b-10a2eb5cea3d",
     "stage": "message",
     "output": {
-      "message": "Namaste! Aapka ₹10,636 ka payment ab theek ho gaya hai. Kripya is link par click karke checkout complete karein: [RETRY_LINK] — dhanyavaad!"
+      "message": "Hi! ₹10636 ka payment pehle fail hua kyunki bank API me 503 error aaya tha. Ab issue solve ho gaya hai. Click yaha aur order complete karo: [RETRY_LINK] Enjoy shopping!"
     },
-    "timestamp": "2026-09-04T10:43:12.948Z"
+    "timestamp": "2026-09-04T19:28:23.997Z"
   },
   {
     "event_id": "49beaf9f-9914-481f-936a-5563adf74130",
     "stage": "diagnosis",
     "output": {
       "category": "systemic",
-      "confidence": 0.95,
-      "reasoning": "The error indicates a gateway timeout, a technical issue in the payment infrastructure, not the customer's fault."
+      "confidence": 0.9,
+      "reasoning": "Timeout indicates a server-side issue"
     },
-    "timestamp": "2026-09-04T10:43:15.092Z"
+    "timestamp": "2026-09-04T19:28:25.808Z"
   },
   {
     "event_id": "49beaf9f-9914-481f-936a-5563adf74130",
@@ -384,7 +384,7 @@
       "recent_count": 0,
       "reason": "11 failures in prior window, 0 in recent window — likely resolved"
     },
-    "timestamp": "2026-09-04T10:43:15.092Z"
+    "timestamp": "2026-09-04T19:28:25.809Z"
   },
   {
     "event_id": "49beaf9f-9914-481f-936a-5563adf74130",
@@ -392,27 +392,27 @@
     "output": {
       "action": "notify",
       "channel": "sms",
-      "reasoning": "Systemic issue resolved with high confidence; safe to auto-notify the customer."
+      "reasoning": "Systemic issue resolved, safe to notify"
     },
-    "timestamp": "2026-09-04T10:43:18.202Z"
+    "timestamp": "2026-09-04T19:28:29.658Z"
   },
   {
     "event_id": "49beaf9f-9914-481f-936a-5563adf74130",
     "stage": "message",
     "output": {
-      "message": "Namaste! Aapka payment gateway timeout se fail hua tha, ab sab theek ho gaya hai. Kripya is link se dobara try karein aur apna ₹8454 ka order confirm karein: [RETRY_LINK] — Shukriya!"
+      "message": "Hey! Payment timeout issue solved. Your ₹8454 cart is ready. Click to complete: [RETRY_LINK] Thanks!"
     },
-    "timestamp": "2026-09-04T10:43:21.921Z"
+    "timestamp": "2026-09-04T19:28:32.805Z"
   },
   {
     "event_id": "69a8e3e4-26ef-43e5-83c8-6e35a37720a8",
     "stage": "diagnosis",
     "output": {
       "category": "systemic",
-      "confidence": 0.95,
-      "reasoning": "Timeout indicates a gateway/infrastructure issue, not customer error"
+      "confidence": 0.9,
+      "reasoning": "Gateway timeout indicates infrastructure issue"
     },
-    "timestamp": "2026-09-04T10:43:23.947Z"
+    "timestamp": "2026-09-04T19:28:33.420Z"
   },
   {
     "event_id": "69a8e3e4-26ef-43e5-83c8-6e35a37720a8",
@@ -425,7 +425,7 @@
       "recent_count": 0,
       "reason": "11 failures in prior window, 0 in recent window — likely resolved"
     },
-    "timestamp": "2026-09-04T10:43:23.947Z"
+    "timestamp": "2026-09-04T19:28:33.421Z"
   },
   {
     "event_id": "69a8e3e4-26ef-43e5-83c8-6e35a37720a8",
@@ -433,27 +433,27 @@
     "output": {
       "action": "notify",
       "channel": "sms",
-      "reasoning": "Systemic issue resolved with high confidence, safe to inform customer"
+      "reasoning": "Systemic issue resolved with high confidence"
     },
-    "timestamp": "2026-09-04T10:43:27.120Z"
+    "timestamp": "2026-09-04T19:28:37.194Z"
   },
   {
     "event_id": "69a8e3e4-26ef-43e5-83c8-6e35a37720a8",
     "stage": "message",
     "output": {
-      "message": "Namaste! Aapka ₹9448 ka payment ab successfully process ho raha hai. Kripya is link pe click karke purchase complete karein: [RETRY_LINK] — Dhanyavaad!"
+      "message": "Payment issue solved! Your cart of ₹9448 is ready. Tap here to finish: [RETRY_LINK] 👍 Happy shopping!"
     },
-    "timestamp": "2026-09-04T10:43:29.750Z"
+    "timestamp": "2026-09-04T19:28:41.105Z"
   },
   {
     "event_id": "42d7800a-aa02-47c1-917e-664b0fb984ca",
     "stage": "diagnosis",
     "output": {
       "category": "systemic",
-      "confidence": 0.95,
-      "reasoning": "Timeout indicates a payment gateway/network issue, not the customer's fault"
+      "confidence": 0.9,
+      "reasoning": "Gateway timeout indicates an infrastructure or network issue, not a customer fault."
     },
-    "timestamp": "2026-09-04T10:43:31.585Z"
+    "timestamp": "2026-09-04T19:28:41.739Z"
   },
   {
     "event_id": "42d7800a-aa02-47c1-917e-664b0fb984ca",
@@ -466,35 +466,35 @@
       "recent_count": 0,
       "reason": "11 failures in prior window, 0 in recent window — likely resolved"
     },
-    "timestamp": "2026-09-04T10:43:31.585Z"
+    "timestamp": "2026-09-04T19:28:41.740Z"
   },
   {
     "event_id": "42d7800a-aa02-47c1-917e-664b0fb984ca",
     "stage": "intervention",
     "output": {
       "action": "notify",
-      "channel": "sms",
-      "reasoning": "Systemic issue resolved with high confidence; safe to notify customer"
+      "channel": "whatsapp",
+      "reasoning": "Systemic issue resolved with high confidence, cart value acceptable."
     },
-    "timestamp": "2026-09-04T10:43:35.488Z"
+    "timestamp": "2026-09-04T19:28:46.626Z"
   },
   {
     "event_id": "42d7800a-aa02-47c1-917e-664b0fb984ca",
     "stage": "message",
     "output": {
-      "message": "Namaste! Aapka ₹519 ka order ab ready hai—pehle network timeout ki wajah se payment fail hua tha, ab sab theek ho gaya hai. Kripya is link se phir se try karein: [RETRY_LINK]  \n\nShubh shopping!"
+      "message": "Hey! Your ₹519 order got a timeout glitch, but it’s sorted now. Just tap the link to finish checkout. Happy shopping! [RETRY_LINK]"
     },
-    "timestamp": "2026-09-04T10:43:38.201Z"
+    "timestamp": "2026-09-04T19:28:48.465Z"
   },
   {
     "event_id": "804ad94c-d1e8-488d-bdb1-ae492015fce4",
     "stage": "diagnosis",
     "output": {
       "category": "systemic",
-      "confidence": 0.95,
-      "reasoning": "Bank's API returned a 5xx error, indicating a technical issue on the payment side"
+      "confidence": 0.9,
+      "reasoning": "Issuer bank API returned 503 Service Unavailable, indicating a server-side failure."
     },
-    "timestamp": "2026-09-04T10:43:39.968Z"
+    "timestamp": "2026-09-04T19:28:49.008Z"
   },
   {
     "event_id": "804ad94c-d1e8-488d-bdb1-ae492015fce4",
@@ -507,7 +507,7 @@
       "recent_count": 0,
       "reason": "14 failures in prior window, 0 in recent window — likely resolved"
     },
-    "timestamp": "2026-09-04T10:43:39.969Z"
+    "timestamp": "2026-09-04T19:28:49.008Z"
   },
   {
     "event_id": "804ad94c-d1e8-488d-bdb1-ae492015fce4",
@@ -515,27 +515,27 @@
     "output": {
       "action": "notify",
       "channel": "sms",
-      "reasoning": "Systemic issue resolved with high confidence and moderate cart value, safe to notify"
+      "reasoning": "Systemic issue resolved with high confidence."
     },
-    "timestamp": "2026-09-04T10:43:44.648Z"
+    "timestamp": "2026-09-04T19:28:54.538Z"
   },
   {
     "event_id": "804ad94c-d1e8-488d-bdb1-ae492015fce4",
     "stage": "message",
     "output": {
-      "message": "Namaste! Aapka ₹8442 ka payment ab theek ho gaya hai. Kripya is link se dubara try karein: [RETRY_LINK] – aapka order turant process ho jayega. Dhanyavaad!"
+      "message": "Hey! Apke payment me thoda delay hua, but ab sab sahi ho gaya. ₹8442 ka order complete karne ke liye yahan click karein: [RETRY_LINK] – quick and easy. Thanks!"
     },
-    "timestamp": "2026-09-04T10:43:46.364Z"
+    "timestamp": "2026-09-04T19:28:57.238Z"
   },
   {
     "event_id": "a7f93c6d-d5a9-4cb0-a916-09bf798b1b00",
     "stage": "diagnosis",
     "output": {
       "category": "systemic",
-      "confidence": 0.95,
-      "reasoning": "Timeout from NPCI indicates a payment network/gateway issue, not a customer action."
+      "confidence": 0.9,
+      "reasoning": "The timeout indicates a failure in the payment infrastructure (NPCI gateway timeout), not an issue with the customer."
     },
-    "timestamp": "2026-09-04T10:43:49.371Z"
+    "timestamp": "2026-09-04T19:28:59.026Z"
   },
   {
     "event_id": "a7f93c6d-d5a9-4cb0-a916-09bf798b1b00",
@@ -548,35 +548,35 @@
       "recent_count": 0,
       "reason": "5 failures in prior window, 0 in recent window — likely resolved"
     },
-    "timestamp": "2026-09-04T10:43:49.371Z"
+    "timestamp": "2026-09-04T19:28:59.027Z"
   },
   {
     "event_id": "a7f93c6d-d5a9-4cb0-a916-09bf798b1b00",
     "stage": "intervention",
     "output": {
       "action": "escalate",
-      "channel": "none",
-      "reasoning": "Systemic issue resolved, high cart value warrants human follow-up"
+      "channel": "sms",
+      "reasoning": "Systemic issue resolved, high cart value, auto-notify and human follow-up."
     },
-    "timestamp": "2026-09-04T10:43:54.146Z"
+    "timestamp": "2026-09-04T19:29:03.986Z"
   },
   {
     "event_id": "a7f93c6d-d5a9-4cb0-a916-09bf798b1b00",
     "stage": "message",
     "output": {
-      "message": "Namaste! Aapke ₹12,486 ke order ka payment ab theek ho gaya hai. Kripya yahan se dubara try karein: [RETRY_LINK] – sab set hai, aapka checkout ready hai!"
+      "message": "Hi! Payment glitch ho gaya tha NPCI gateway timeout ki wajah se. Ab sab set hai. ₹12,486 ka order complete karein: [RETRY_LINK] Enjoy shopping!"
     },
-    "timestamp": "2026-09-04T10:43:58.975Z"
+    "timestamp": "2026-09-04T19:29:07.613Z"
   },
   {
     "event_id": "f902dd54-97a7-41b8-a23c-c0d990e24498",
     "stage": "diagnosis",
     "output": {
       "category": "systemic",
-      "confidence": 0.93,
-      "reasoning": "Timeout indicates a payment gateway or infrastructure failure, not user error."
+      "confidence": 0.9,
+      "reasoning": "Timeout indicates backend infrastructure issue"
     },
-    "timestamp": "2026-09-04T10:44:00.829Z"
+    "timestamp": "2026-09-04T19:29:08.112Z"
   },
   {
     "event_id": "f902dd54-97a7-41b8-a23c-c0d990e24498",
@@ -589,45 +589,45 @@
       "recent_count": 0,
       "reason": "11 failures in prior window, 0 in recent window — likely resolved"
     },
-    "timestamp": "2026-09-04T10:44:00.829Z"
+    "timestamp": "2026-09-04T19:29:08.112Z"
   },
   {
     "event_id": "f902dd54-97a7-41b8-a23c-c0d990e24498",
     "stage": "intervention",
     "output": {
       "action": "escalate",
-      "channel": "none",
-      "reasoning": "high cart value, systemic issue resolved, recommend auto-notify with human follow‑up"
+      "channel": "whatsapp",
+      "reasoning": "Systemic issue resolved, high cart value—escalate for human follow-up"
     },
-    "timestamp": "2026-09-04T10:44:04.299Z"
+    "timestamp": "2026-09-04T19:29:12.790Z"
   },
   {
     "event_id": "f902dd54-97a7-41b8-a23c-c0d990e24498",
     "stage": "message",
     "output": {
-      "message": "Namaste! Aapka ₹10,964 ka payment ab theek ho gaya hai. Kripya is link se dobara try karein: [RETRY_LINK] — ab sab smooth hai! 🙏"
+      "message": "Hey! Payment ka timeout issue fix ho gaya hai. ₹10,964 ki cart ab complete kar sakte ho. Click yaha: [RETRY_LINK] 👍"
     },
-    "timestamp": "2026-09-04T10:44:10.225Z"
+    "timestamp": "2026-09-04T19:29:16.485Z"
   },
   {
     "event_id": "50508ad0-c9d1-40ce-9d94-ace8cd88cb66",
     "stage": "diagnosis",
     "output": {
       "category": "user_side",
-      "confidence": 0.96,
-      "reasoning": "An expired card indicates the customer's payment method is no longer valid, which is a user-related issue."
+      "confidence": 0.95,
+      "reasoning": "Card has expired, which is a customer-side issue."
     },
-    "timestamp": "2026-09-04T10:44:10.955Z"
+    "timestamp": "2026-09-04T19:29:18.124Z"
   },
   {
     "event_id": "b61aaafc-f516-4fa0-9f18-55753b53c4fc",
     "stage": "diagnosis",
     "output": {
       "category": "systemic",
-      "confidence": 0.95,
-      "reasoning": "The error is a 503 response from the issuer bank API, indicating a server-side outage, which is a technical issue beyond the customer's control."
+      "confidence": 0.9,
+      "reasoning": "Bank API 503 indicates a server-side issue"
     },
-    "timestamp": "2026-09-04T10:44:14.119Z"
+    "timestamp": "2026-09-04T19:29:20.839Z"
   },
   {
     "event_id": "b61aaafc-f516-4fa0-9f18-55753b53c4fc",
@@ -640,35 +640,35 @@
       "recent_count": 0,
       "reason": "14 failures in prior window, 0 in recent window — likely resolved"
     },
-    "timestamp": "2026-09-04T10:44:14.119Z"
+    "timestamp": "2026-09-04T19:29:20.839Z"
   },
   {
     "event_id": "b61aaafc-f516-4fa0-9f18-55753b53c4fc",
     "stage": "intervention",
     "output": {
       "action": "escalate",
-      "channel": "none",
-      "reasoning": "systemic issue resolved, high cart value warrants human follow-up"
+      "channel": "sms",
+      "reasoning": "Systemic issue resolved, high cart value"
     },
-    "timestamp": "2026-09-04T10:44:20.012Z"
+    "timestamp": "2026-09-04T19:29:23.919Z"
   },
   {
     "event_id": "b61aaafc-f516-4fa0-9f18-55753b53c4fc",
     "stage": "message",
     "output": {
-      "message": "Namaste! Aapka ₹12,560 ka payment ab theek ho gaya hai. Kripya is link se dobara try karein: [RETRY_LINK] — Shukriya!"
+      "message": "Hey! 🎉 Payment hiccup hua tha bank side se, ab fix ho gaya hai. ₹12,560 ka order ab finalize kar sakte ho: [RETRY_LINK] – enjoy shopping! 🚀"
     },
-    "timestamp": "2026-09-04T10:44:24.015Z"
+    "timestamp": "2026-09-04T19:29:26.566Z"
   },
   {
     "event_id": "69e62f08-5586-4a52-900b-b6235d626210",
     "stage": "diagnosis",
     "output": {
       "category": "systemic",
-      "confidence": 0.95,
-      "reasoning": "The error indicates a timeout while contacting NPCI's UPI service, a technical issue in the payment infrastructure rather than a user mistake."
+      "confidence": 0.9,
+      "reasoning": "Timeout on NPCI collect request indicates a payment gateway/system issue"
     },
-    "timestamp": "2026-09-04T10:44:24.838Z"
+    "timestamp": "2026-09-04T19:29:29.269Z"
   },
   {
     "event_id": "69e62f08-5586-4a52-900b-b6235d626210",
@@ -681,7 +681,7 @@
       "recent_count": 0,
       "reason": "5 failures in prior window, 0 in recent window — likely resolved"
     },
-    "timestamp": "2026-09-04T10:44:24.838Z"
+    "timestamp": "2026-09-04T19:29:29.269Z"
   },
   {
     "event_id": "69e62f08-5586-4a52-900b-b6235d626210",
@@ -689,17 +689,17 @@
     "output": {
       "action": "notify",
       "channel": "sms",
-      "reasoning": "systemic issue resolved, safe to inform"
+      "reasoning": "Payment system issue resolved, safe to notify customer."
     },
-    "timestamp": "2026-09-04T10:44:31.324Z"
+    "timestamp": "2026-09-04T19:29:33.226Z"
   },
   {
     "event_id": "69e62f08-5586-4a52-900b-b6235d626210",
     "stage": "message",
     "output": {
-      "message": "Namaste! Aapka ₹9021 ka payment ab theek ho gaya hai. Kripya is link se dobara try karein: [RETRY_LINK] — ab aapka order confirm ho jayega. Shukriya!"
+      "message": "Hey! Payment timeout issue hua tha. Ab fix ho gaya. ₹9021 ka order complete karne ke liye click karo: [RETRY_LINK] Best, Team"
     },
-    "timestamp": "2026-09-04T10:44:33.317Z"
+    "timestamp": "2026-09-04T19:29:36.117Z"
   },
   {
     "event_id": "9154526f-d7a5-40db-9a68-15d9488e926c",
@@ -707,9 +707,9 @@
     "output": {
       "category": "systemic",
       "confidence": 0.95,
-      "reasoning": "Bank's API returned a 503 error, indicating a server-side outage or timeout, not a user error"
+      "reasoning": "Bank API returned 503, indicating a server-side infrastructure issue."
     },
-    "timestamp": "2026-09-04T10:44:34.393Z"
+    "timestamp": "2026-09-04T19:29:39.025Z"
   },
   {
     "event_id": "9154526f-d7a5-40db-9a68-15d9488e926c",
@@ -722,35 +722,35 @@
       "recent_count": 0,
       "reason": "14 failures in prior window, 0 in recent window — likely resolved"
     },
-    "timestamp": "2026-09-04T10:44:34.393Z"
+    "timestamp": "2026-09-04T19:29:39.025Z"
   },
   {
     "event_id": "9154526f-d7a5-40db-9a68-15d9488e926c",
     "stage": "intervention",
     "output": {
-      "action": "notify",
-      "channel": "sms",
-      "reasoning": "Systemic outage resolved, high-value cart; auto-notify and flag for human follow-up"
+      "action": "escalate",
+      "channel": "whatsapp",
+      "reasoning": "Systemic issue resolved, high cart value, so escalation recommended."
     },
-    "timestamp": "2026-09-04T10:44:40.436Z"
+    "timestamp": "2026-09-04T19:29:42.170Z"
   },
   {
     "event_id": "9154526f-d7a5-40db-9a68-15d9488e926c",
     "stage": "message",
     "output": {
-      "message": "Namaste! Aapka ₹13,799 ka payment ab theek ho gaya hai. Kripya is link se phir se try karein: [RETRY_LINK] – sab ready hai, happy shopping!"
+      "message": "Hi! Payment ka error tha (bank API 503). Ab sab fix ho gaya. 13799₹ ka order complete karne ke liye yahan click karo: [RETRY_LINK] Cheers!"
     },
-    "timestamp": "2026-09-04T10:44:45.409Z"
+    "timestamp": "2026-09-04T19:29:46.361Z"
   },
   {
     "event_id": "82381800-4974-461a-851f-277ef99c2b83",
     "stage": "diagnosis",
     "output": {
       "category": "systemic",
-      "confidence": 0.95,
-      "reasoning": "Timeout from payment gateway indicates infrastructure issue, not customer error"
+      "confidence": 0.9,
+      "reasoning": "gateway timeout indicates infrastructure issue"
     },
-    "timestamp": "2026-09-04T10:44:46.069Z"
+    "timestamp": "2026-09-04T19:29:47.023Z"
   },
   {
     "event_id": "82381800-4974-461a-851f-277ef99c2b83",
@@ -763,35 +763,35 @@
       "recent_count": 0,
       "reason": "11 failures in prior window, 0 in recent window — likely resolved"
     },
-    "timestamp": "2026-09-04T10:44:46.069Z"
+    "timestamp": "2026-09-04T19:29:47.023Z"
   },
   {
     "event_id": "82381800-4974-461a-851f-277ef99c2b83",
     "stage": "intervention",
     "output": {
       "action": "escalate",
-      "channel": "none",
-      "reasoning": "Systemic issue resolved, high cart value warrants human follow-up"
+      "channel": "whatsapp",
+      "reasoning": "Issue resolved, high cart value, escalation recommended"
     },
-    "timestamp": "2026-09-04T10:44:52.826Z"
+    "timestamp": "2026-09-04T19:29:51.283Z"
   },
   {
     "event_id": "82381800-4974-461a-851f-277ef99c2b83",
     "stage": "message",
     "output": {
-      "message": "Namaste! Aapka ₹10,303 ka payment gateway timeout ki wajah se pending tha, lekin ab sab theek ho gaya hai. Kripya is link se dubara payment complete karein: [RETRY_LINK] — dhanyavaad!"
+      "message": "Hey! Payment failed due to timeout, but it's fixed now. Your ₹10,303 cart is ready. Click to complete: [RETRY_LINK] 👍"
     },
-    "timestamp": "2026-09-04T10:44:55.492Z"
+    "timestamp": "2026-09-04T19:29:56.385Z"
   },
   {
     "event_id": "177a8b33-7a0a-4c55-aff2-9673bc6b216f",
     "stage": "diagnosis",
     "output": {
       "category": "systemic",
-      "confidence": 0.95,
-      "reasoning": "Bank API returned a 503 Service Unavailable, indicating a server-side/network failure beyond the customer's control."
+      "confidence": 0.9,
+      "reasoning": "503 Service Unavailable indicates a server-side failure from the bank's API, not user error."
     },
-    "timestamp": "2026-09-04T10:44:56.516Z"
+    "timestamp": "2026-09-04T19:29:59.483Z"
   },
   {
     "event_id": "177a8b33-7a0a-4c55-aff2-9673bc6b216f",
@@ -804,7 +804,7 @@
       "recent_count": 0,
       "reason": "14 failures in prior window, 0 in recent window — likely resolved"
     },
-    "timestamp": "2026-09-04T10:44:56.516Z"
+    "timestamp": "2026-09-04T19:29:59.483Z"
   },
   {
     "event_id": "177a8b33-7a0a-4c55-aff2-9673bc6b216f",
@@ -812,17 +812,17 @@
     "output": {
       "action": "notify",
       "channel": "sms",
-      "reasoning": "Systemic issue resolved with high confidence, safe to notify."
+      "reasoning": "Systemic issue resolved, cart under threshold."
     },
-    "timestamp": "2026-09-04T10:45:01.571Z"
+    "timestamp": "2026-09-04T19:30:03.507Z"
   },
   {
     "event_id": "177a8b33-7a0a-4c55-aff2-9673bc6b216f",
     "stage": "message",
     "output": {
-      "message": "Namaste! Aapka ₹7,944 ka payment ab theek ho gaya hai. Kripya is link se dobara try karein: [RETRY_LINK] — Ab aap asaani se checkout kar sakte hain. Dhanyavaad!"
+      "message": "Payment ke time server error ho gaya, ab fix ho gaya.  ₹7944 ka order complete karne ke liye yahan click kare: [RETRY_LINK] — happy shopping!"
     },
-    "timestamp": "2026-09-04T10:45:03.405Z"
+    "timestamp": "2026-09-04T19:30:06.268Z"
   },
   {
     "event_id": "958a8efa-2336-460f-885d-6e7042a1f160",
@@ -830,9 +830,9 @@
     "output": {
       "category": "user_side",
       "confidence": 0.95,
-      "reasoning": "OTP mismatch indicates the customer entered an incorrect or expired code"
+      "reasoning": "OTP mismatch indicates user error"
     },
-    "timestamp": "2026-09-04T10:45:05.622Z"
+    "timestamp": "2026-09-04T19:30:08.333Z"
   },
   {
     "event_id": "57d1c308-f69e-4ec6-a1d2-354e599e815d",
@@ -840,9 +840,9 @@
     "output": {
       "category": "systemic",
       "confidence": 0.9,
-      "reasoning": "Timeout indicates a technical issue with the NPCI/U​PI gateway, not user error."
+      "reasoning": "The timeout originates from the NPCI collect request, indicating an infrastructure or network issue on the payment gateway side rather than a user error."
     },
-    "timestamp": "2026-09-04T10:45:08.902Z"
+    "timestamp": "2026-09-04T19:30:11.087Z"
   },
   {
     "event_id": "57d1c308-f69e-4ec6-a1d2-354e599e815d",
@@ -855,7 +855,7 @@
       "recent_count": 0,
       "reason": "5 failures in prior window, 0 in recent window — likely resolved"
     },
-    "timestamp": "2026-09-04T10:45:08.902Z"
+    "timestamp": "2026-09-04T19:30:11.087Z"
   },
   {
     "event_id": "57d1c308-f69e-4ec6-a1d2-354e599e815d",
@@ -863,27 +863,27 @@
     "output": {
       "action": "notify",
       "channel": "sms",
-      "reasoning": "Systemic issue resolved, safe to notify customer"
+      "reasoning": "Systemic issue resolved with high confidence, cart value below threshold, so send a recovery message."
     },
-    "timestamp": "2026-09-04T10:45:14.033Z"
+    "timestamp": "2026-09-04T19:30:15.119Z"
   },
   {
     "event_id": "57d1c308-f69e-4ec6-a1d2-354e599e815d",
     "stage": "message",
     "output": {
-      "message": "Namaste! Aapka payment gateway ka timeout issue ab fix ho gaya hai. Cart ₹3802 ka checkout ab safe hai. Kripya is link se dubara try karein: [RETRY_LINK] — Shukriya!"
+      "message": "Hey! Payment issue solved. Your cart ₹3802 is ready. Just hit the link to complete: [RETRY_LINK] Happy shopping!"
     },
-    "timestamp": "2026-09-04T10:45:16.042Z"
+    "timestamp": "2026-09-04T19:30:19.547Z"
   },
   {
     "event_id": "64a258a1-c29a-43b0-bd41-a57f6955a976",
     "stage": "diagnosis",
     "output": {
       "category": "systemic",
-      "confidence": 0.95,
-      "reasoning": "Timeout from NPCI indicates a gateway/network issue, not caused by the customer"
+      "confidence": 0.9,
+      "reasoning": "timeout from NPCI indicates a payment infrastructure issue"
     },
-    "timestamp": "2026-09-04T10:45:16.993Z"
+    "timestamp": "2026-09-04T19:30:20.239Z"
   },
   {
     "event_id": "64a258a1-c29a-43b0-bd41-a57f6955a976",
@@ -896,7 +896,7 @@
       "recent_count": 0,
       "reason": "5 failures in prior window, 0 in recent window — likely resolved"
     },
-    "timestamp": "2026-09-04T10:45:16.993Z"
+    "timestamp": "2026-09-04T19:30:20.239Z"
   },
   {
     "event_id": "64a258a1-c29a-43b0-bd41-a57f6955a976",
@@ -904,17 +904,17 @@
     "output": {
       "action": "notify",
       "channel": "sms",
-      "reasoning": "Systemic issue resolved with high confidence, safe to notify the customer"
+      "reasoning": "Systemic issue resolved with high confidence, cart value acceptable"
     },
-    "timestamp": "2026-09-04T10:45:23.174Z"
+    "timestamp": "2026-09-04T19:30:25.198Z"
   },
   {
     "event_id": "64a258a1-c29a-43b0-bd41-a57f6955a976",
     "stage": "message",
     "output": {
-      "message": "Namaste! Aapka ₹8211 ka payment ab theek ho gaya hai. Kripya is link se dobara try karein: [RETRY_LINK] – ab aap asaani se purchase complete kar sakte hain. Dhanyavaad!"
+      "message": "Hi! Payment timeout hua tha NPCI se. Ab sab fix ho gaya. ₹8211 ka order complete karne ke liye click kare: [RETRY_LINK] Happy shopping!"
     },
-    "timestamp": "2026-09-04T10:45:23.854Z"
+    "timestamp": "2026-09-04T19:30:27.728Z"
   },
   {
     "event_id": "092dc899-dbdd-4d04-b0e4-234fc60e6e2c",
@@ -922,19 +922,19 @@
     "output": {
       "category": "user_side",
       "confidence": 0.95,
-      "reasoning": "The error indicates an incorrect OTP entered by the customer, a typical user error."
+      "reasoning": "OTP entered incorrectly by the customer"
     },
-    "timestamp": "2026-09-04T10:45:25.798Z"
+    "timestamp": "2026-09-04T19:30:33.472Z"
   },
   {
     "event_id": "0dd1897e-a739-4dd7-886a-fb9bbb514c1b",
     "stage": "diagnosis",
     "output": {
       "category": "systemic",
-      "confidence": 0.95,
-      "reasoning": "The failure stems from a 503 Service Unavailable response from the issuer bank API, indicating a server-side outage or timeout, not a user action."
+      "confidence": 0.9,
+      "reasoning": "The error indicates a 503 Service Unavailable from the issuer bank API, a typical gateway/server issue."
     },
-    "timestamp": "2026-09-04T10:45:28.770Z"
+    "timestamp": "2026-09-04T19:30:35.924Z"
   },
   {
     "event_id": "0dd1897e-a739-4dd7-886a-fb9bbb514c1b",
@@ -947,55 +947,55 @@
       "recent_count": 0,
       "reason": "14 failures in prior window, 0 in recent window — likely resolved"
     },
-    "timestamp": "2026-09-04T10:45:28.770Z"
+    "timestamp": "2026-09-04T19:30:35.925Z"
   },
   {
     "event_id": "0dd1897e-a739-4dd7-886a-fb9bbb514c1b",
     "stage": "intervention",
     "output": {
       "action": "escalate",
-      "channel": "none",
-      "reasoning": "Systemic issue resolved, high cart value warrants human follow‑up"
+      "channel": "sms",
+      "reasoning": "Systemic issue resolved, high cart value."
     },
-    "timestamp": "2026-09-04T10:45:34.741Z"
+    "timestamp": "2026-09-04T19:30:37.040Z"
   },
   {
     "event_id": "0dd1897e-a739-4dd7-886a-fb9bbb514c1b",
     "stage": "message",
     "output": {
-      "message": "Namaste! Aapka ₹13,473 ka payment ab sahi ho gaya hai. Kripya is link pe click karke aapka order complete karein: [RETRY_LINK] — Shukriya!"
+      "message": "Hey! Apke ₹13473 ka payment pehle 503 error aaya tha, par ab sab thik ho gaya hai. Click the link to complete: [RETRY_LINK] – everything’s smooth now! 🚀"
     },
-    "timestamp": "2026-09-04T10:45:38.747Z"
+    "timestamp": "2026-09-04T19:30:40.667Z"
   },
   {
     "event_id": "47488802-be3e-43cd-bbb6-e5336b016ca2",
     "stage": "diagnosis",
     "output": {
       "category": "user_side",
-      "confidence": 0.96,
-      "reasoning": "The error indicates an incorrect one‑time password entered by the customer, which is a user mistake."
+      "confidence": 0.95,
+      "reasoning": "OTP incorrect entered by customer"
     },
-    "timestamp": "2026-09-04T10:45:39.305Z"
+    "timestamp": "2026-09-04T19:30:42.254Z"
   },
   {
     "event_id": "a1cfb127-8dde-442e-ab7f-800e5f005d2b",
     "stage": "diagnosis",
     "output": {
       "category": "user_side",
-      "confidence": 0.98,
-      "reasoning": "The error indicates the card's expiration date has passed, which is a customer-provided issue, not a system fault."
+      "confidence": 0.95,
+      "reasoning": "Card expired indicates the issue is with the customer's card, not the payment system."
     },
-    "timestamp": "2026-09-04T10:45:42.268Z"
+    "timestamp": "2026-09-04T19:30:44.346Z"
   },
   {
     "event_id": "029e6c0a-d1b0-4ba6-a68d-f89872fd5edd",
     "stage": "diagnosis",
     "output": {
       "category": "systemic",
-      "confidence": 0.95,
-      "reasoning": "Timeout from gateway indicates infrastructure issue, not user error"
+      "confidence": 0.9,
+      "reasoning": "Gateway timeout indicates infrastructure issue"
     },
-    "timestamp": "2026-09-04T10:45:45.251Z"
+    "timestamp": "2026-09-04T19:30:49.573Z"
   },
   {
     "event_id": "029e6c0a-d1b0-4ba6-a68d-f89872fd5edd",
@@ -1008,7 +1008,7 @@
       "recent_count": 0,
       "reason": "11 failures in prior window, 0 in recent window — likely resolved"
     },
-    "timestamp": "2026-09-04T10:45:45.251Z"
+    "timestamp": "2026-09-04T19:30:49.573Z"
   },
   {
     "event_id": "029e6c0a-d1b0-4ba6-a68d-f89872fd5edd",
@@ -1016,27 +1016,27 @@
     "output": {
       "action": "notify",
       "channel": "sms",
-      "reasoning": "Systemic issue resolved with high confidence; safe to notify customer."
+      "reasoning": "Systemic issue resolved, confidence high, cart below high-value threshold."
     },
-    "timestamp": "2026-09-04T10:45:50.560Z"
+    "timestamp": "2026-09-04T19:30:50.711Z"
   },
   {
     "event_id": "029e6c0a-d1b0-4ba6-a68d-f89872fd5edd",
     "stage": "message",
     "output": {
-      "message": "Hi! Aapki payment ka timeout issue fix ho gaya hai. Ab aap ₹1828 ka order asani se complete kar sakte hain. Jaldi se checkout karein: [RETRY_LINK] — Happy shopping!"
+      "message": "Hey! Payment hiccup due to gateway timeout. Problem solved. ₹1828 cart ready. Click here to finish: [RETRY_LINK] Enjoy shopping!"
     },
-    "timestamp": "2026-09-04T10:45:52.387Z"
+    "timestamp": "2026-09-04T19:30:53.467Z"
   },
   {
     "event_id": "ac9b331d-5c1c-44f2-8c07-cc9b6526d78d",
     "stage": "diagnosis",
     "output": {
       "category": "user_side",
-      "confidence": 0.96,
-      "reasoning": "OTP failure indicates the customer entered an incorrect or expired one, a user error"
+      "confidence": 0.95,
+      "reasoning": "OTP mismatch indicates user entered wrong OTP"
     },
-    "timestamp": "2026-09-04T10:45:54.400Z"
+    "timestamp": "2026-09-04T19:30:56.216Z"
   },
   {
     "event_id": "6d57e252-9fb6-47a7-8b9c-3b2b5d2a3ddc",
@@ -1044,9 +1044,9 @@
     "output": {
       "category": "systemic",
       "confidence": 0.9,
-      "reasoning": "The error indicates a gateway timeout, a technical issue in the payment infrastructure, not caused by the customer."
+      "reasoning": "Gateway timeout indicates a backend issue."
     },
-    "timestamp": "2026-09-04T10:45:56.591Z"
+    "timestamp": "2026-09-04T19:30:59.032Z"
   },
   {
     "event_id": "6d57e252-9fb6-47a7-8b9c-3b2b5d2a3ddc",
@@ -1059,7 +1059,7 @@
       "recent_count": 0,
       "reason": "11 failures in prior window, 0 in recent window — likely resolved"
     },
-    "timestamp": "2026-09-04T10:45:56.591Z"
+    "timestamp": "2026-09-04T19:30:59.032Z"
   },
   {
     "event_id": "6d57e252-9fb6-47a7-8b9c-3b2b5d2a3ddc",
@@ -1067,232 +1067,232 @@
     "output": {
       "action": "notify",
       "channel": "sms",
-      "reasoning": "Systemic payment issue resolved, safe to inform the customer"
+      "reasoning": "Systemic issue resolved with high confidence, cart value below threshold."
     },
-    "timestamp": "2026-09-04T10:46:01.855Z"
+    "timestamp": "2026-09-04T19:31:02.205Z"
   },
   {
     "event_id": "6d57e252-9fb6-47a7-8b9c-3b2b5d2a3ddc",
     "stage": "message",
     "output": {
-      "message": "Namaste! Aapke ₹5,694 ka payment gateway timeout ki wajah se pending tha, ab sab theek ho gaya hai. Kripya is link se dobara checkout karein: [RETRY_LINK] – shukriya!"
+      "message": "Hey, payment timeout thoda error aa gaya tha ₹5694 ke liye. Ab sab fix ho gaya! Click [RETRY_LINK] aur apni purchase complete karein. 😊"
     },
-    "timestamp": "2026-09-04T10:46:03.990Z"
+    "timestamp": "2026-09-04T19:31:04.918Z"
   },
   {
     "event_id": "351c573d-5707-4f7b-a6ec-401218709d7b",
-    "stage": "diagnosis",
-    "output": {
-      "category": "systemic",
-      "confidence": 0.95,
-      "reasoning": "Bank's API returned a 503 error, indicating a server-side outage not caused by the user"
-    },
-    "timestamp": "2026-09-04T10:46:06.194Z"
-  },
-  {
-    "event_id": "351c573d-5707-4f7b-a6ec-401218709d7b",
-    "stage": "resolution",
-    "output": {
-      "error_code": "BANK_API_5XX",
-      "resolved": true,
-      "confidence": 1,
-      "prior_count": 14,
-      "recent_count": 0,
-      "reason": "14 failures in prior window, 0 in recent window — likely resolved"
-    },
-    "timestamp": "2026-09-04T10:46:06.194Z"
-  },
-  {
-    "event_id": "351c573d-5707-4f7b-a6ec-401218709d7b",
-    "stage": "intervention",
-    "output": {
-      "action": "notify",
-      "channel": "sms",
-      "reasoning": "Systemic failure resolved with high confidence, so inform the customer."
-    },
-    "timestamp": "2026-09-04T10:46:10.400Z"
-  },
-  {
-    "event_id": "351c573d-5707-4f7b-a6ec-401218709d7b",
-    "stage": "message",
-    "output": {
-      "message": "Hi! Aapka ₹530 ka order ab payment ke liye ready hai. Pehle bank ki API down thi, ab sab theek hai. Click karein aur checkout complete karein: [RETRY_LINK]"
-    },
-    "timestamp": "2026-09-04T10:46:12.698Z"
-  },
-  {
-    "event_id": "6970a712-7914-4b14-9a00-16381e30aeb0",
-    "stage": "diagnosis",
-    "output": {
-      "category": "systemic",
-      "confidence": 0.95,
-      "reasoning": "Bank API returned a 503, indicating a server-side outage beyond the user's control"
-    },
-    "timestamp": "2026-09-04T10:46:14.905Z"
-  },
-  {
-    "event_id": "6970a712-7914-4b14-9a00-16381e30aeb0",
-    "stage": "resolution",
-    "output": {
-      "error_code": "BANK_API_5XX",
-      "resolved": true,
-      "confidence": 1,
-      "prior_count": 14,
-      "recent_count": 0,
-      "reason": "14 failures in prior window, 0 in recent window — likely resolved"
-    },
-    "timestamp": "2026-09-04T10:46:14.905Z"
-  },
-  {
-    "event_id": "6970a712-7914-4b14-9a00-16381e30aeb0",
-    "stage": "intervention",
-    "output": {
-      "action": "notify",
-      "channel": "sms",
-      "reasoning": "Systemic outage resolved with high confidence, safe to notify."
-    },
-    "timestamp": "2026-09-04T10:46:20.379Z"
-  },
-  {
-    "event_id": "6970a712-7914-4b14-9a00-16381e30aeb0",
-    "stage": "message",
-    "output": {
-      "message": "Namaste! Aapka ₹5289 ka payment ab process ho sakta hai. Kripya is link pe click karein aur checkout complete karein: [RETRY_LINK] — shukriya!"
-    },
-    "timestamp": "2026-09-04T10:46:20.989Z"
-  },
-  {
-    "event_id": "ba81120a-8a9f-4319-b158-0d6909515b50",
-    "stage": "diagnosis",
-    "output": {
-      "category": "systemic",
-      "confidence": 0.95,
-      "reasoning": "Bank API returned 503, indicating a server-side outage not caused by the user"
-    },
-    "timestamp": "2026-09-04T10:46:23.042Z"
-  },
-  {
-    "event_id": "ba81120a-8a9f-4319-b158-0d6909515b50",
-    "stage": "resolution",
-    "output": {
-      "error_code": "BANK_API_5XX",
-      "resolved": true,
-      "confidence": 1,
-      "prior_count": 14,
-      "recent_count": 0,
-      "reason": "14 failures in prior window, 0 in recent window — likely resolved"
-    },
-    "timestamp": "2026-09-04T10:46:23.042Z"
-  },
-  {
-    "event_id": "ba81120a-8a9f-4319-b158-0d6909515b50",
-    "stage": "intervention",
-    "output": {
-      "action": "escalate",
-      "channel": "none",
-      "reasoning": "Systemic outage resolved, high cart value; recommend human follow‑up."
-    },
-    "timestamp": "2026-09-04T10:46:28.648Z"
-  },
-  {
-    "event_id": "ba81120a-8a9f-4319-b158-0d6909515b50",
-    "stage": "message",
-    "output": {
-      "message": "Hey! Aapka payment thoda ruk gaya tha (bank side issue), ab sab theek hai. ₹10,628 ka order complete karne ke liye yahan click kare: [RETRY_LINK] Dhanyavaad!"
-    },
-    "timestamp": "2026-09-04T10:46:31.710Z"
-  },
-  {
-    "event_id": "c0b3a6a8-ba7d-45e0-aa49-735a54022f0d",
-    "stage": "diagnosis",
-    "output": {
-      "category": "systemic",
-      "confidence": 0.95,
-      "reasoning": "Bank's API responded with 503, indicating a server-side outage, not a user error."
-    },
-    "timestamp": "2026-09-04T10:46:33.789Z"
-  },
-  {
-    "event_id": "c0b3a6a8-ba7d-45e0-aa49-735a54022f0d",
-    "stage": "resolution",
-    "output": {
-      "error_code": "BANK_API_5XX",
-      "resolved": true,
-      "confidence": 1,
-      "prior_count": 14,
-      "recent_count": 0,
-      "reason": "14 failures in prior window, 0 in recent window — likely resolved"
-    },
-    "timestamp": "2026-09-04T10:46:33.789Z"
-  },
-  {
-    "event_id": "c0b3a6a8-ba7d-45e0-aa49-735a54022f0d",
-    "stage": "intervention",
-    "output": {
-      "action": "notify",
-      "channel": "sms",
-      "reasoning": "Systemic issue resolved with high confidence; notify the customer."
-    },
-    "timestamp": "2026-09-04T10:46:39.117Z"
-  },
-  {
-    "event_id": "c0b3a6a8-ba7d-45e0-aa49-735a54022f0d",
-    "stage": "message",
-    "output": {
-      "message": "Namaste! Aapke ₹1062 ka payment ab theek ho gaya hai. Kripya is link se dobara try karein: [RETRY_LINK] — aapka order turant process ho jayega. Dhanyavaad!"
-    },
-    "timestamp": "2026-09-04T10:46:39.833Z"
-  },
-  {
-    "event_id": "ee7f7164-c6c1-41ce-a185-225a3675c2ac",
-    "stage": "diagnosis",
-    "output": {
-      "category": "systemic",
-      "confidence": 0.95,
-      "reasoning": "Bank API returned a 503 error, indicating a server-side outage or timeout, which is a technical issue beyond the customer's control."
-    },
-    "timestamp": "2026-09-04T10:46:41.881Z"
-  },
-  {
-    "event_id": "ee7f7164-c6c1-41ce-a185-225a3675c2ac",
-    "stage": "resolution",
-    "output": {
-      "error_code": "BANK_API_5XX",
-      "resolved": true,
-      "confidence": 1,
-      "prior_count": 14,
-      "recent_count": 0,
-      "reason": "14 failures in prior window, 0 in recent window — likely resolved"
-    },
-    "timestamp": "2026-09-04T10:46:41.881Z"
-  },
-  {
-    "event_id": "ee7f7164-c6c1-41ce-a185-225a3675c2ac",
-    "stage": "intervention",
-    "output": {
-      "action": "notify",
-      "channel": "sms",
-      "reasoning": "Systemic issue resolved, safe to notify."
-    },
-    "timestamp": "2026-09-04T10:46:48.232Z"
-  },
-  {
-    "event_id": "ee7f7164-c6c1-41ce-a185-225a3675c2ac",
-    "stage": "message",
-    "output": {
-      "message": "Namaste! Aapka ₹7181 ka payment ab theek ho gaya hai. Kripya is link se dobara try karein: [RETRY_LINK] — sab set hai, happy shopping!"
-    },
-    "timestamp": "2026-09-04T10:46:49.152Z"
-  },
-  {
-    "event_id": "c589581c-8cea-4eef-a858-f1617764d29f",
     "stage": "diagnosis",
     "output": {
       "category": "systemic",
       "confidence": 0.9,
-      "reasoning": "Timeout indicates payment infrastructure issue"
+      "reasoning": "503 Service Unavailable from issuer bank API indicates a technical failure on the bank side"
     },
-    "timestamp": "2026-09-04T10:46:51.199Z"
+    "timestamp": "2026-09-04T19:31:07.661Z"
+  },
+  {
+    "event_id": "351c573d-5707-4f7b-a6ec-401218709d7b",
+    "stage": "resolution",
+    "output": {
+      "error_code": "BANK_API_5XX",
+      "resolved": true,
+      "confidence": 1,
+      "prior_count": 14,
+      "recent_count": 0,
+      "reason": "14 failures in prior window, 0 in recent window — likely resolved"
+    },
+    "timestamp": "2026-09-04T19:31:07.661Z"
+  },
+  {
+    "event_id": "351c573d-5707-4f7b-a6ec-401218709d7b",
+    "stage": "intervention",
+    "output": {
+      "action": "notify",
+      "channel": "sms",
+      "reasoning": "Systemic issue resolved, low value cart, auto-notify."
+    },
+    "timestamp": "2026-09-04T19:31:10.523Z"
+  },
+  {
+    "event_id": "351c573d-5707-4f7b-a6ec-401218709d7b",
+    "stage": "message",
+    "output": {
+      "message": "Hi! Your payment for ₹530 hiccuped due to a 503 error from the bank. We’ve fixed it now—just click the link to complete the purchase.  \n[RETRY_LINK]"
+    },
+    "timestamp": "2026-09-04T19:31:13.688Z"
+  },
+  {
+    "event_id": "6970a712-7914-4b14-9a00-16381e30aeb0",
+    "stage": "diagnosis",
+    "output": {
+      "category": "systemic",
+      "confidence": 0.9,
+      "reasoning": "Issuer bank API returned 503"
+    },
+    "timestamp": "2026-09-04T19:31:16.485Z"
+  },
+  {
+    "event_id": "6970a712-7914-4b14-9a00-16381e30aeb0",
+    "stage": "resolution",
+    "output": {
+      "error_code": "BANK_API_5XX",
+      "resolved": true,
+      "confidence": 1,
+      "prior_count": 14,
+      "recent_count": 0,
+      "reason": "14 failures in prior window, 0 in recent window — likely resolved"
+    },
+    "timestamp": "2026-09-04T19:31:16.485Z"
+  },
+  {
+    "event_id": "6970a712-7914-4b14-9a00-16381e30aeb0",
+    "stage": "intervention",
+    "output": {
+      "action": "notify",
+      "channel": "sms",
+      "reasoning": "Systemic issue resolved, safe to notify customer."
+    },
+    "timestamp": "2026-09-04T19:31:19.602Z"
+  },
+  {
+    "event_id": "6970a712-7914-4b14-9a00-16381e30aeb0",
+    "stage": "message",
+    "output": {
+      "message": "Hey! Your ₹5289 order faced a hiccup, but it's sorted now. Just tap the link to complete your payment: [RETRY_LINK] – easy peasy! Thanks for choosing us."
+    },
+    "timestamp": "2026-09-04T19:31:22.398Z"
+  },
+  {
+    "event_id": "ba81120a-8a9f-4319-b158-0d6909515b50",
+    "stage": "diagnosis",
+    "output": {
+      "category": "systemic",
+      "confidence": 0.9,
+      "reasoning": "Bank API returned 503, a server-side error indicating issuer bank infrastructure failure."
+    },
+    "timestamp": "2026-09-04T19:31:25.295Z"
+  },
+  {
+    "event_id": "ba81120a-8a9f-4319-b158-0d6909515b50",
+    "stage": "resolution",
+    "output": {
+      "error_code": "BANK_API_5XX",
+      "resolved": true,
+      "confidence": 1,
+      "prior_count": 14,
+      "recent_count": 0,
+      "reason": "14 failures in prior window, 0 in recent window — likely resolved"
+    },
+    "timestamp": "2026-09-04T19:31:25.295Z"
+  },
+  {
+    "event_id": "ba81120a-8a9f-4319-b158-0d6909515b50",
+    "stage": "intervention",
+    "output": {
+      "action": "escalate",
+      "channel": "sms",
+      "reasoning": "High cart value, systemic issue resolved, auto-notify plus human follow-up advised"
+    },
+    "timestamp": "2026-09-04T19:31:29.166Z"
+  },
+  {
+    "event_id": "ba81120a-8a9f-4319-b158-0d6909515b50",
+    "stage": "message",
+    "output": {
+      "message": "Hey, payment hiccup hua tha 503 error se, ab sab set hai. Apna order ₹10628 complete karne ke liye click karein: [RETRY_LINK] – order ready, just one click!"
+    },
+    "timestamp": "2026-09-04T19:31:31.889Z"
+  },
+  {
+    "event_id": "c0b3a6a8-ba7d-45e0-aa49-735a54022f0d",
+    "stage": "diagnosis",
+    "output": {
+      "category": "systemic",
+      "confidence": 0.9,
+      "reasoning": "503 Service Unavailable indicates a server-side issue in the issuer bank's API."
+    },
+    "timestamp": "2026-09-04T19:31:35.993Z"
+  },
+  {
+    "event_id": "c0b3a6a8-ba7d-45e0-aa49-735a54022f0d",
+    "stage": "resolution",
+    "output": {
+      "error_code": "BANK_API_5XX",
+      "resolved": true,
+      "confidence": 1,
+      "prior_count": 14,
+      "recent_count": 0,
+      "reason": "14 failures in prior window, 0 in recent window — likely resolved"
+    },
+    "timestamp": "2026-09-04T19:31:35.994Z"
+  },
+  {
+    "event_id": "c0b3a6a8-ba7d-45e0-aa49-735a54022f0d",
+    "stage": "intervention",
+    "output": {
+      "action": "notify",
+      "channel": "sms",
+      "reasoning": "Systemic issue resolved, safe to inform customer."
+    },
+    "timestamp": "2026-09-04T19:31:37.906Z"
+  },
+  {
+    "event_id": "c0b3a6a8-ba7d-45e0-aa49-735a54022f0d",
+    "stage": "message",
+    "output": {
+      "message": "Hi! Payment failed due to a server issue (503). All set now! Complete ₹1062 purchase: [RETRY_LINK] Thanks!"
+    },
+    "timestamp": "2026-09-04T19:31:42.561Z"
+  },
+  {
+    "event_id": "ee7f7164-c6c1-41ce-a185-225a3675c2ac",
+    "stage": "diagnosis",
+    "output": {
+      "category": "systemic",
+      "confidence": 0.95,
+      "reasoning": "503 Service Unavailable indicates a server-side error from the issuer bank API, not a customer issue."
+    },
+    "timestamp": "2026-09-04T19:31:43.567Z"
+  },
+  {
+    "event_id": "ee7f7164-c6c1-41ce-a185-225a3675c2ac",
+    "stage": "resolution",
+    "output": {
+      "error_code": "BANK_API_5XX",
+      "resolved": true,
+      "confidence": 1,
+      "prior_count": 14,
+      "recent_count": 0,
+      "reason": "14 failures in prior window, 0 in recent window — likely resolved"
+    },
+    "timestamp": "2026-09-04T19:31:43.567Z"
+  },
+  {
+    "event_id": "ee7f7164-c6c1-41ce-a185-225a3675c2ac",
+    "stage": "intervention",
+    "output": {
+      "action": "notify",
+      "channel": "sms",
+      "reasoning": "Payment failed due to a server issue that has now been resolved."
+    },
+    "timestamp": "2026-09-04T19:31:47.916Z"
+  },
+  {
+    "event_id": "ee7f7164-c6c1-41ce-a185-225a3675c2ac",
+    "stage": "message",
+    "output": {
+      "message": "Payment hiccup ho gaya tha, ab server sahi hai. ₹7181 ki purchase ko complete karein: [RETRY_LINK] — sab set, enjoy!"
+    },
+    "timestamp": "2026-09-04T19:31:49.362Z"
+  },
+  {
+    "event_id": "c589581c-8cea-4eef-a858-f1617764d29f",
+    "stage": "diagnosis",
+    "output": {
+      "category": "systemic",
+      "confidence": 0.95,
+      "reasoning": "Timeout indicates a gateway/network issue rather than customer error"
+    },
+    "timestamp": "2026-09-04T19:31:53.596Z"
   },
   {
     "event_id": "c589581c-8cea-4eef-a858-f1617764d29f",
@@ -1305,7 +1305,7 @@
       "recent_count": 0,
       "reason": "11 failures in prior window, 0 in recent window — likely resolved"
     },
-    "timestamp": "2026-09-04T10:46:51.199Z"
+    "timestamp": "2026-09-04T19:31:53.597Z"
   },
   {
     "event_id": "c589581c-8cea-4eef-a858-f1617764d29f",
@@ -1313,17 +1313,17 @@
     "output": {
       "action": "notify",
       "channel": "sms",
-      "reasoning": "Systemic issue resolved with high confidence; notify to recover the ₹8157 cart."
+      "reasoning": "Systemic issue resolved; notify customer."
     },
-    "timestamp": "2026-09-04T10:46:55.392Z"
+    "timestamp": "2026-09-04T19:31:55.962Z"
   },
   {
     "event_id": "c589581c-8cea-4eef-a858-f1617764d29f",
     "stage": "message",
     "output": {
-      "message": "Namaste! Aapka ₹8157 ka checkout ab ready hai—payment timeout ka issue fix ho gaya hai. Ab bas click karein aur purchase complete karein: [RETRY_LINK] . Shubh shopping!"
+      "message": "Hi! Payment timeout ho gaya, lekin ab fix ho gaya hai. 8157₹ ka order complete karne ke liye bas is link pe click kare: [RETRY_LINK] Thanks!"
     },
-    "timestamp": "2026-09-04T10:46:57.448Z"
+    "timestamp": "2026-09-04T19:31:58.788Z"
   },
   {
     "event_id": "354eafe8-1a20-45d7-99fa-9192a3944377",
@@ -1331,9 +1331,9 @@
     "output": {
       "category": "systemic",
       "confidence": 0.95,
-      "reasoning": "Timeouts in the payment gateway indicate a technical issue on the payment infrastructure side"
+      "reasoning": "Gateway timeout indicates infrastructure issue"
     },
-    "timestamp": "2026-09-04T10:46:59.601Z"
+    "timestamp": "2026-09-04T19:32:01.634Z"
   },
   {
     "event_id": "354eafe8-1a20-45d7-99fa-9192a3944377",
@@ -1346,55 +1346,55 @@
       "recent_count": 0,
       "reason": "11 failures in prior window, 0 in recent window — likely resolved"
     },
-    "timestamp": "2026-09-04T10:46:59.601Z"
+    "timestamp": "2026-09-04T19:32:01.634Z"
   },
   {
     "event_id": "354eafe8-1a20-45d7-99fa-9192a3944377",
     "stage": "intervention",
     "output": {
       "action": "escalate",
-      "channel": "none",
-      "reasoning": "Systemic issue resolved with high confidence and high cart value, so notify customer and flag for human follow‑up"
+      "channel": "whatsapp",
+      "reasoning": "Systemic issue resolved, high cart value, escalation for human follow-up"
     },
-    "timestamp": "2026-09-04T10:47:04.823Z"
+    "timestamp": "2026-09-04T19:32:04.802Z"
   },
   {
     "event_id": "354eafe8-1a20-45d7-99fa-9192a3944377",
     "stage": "message",
     "output": {
-      "message": "Namaste! Aapke ₹14,902 ke payment mein thoda glitch tha, lekin ab sab theek ho gaya hai. Kripya yahan se dubara checkout karein: [RETRY_LINK] — aapka order taiyaar hai!"
+      "message": "Hey! Payment for ₹14902 failed due to a timeout, but we’ve fixed it. Just tap the link to complete your order now: [RETRY_LINK] 🚀 Your cart’s waiting!"
     },
-    "timestamp": "2026-09-04T10:47:08.909Z"
+    "timestamp": "2026-09-04T19:32:09.590Z"
   },
   {
     "event_id": "6a1f039e-f103-4c52-8edd-8ee68e0257cf",
     "stage": "diagnosis",
     "output": {
       "category": "user_side",
-      "confidence": 0.96,
-      "reasoning": "The message indicates the issuer declined the payment due to insufficient funds, which is a condition on the customer's account rather than a technical issue with the payment system."
+      "confidence": 0.9,
+      "reasoning": "The issuer declined due to insufficient funds, indicating an issue on the customer's side."
     },
-    "timestamp": "2026-09-04T10:47:10.878Z"
+    "timestamp": "2026-09-04T19:32:11.319Z"
   },
   {
     "event_id": "8f18dd58-ff96-4791-9854-f63417da14fc",
     "stage": "diagnosis",
     "output": {
       "category": "user_side",
-      "confidence": 0.97,
-      "reasoning": "Message indicates the card issuer declined due to insufficient funds, which is a customer-related issue."
+      "confidence": 0.95,
+      "reasoning": "Insufficient funds is a customer issue"
     },
-    "timestamp": "2026-09-04T10:47:14.071Z"
+    "timestamp": "2026-09-04T19:32:14.436Z"
   },
   {
     "event_id": "d6029c80-7930-429c-a563-a6ef1c347bb4",
     "stage": "diagnosis",
     "output": {
       "category": "systemic",
-      "confidence": 0.95,
-      "reasoning": "Timeout contacting NPCI indicates a payment gateway/network issue, not user error"
+      "confidence": 0.9,
+      "reasoning": "Timeout from NPCI indicates a payment infrastructure issue."
     },
-    "timestamp": "2026-09-04T10:47:16.129Z"
+    "timestamp": "2026-09-04T19:32:17.422Z"
   },
   {
     "event_id": "d6029c80-7930-429c-a563-a6ef1c347bb4",
@@ -1407,25 +1407,25 @@
       "recent_count": 0,
       "reason": "5 failures in prior window, 0 in recent window — likely resolved"
     },
-    "timestamp": "2026-09-04T10:47:16.129Z"
+    "timestamp": "2026-09-04T19:32:17.422Z"
   },
   {
     "event_id": "d6029c80-7930-429c-a563-a6ef1c347bb4",
     "stage": "intervention",
     "output": {
       "action": "escalate",
-      "channel": "none",
-      "reasoning": "High cart value and issue resolved, recommend human follow‑up"
+      "channel": "sms",
+      "reasoning": "Systemic failure resolved, high cart value, escalation recommended."
     },
-    "timestamp": "2026-09-04T10:47:22.132Z"
+    "timestamp": "2026-09-04T19:32:20.612Z"
   },
   {
     "event_id": "d6029c80-7930-429c-a563-a6ef1c347bb4",
     "stage": "message",
     "output": {
-      "message": "Namaste! Aapka ₹10,750 ka payment ab theek ho gaya hai. Kripya is link se dobara try karein: [RETRY_LINK] — sab smooth hoga! 🙏"
+      "message": "Hey! Payment timeout hua tha NPCI se, lekin ab fix ho gaya hai. ₹10,750 ka order ab complete kar sakte ho. Click below and finish your purchase: [RETRY_LINK] 🚀"
     },
-    "timestamp": "2026-09-04T10:47:25.302Z"
+    "timestamp": "2026-09-04T19:32:24.364Z"
   },
   {
     "event_id": "e2097f4b-f96c-4ac2-b2ae-c80581c9ea9b",
@@ -1433,9 +1433,9 @@
     "output": {
       "category": "systemic",
       "confidence": 0.95,
-      "reasoning": "Timeout indicates payment gateway or network issue, not customer error"
+      "reasoning": "Gateway timeout indicates a server-side infrastructure issue, not a customer-related problem."
     },
-    "timestamp": "2026-09-04T10:47:27.208Z"
+    "timestamp": "2026-09-04T19:32:26.078Z"
   },
   {
     "event_id": "e2097f4b-f96c-4ac2-b2ae-c80581c9ea9b",
@@ -1448,7 +1448,7 @@
       "recent_count": 0,
       "reason": "11 failures in prior window, 0 in recent window — likely resolved"
     },
-    "timestamp": "2026-09-04T10:47:27.208Z"
+    "timestamp": "2026-09-04T19:32:26.079Z"
   },
   {
     "event_id": "e2097f4b-f96c-4ac2-b2ae-c80581c9ea9b",
@@ -1456,27 +1456,27 @@
     "output": {
       "action": "notify",
       "channel": "sms",
-      "reasoning": "Systemic issue resolved with high confidence, safe to notify customer."
+      "reasoning": "Systemic issue resolved, safe to notify customer."
     },
-    "timestamp": "2026-09-04T10:47:32.878Z"
+    "timestamp": "2026-09-04T19:32:30.221Z"
   },
   {
     "event_id": "e2097f4b-f96c-4ac2-b2ae-c80581c9ea9b",
     "stage": "message",
     "output": {
-      "message": "Namaste! Aapka payment ab theek ho gaya hai. 🎉 Kripya is link se dobara try karein: [RETRY_LINK] – bas ₹3732 ka cart complete ho jayega. Dhanyavaad!"
+      "message": "Hey! Payment mein thodi delay ho gayi thi due to server timeout. Sab fix ho gaya! Click link to complete ₹3732 purchase: [RETRY_LINK] Happy shopping!"
     },
-    "timestamp": "2026-09-04T10:47:33.595Z"
+    "timestamp": "2026-09-04T19:32:33.009Z"
   },
   {
     "event_id": "f1fed94d-3b0a-417e-a7d6-f810e2575b70",
     "stage": "diagnosis",
     "output": {
       "category": "systemic",
-      "confidence": 0.95,
-      "reasoning": "Bank's API returned a 503 error, indicating a server-side outage not caused by the user"
+      "confidence": 0.9,
+      "reasoning": "Issuer bank API error 503 indicates a server-side issue."
     },
-    "timestamp": "2026-09-04T10:47:36.153Z"
+    "timestamp": "2026-09-04T19:32:35.557Z"
   },
   {
     "event_id": "f1fed94d-3b0a-417e-a7d6-f810e2575b70",
@@ -1489,7 +1489,7 @@
       "recent_count": 0,
       "reason": "14 failures in prior window, 0 in recent window — likely resolved"
     },
-    "timestamp": "2026-09-04T10:47:36.153Z"
+    "timestamp": "2026-09-04T19:32:35.557Z"
   },
   {
     "event_id": "f1fed94d-3b0a-417e-a7d6-f810e2575b70",
@@ -1497,186 +1497,186 @@
     "output": {
       "action": "escalate",
       "channel": "sms",
-      "reasoning": "systemic failure resolved, high cart value merits human follow-up"
+      "reasoning": "Systemic issue resolved, high cart value."
     },
-    "timestamp": "2026-09-04T10:47:41.482Z"
+    "timestamp": "2026-09-04T19:32:39.763Z"
   },
   {
     "event_id": "f1fed94d-3b0a-417e-a7d6-f810e2575b70",
     "stage": "message",
     "output": {
-      "message": "Namaste! Aapka ₹12,753 ka payment ab theek ho gaya hai. Kripya is link se dubara checkout karein: [RETRY_LINK] — ab aapka order turant confirm ho jayega. Shubh shopping!"
+      "message": "Payment issue solved! Your ₹12,753 order is ready. Click below to complete the purchase.  \n[RETRY_LINK]  \nThanks for your patience!"
     },
-    "timestamp": "2026-09-04T10:47:43.836Z"
+    "timestamp": "2026-09-04T19:32:42.184Z"
   },
   {
     "event_id": "560c3c5a-2f36-4b3a-9bfb-3b07f4d13515",
     "stage": "diagnosis",
     "output": {
       "category": "user_side",
-      "confidence": 0.96,
-      "reasoning": "Message indicates issuer declined due to insufficient funds, a customer account issue."
+      "confidence": 0.95,
+      "reasoning": "Issuer declined due to insufficient funds, indicating a customer-side issue."
     },
-    "timestamp": "2026-09-04T10:47:44.652Z"
+    "timestamp": "2026-09-04T19:32:44.938Z"
   },
   {
     "event_id": "3b63cd40-0e96-4878-9386-44c4cb36c9ae",
     "stage": "diagnosis",
     "output": {
       "category": "user_side",
-      "confidence": 0.99,
-      "reasoning": "The error indicates the card's expiration date has passed, which is a customer-side issue."
+      "confidence": 0.95,
+      "reasoning": "Card expired indicates the customer’s card has passed its validity period, a user-side issue."
     },
-    "timestamp": "2026-09-04T10:47:47.550Z"
+    "timestamp": "2026-09-04T19:32:48.262Z"
   },
   {
     "event_id": "b0c0c12c-f24b-4fb6-866c-9d4dbd592ec6",
     "stage": "diagnosis",
     "output": {
       "category": "user_side",
-      "confidence": 0.96,
-      "reasoning": "Insufficient funds are a customer account issue, not a platform or gateway error."
+      "confidence": 0.95,
+      "reasoning": "Insufficient funds is a customer balance issue"
     },
-    "timestamp": "2026-09-04T10:47:49.672Z"
+    "timestamp": "2026-09-04T19:32:51.190Z"
   },
   {
     "event_id": "8fab0342-8adb-469d-b621-ca06a24464fb",
     "stage": "diagnosis",
     "output": {
       "category": "user_side",
-      "confidence": 0.96,
-      "reasoning": "The issuer declined due to insufficient funds, indicating the customer's account lacks enough balance."
+      "confidence": 0.95,
+      "reasoning": "The issuer declined the payment due to insufficient funds, indicating the customer’s account balance was the issue."
     },
-    "timestamp": "2026-09-04T10:47:52.550Z"
+    "timestamp": "2026-09-04T19:32:54.013Z"
   },
   {
     "event_id": "bc4afbb8-0efe-4609-b7e8-3f4f4cb9b751",
     "stage": "diagnosis",
     "output": {
       "category": "user_side",
-      "confidence": 0.7,
-      "reasoning": "Issuer declined the transaction, which typically indicates issues like insufficient funds, card restrictions, or user authentication problems, placing the fault on the customer side despite the generic error code."
+      "confidence": 0.8,
+      "reasoning": "Issuer declined the card, indicating a user-side issue such as insufficient funds or card restrictions, not a platform or gateway failure."
     },
-    "timestamp": "2026-09-04T10:47:55.760Z"
+    "timestamp": "2026-09-04T19:32:56.810Z"
   },
   {
     "event_id": "e7434a7a-f22a-4c90-8c88-5429d3862386",
     "stage": "diagnosis",
     "output": {
       "category": "user_side",
-      "confidence": 0.98,
-      "reasoning": "Card expiration is a customer-side issue, not a system fault"
+      "confidence": 0.95,
+      "reasoning": "The error message 'Card expired' indicates the card's validity period has lapsed, which is a customer-side issue."
     },
-    "timestamp": "2026-09-04T10:47:58.685Z"
+    "timestamp": "2026-09-04T19:32:59.535Z"
   },
   {
     "event_id": "cd5bc445-99ea-40bc-84b4-109fc30d2a3b",
     "stage": "diagnosis",
     "output": {
       "category": "user_side",
-      "confidence": 0.6,
-      "reasoning": "Issuer declined the transaction, which typically indicates a problem with the customer's card (e.g., insufficient funds, blocked card). However, the generic code \"UNKNOWN_DECLINE\" provides no specific technical details, making the cause somewhat ambiguous."
+      "confidence": 0.85,
+      "reasoning": "The error message indicates the card issuer declined the transaction, which points to a customer-side issue such as insufficient funds or card restrictions."
     },
-    "timestamp": "2026-09-04T10:48:00.935Z"
+    "timestamp": "2026-09-04T19:33:02.545Z"
   },
   {
     "event_id": "350e4868-d7ed-4fdd-99bc-2df0d0f08c8e",
     "stage": "diagnosis",
     "output": {
       "category": "user_side",
-      "confidence": 0.99,
-      "reasoning": "Insufficient funds is a customer financial issue, not a system error"
+      "confidence": 0.95,
+      "reasoning": "Decline due to insufficient funds is a customer-side issue."
     },
-    "timestamp": "2026-09-04T10:48:03.959Z"
+    "timestamp": "2026-09-04T19:33:05.303Z"
   },
   {
     "event_id": "494445d8-bbe1-4201-a7f1-473d1759627e",
     "stage": "diagnosis",
     "output": {
       "category": "user_side",
-      "confidence": 0.97,
-      "reasoning": "Insufficient funds is a cardholder issue, not a system error"
+      "confidence": 0.95,
+      "reasoning": "Insufficient funds is a customer balance issue"
     },
-    "timestamp": "2026-09-04T10:48:06.995Z"
+    "timestamp": "2026-09-04T19:33:07.958Z"
   },
   {
     "event_id": "c9746e18-e660-45df-b20d-345f3cd53b4b",
     "stage": "diagnosis",
     "output": {
       "category": "user_side",
-      "confidence": 0.98,
-      "reasoning": "The issuer declined due to insufficient funds, indicating the customer's account lacks enough balance, a user-related issue."
+      "confidence": 0.95,
+      "reasoning": "Issuer declined due to insufficient funds, indicating a customer-side issue"
     },
-    "timestamp": "2026-09-04T10:48:10.460Z"
+    "timestamp": "2026-09-04T19:33:10.438Z"
   },
   {
     "event_id": "b212911a-0000-4fb3-8b03-e7bd80386976",
     "stage": "diagnosis",
     "output": {
       "category": "user_side",
-      "confidence": 0.96,
-      "reasoning": "Wrong OTP indicates user entered incorrect verification code, a user error"
+      "confidence": 0.9,
+      "reasoning": "OTP entered incorrectly by the customer"
     },
-    "timestamp": "2026-09-04T10:48:12.505Z"
+    "timestamp": "2026-09-04T19:33:13.434Z"
   },
   {
     "event_id": "ca8b1564-edf4-429d-b1f6-27e09b67430f",
     "stage": "diagnosis",
     "output": {
       "category": "user_side",
-      "confidence": 0.99,
-      "reasoning": "Card expiration is due to the customer's card being out of date, not a system fault."
+      "confidence": 0.95,
+      "reasoning": "card expired indicates user issue"
     },
-    "timestamp": "2026-09-04T10:48:14.563Z"
+    "timestamp": "2026-09-04T19:33:16.172Z"
   },
   {
     "event_id": "efbe9241-8f73-4371-aa44-4fbbc84f4880",
     "stage": "diagnosis",
     "output": {
       "category": "user_side",
-      "confidence": 0.97,
-      "reasoning": "Insufficient funds is a customer account issue, not a system error"
+      "confidence": 0.95,
+      "reasoning": "Insufficient funds indicates the customer does not have enough balance in their account."
     },
-    "timestamp": "2026-09-04T10:48:17.524Z"
+    "timestamp": "2026-09-04T19:33:18.857Z"
   },
   {
     "event_id": "8d867e14-d51f-4cae-80e8-23752f2a30df",
     "stage": "diagnosis",
     "output": {
       "category": "user_side",
-      "confidence": 0.97,
-      "reasoning": "The issuer declined the transaction due to insufficient funds, which is a customer account issue, not a technical fault."
+      "confidence": 0.95,
+      "reasoning": "The issuer declined the payment due to insufficient funds, indicating a customer-side issue."
     },
-    "timestamp": "2026-09-04T10:48:20.497Z"
+    "timestamp": "2026-09-04T19:33:21.439Z"
   },
   {
     "event_id": "7d16f159-6d13-4545-890d-6c6e75d6bf62",
     "stage": "diagnosis",
     "output": {
       "category": "user_side",
-      "confidence": 0.95,
-      "reasoning": "OTP failure indicates the customer entered an incorrect or expired one, which is a user-side issue."
+      "confidence": 0.9,
+      "reasoning": "OTP was entered incorrectly, indicating user error"
     },
-    "timestamp": "2026-09-04T10:48:23.159Z"
+    "timestamp": "2026-09-04T19:33:24.332Z"
   },
   {
     "event_id": "39b9c62f-0817-49f7-aaa3-26b552f4f6b5",
     "stage": "diagnosis",
     "output": {
       "category": "user_side",
-      "confidence": 0.78,
-      "reasoning": "Issuer declined the transaction, typically indicating a card or account issue on the customer's side."
+      "confidence": 0.9,
+      "reasoning": "Issuer declined the transaction, which indicates a user-side issue such as insufficient funds or card restrictions."
     },
-    "timestamp": "2026-09-04T10:48:25.335Z"
+    "timestamp": "2026-09-04T19:33:27.067Z"
   },
   {
     "event_id": "4ddc2eb8-b5f0-4c35-8451-f7fdf2b649fd",
     "stage": "diagnosis",
     "output": {
       "category": "user_side",
-      "confidence": 0.98,
-      "reasoning": "Card expiration is a condition of the customer's payment instrument, not a system fault."
+      "confidence": 0.95,
+      "reasoning": "The error message 'Card expired' indicates that the card used by the customer has reached its expiration date, which is a customer-side issue."
     },
-    "timestamp": "2026-09-04T10:48:28.585Z"
+    "timestamp": "2026-09-04T19:33:29.966Z"
   }
 ]

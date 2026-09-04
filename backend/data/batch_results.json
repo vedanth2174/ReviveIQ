@@ -6,8 +6,8 @@
     "error_code": "INSUFFICIENT_FUNDS",
     "true_category": "user_side",
     "predicted_category": "user_side",
-    "diagnosis_confidence": 0.97,
-    "diagnosis_reasoning": "The issuer declined due to insufficient funds, which is a condition of the customer's payment method rather than a technical issue with the platform.",
+    "diagnosis_confidence": 0.9,
+    "diagnosis_reasoning": "Decline due to insufficient balance is a customer issue.",
     "final_status": "ignored"
   },
   {
@@ -18,7 +18,7 @@
     "true_category": "user_side",
     "predicted_category": "user_side",
     "diagnosis_confidence": 0.95,
-    "diagnosis_reasoning": "The error indicates the OTP entered by the customer was incorrect, which is a user action issue.",
+    "diagnosis_reasoning": "OTP mismatch is a customer input error.",
     "final_status": "ignored"
   },
   {
@@ -28,8 +28,8 @@
     "error_code": "CARD_EXPIRED",
     "true_category": "user_side",
     "predicted_category": "user_side",
-    "diagnosis_confidence": 0.96,
-    "diagnosis_reasoning": "Card expiration is a property of the customer's payment instrument, not a platform error.",
+    "diagnosis_confidence": 0.9,
+    "diagnosis_reasoning": "Card expired indicates the customer's card is no longer valid",
     "final_status": "ignored"
   },
   {
@@ -39,8 +39,8 @@
     "error_code": "UNKNOWN_DECLINE",
     "true_category": "unknown",
     "predicted_category": "user_side",
-    "diagnosis_confidence": 0.78,
-    "diagnosis_reasoning": "Issuer decline typically reflects customer-related issues such as insufficient funds or card problems, not a platform error.",
+    "diagnosis_confidence": 0.9,
+    "diagnosis_reasoning": "Issuer declined the card transaction, which is a user-side issue rather than a payment gateway or infrastructure failure.",
     "final_status": "ignored"
   },
   {
@@ -50,8 +50,8 @@
     "error_code": "INSUFFICIENT_FUNDS",
     "true_category": "user_side",
     "predicted_category": "user_side",
-    "diagnosis_confidence": 0.98,
-    "diagnosis_reasoning": "The issuer explicitly declined due to insufficient funds, a customer-related issue.",
+    "diagnosis_confidence": 0.95,
+    "diagnosis_reasoning": "The issuer declined the transaction due to insufficient funds, indicating the issue lies with the customer's account balance.",
     "final_status": "ignored"
   },
   {
@@ -61,8 +61,8 @@
     "error_code": "CARD_EXPIRED",
     "true_category": "user_side",
     "predicted_category": "user_side",
-    "diagnosis_confidence": 0.97,
-    "diagnosis_reasoning": "Card expiration is a property of the customer's payment instrument, not a system error",
+    "diagnosis_confidence": 0.9,
+    "diagnosis_reasoning": "Card expired indicates customer card issue.",
     "final_status": "ignored"
   },
   {
@@ -72,8 +72,8 @@
     "error_code": "INSUFFICIENT_FUNDS",
     "true_category": "user_side",
     "predicted_category": "user_side",
-    "diagnosis_confidence": 0.98,
-    "diagnosis_reasoning": "The error indicates the issuer declined the transaction due to insufficient funds, which is a condition of the customer's account rather than a technical issue.",
+    "diagnosis_confidence": 0.9,
+    "diagnosis_reasoning": "Card issuer declined the transaction due to insufficient funds, indicating a user-side issue.",
     "final_status": "ignored"
   },
   {
@@ -84,7 +84,7 @@
     "true_category": "user_side",
     "predicted_category": "user_side",
     "diagnosis_confidence": 0.95,
-    "diagnosis_reasoning": "The error indicates the issuer declined due to insufficient funds, a customer-side issue.",
+    "diagnosis_reasoning": "The issuer declined the payment due to insufficient funds, indicating the customer's account balance was insufficient, which is a user-side issue.",
     "final_status": "ignored"
   },
   {
@@ -94,8 +94,8 @@
     "error_code": "WRONG_OTP",
     "true_category": "user_side",
     "predicted_category": "user_side",
-    "diagnosis_confidence": 0.96,
-    "diagnosis_reasoning": "The error indicates an incorrect OTP entered, which is caused by the customer's input rather than a system or network issue.",
+    "diagnosis_confidence": 0.9,
+    "diagnosis_reasoning": "Wrong OTP entered",
     "final_status": "ignored"
   },
   {
@@ -105,8 +105,8 @@
     "error_code": "INSUFFICIENT_FUNDS",
     "true_category": "user_side",
     "predicted_category": "user_side",
-    "diagnosis_confidence": 0.96,
-    "diagnosis_reasoning": "The issuer explicitly declined due to insufficient funds, indicating the customer's account lacks enough money, which is a user-side issue.",
+    "diagnosis_confidence": 0.95,
+    "diagnosis_reasoning": "The issuer explicitly declined the transaction due to insufficient funds, indicating the customer's account balance is the cause.",
     "final_status": "ignored"
   },
   {
@@ -116,8 +116,8 @@
     "error_code": "INSUFFICIENT_FUNDS",
     "true_category": "user_side",
     "predicted_category": "user_side",
-    "diagnosis_confidence": 0.99,
-    "diagnosis_reasoning": "The issuer declined due to insufficient funds, indicating the customer's account lacks the necessary balance, which is a user-side issue.",
+    "diagnosis_confidence": 0.95,
+    "diagnosis_reasoning": "Insufficient funds is a customer’s account issue.",
     "final_status": "ignored"
   },
   {
@@ -127,8 +127,8 @@
     "error_code": "INSUFFICIENT_FUNDS",
     "true_category": "user_side",
     "predicted_category": "user_side",
-    "diagnosis_confidence": 0.95,
-    "diagnosis_reasoning": "Insufficient funds indicates the customer's account cannot cover the payment, a user‑side issue.",
+    "diagnosis_confidence": 0.9,
+    "diagnosis_reasoning": "Insufficient funds is a cardholder-side issue.",
     "final_status": "ignored"
   },
   {
@@ -139,7 +139,7 @@
     "true_category": "user_side",
     "predicted_category": "user_side",
     "diagnosis_confidence": 0.95,
-    "diagnosis_reasoning": "OTP mismatch indicates customer entered incorrect verification code",
+    "diagnosis_reasoning": "OTP verification failed indicates user entered incorrect OTP, a user-side error.",
     "final_status": "ignored"
   },
   {
@@ -149,8 +149,8 @@
     "error_code": "WRONG_OTP",
     "true_category": "user_side",
     "predicted_category": "user_side",
-    "diagnosis_confidence": 0.95,
-    "diagnosis_reasoning": "The error indicates the OTP entered did not match, which is caused by the customer's input rather than a system or gateway issue.",
+    "diagnosis_confidence": 0.9,
+    "diagnosis_reasoning": "The error indicates the customer entered an incorrect OTP, which is a user-side issue.",
     "final_status": "ignored"
   },
   {
@@ -160,8 +160,8 @@
     "error_code": "INSUFFICIENT_FUNDS",
     "true_category": "user_side",
     "predicted_category": "user_side",
-    "diagnosis_confidence": 0.96,
-    "diagnosis_reasoning": "Insufficient funds is a customer account issue, not a platform or gateway error",
+    "diagnosis_confidence": 0.95,
+    "diagnosis_reasoning": "Decline due to insufficient funds is customer-side",
     "final_status": "ignored"
   },
   {
@@ -171,8 +171,8 @@
     "error_code": "WRONG_OTP",
     "true_category": "user_side",
     "predicted_category": "user_side",
-    "diagnosis_confidence": 0.96,
-    "diagnosis_reasoning": "The error indicates the OTP entered was incorrect, which is a mistake made by the customer.",
+    "diagnosis_confidence": 0.95,
+    "diagnosis_reasoning": "OTP failure indicates user entered wrong code",
     "final_status": "ignored"
   },
   {
@@ -182,8 +182,8 @@
     "error_code": "INSUFFICIENT_FUNDS",
     "true_category": "user_side",
     "predicted_category": "user_side",
-    "diagnosis_confidence": 0.98,
-    "diagnosis_reasoning": "The issuer explicitly declined due to insufficient funds, which is a customer-side issue.",
+    "diagnosis_confidence": 0.95,
+    "diagnosis_reasoning": "Issuer declined due to insufficient funds.",
     "final_status": "ignored"
   },
   {
@@ -193,8 +193,8 @@
     "error_code": "INSUFFICIENT_FUNDS",
     "true_category": "user_side",
     "predicted_category": "user_side",
-    "diagnosis_confidence": 0.99,
-    "diagnosis_reasoning": "Insufficient funds is a customer account issue, not a platform or network problem",
+    "diagnosis_confidence": 0.95,
+    "diagnosis_reasoning": "decline due to insufficient funds",
     "final_status": "ignored"
   },
   {
@@ -204,8 +204,8 @@
     "error_code": "CARD_EXPIRED",
     "true_category": "user_side",
     "predicted_category": "user_side",
-    "diagnosis_confidence": 0.96,
-    "diagnosis_reasoning": "Card expiration is a property of the customer's payment method, not a platform issue",
+    "diagnosis_confidence": 0.95,
+    "diagnosis_reasoning": "The error indicates the customer's card has expired, which is a user-side issue.",
     "final_status": "ignored"
   },
   {
@@ -215,8 +215,8 @@
     "error_code": "CARD_EXPIRED",
     "true_category": "user_side",
     "predicted_category": "user_side",
-    "diagnosis_confidence": 0.97,
-    "diagnosis_reasoning": "Card expiration is a condition of the customer's payment instrument, not a system fault.",
+    "diagnosis_confidence": 0.95,
+    "diagnosis_reasoning": "Card expired indicates a user-side issue.",
     "final_status": "ignored"
   },
   {
@@ -226,14 +226,15 @@
     "error_code": "GATEWAY_TIMEOUT_5003",
     "true_category": "systemic",
     "predicted_category": "systemic",
-    "diagnosis_confidence": 0.95,
-    "diagnosis_reasoning": "Gateway timeout indicates a technical issue with the payment gateway, not the customer's fault",
+    "diagnosis_confidence": 0.9,
+    "diagnosis_reasoning": "timeout indicates infrastructure issue",
     "resolved": true,
     "resolution_reason": "11 failures in prior window, 0 in recent window — likely resolved",
     "action": "escalate",
-    "intervention_reasoning": "Systemic issue resolved, high cart value warrants human follow-up",
+    "intervention_reasoning": "Systemic issue resolved, cart value high, safe to notify and flag for human review",
     "final_status": "escalate",
-    "message": "Hi! Aapka payment gateway timeout ki wajah se fail ho gaya tha, ab sab theek ho gaya hai. Cart ₹10,466 ka hai – please yahan se dubara try karein: [RETRY_LINK] . Shukriya!"
+    "message": "Payment timeout hua tha, ab fix ho gaya! ₹10,466 ka order complete karne ke liye yahan click karo: https://rzp.io/rzp/i5tbVuCK Happy shopping!",
+    "retry_link": "https://rzp.io/rzp/i5tbVuCK"
   },
   {
     "event_id": "4cb3b09f-17e4-4545-bc33-d9a4f93f2cab",
@@ -243,13 +244,14 @@
     "true_category": "systemic",
     "predicted_category": "systemic",
     "diagnosis_confidence": 0.95,
-    "diagnosis_reasoning": "The error indicates a 503 Service Unavailable from the issuer bank API, a server-side failure not caused by the customer.",
+    "diagnosis_reasoning": "503 Service Unavailable indicates server-side issue from issuer bank API, not customer fault.",
     "resolved": true,
     "resolution_reason": "14 failures in prior window, 0 in recent window — likely resolved",
     "action": "notify",
-    "intervention_reasoning": "Systemic issue resolved, safe to notify customer",
+    "intervention_reasoning": "Systemic issue resolved, safe to notify customer.",
     "final_status": "notify",
-    "message": "Namaste! Aapka ₹6636 ka payment ab sahi ho gaya hai. Kripya is link se dobara try karein: [RETRY_LINK] – ab aapka order turant confirm ho jayega. Shukriya!"
+    "message": "Hey! Payment issue (503) fixed. Cart ₹6636 ready. Just hit the link below to complete your order: https://rzp.io/rzp/UdiRSes Enjoy shopping!",
+    "retry_link": "https://rzp.io/rzp/UdiRSes"
   },
   {
     "event_id": "6e3ee4e7-c945-461e-8f4f-36715648a1dd",
@@ -258,14 +260,15 @@
     "error_code": "BANK_API_5XX",
     "true_category": "systemic",
     "predicted_category": "systemic",
-    "diagnosis_confidence": 0.95,
-    "diagnosis_reasoning": "5xx error from issuer bank API indicates a technical/service outage, not a user error.",
+    "diagnosis_confidence": 0.9,
+    "diagnosis_reasoning": "503 Service Unavailable is a server-side error from the issuer bank API, indicating a systemic issue.",
     "resolved": true,
     "resolution_reason": "14 failures in prior window, 0 in recent window — likely resolved",
     "action": "escalate",
-    "intervention_reasoning": "Systemic failure resolved with high confidence and high cart value, recommend human follow‑up",
+    "intervention_reasoning": "Systemic error resolved; high cart value warrants human follow‑up.",
     "final_status": "escalate",
-    "message": "Namaste! Aapka ₹12,290 ka payment ab theek ho gaya hai. Kripya is link pe click karke checkout complete karein: [RETRY_LINK] Dhanyavaad!"
+    "message": "Hey! Payment ka issue fix ho gaya. Aap ₹12,290 ka order complete kar sakte ho. Click yaha: https://rzp.io/rzp/j6c26sU Best wishes!",
+    "retry_link": "https://rzp.io/rzp/j6c26sU"
   },
   {
     "event_id": "ff3e0ede-f029-4c13-853b-10a2eb5cea3d",
@@ -274,14 +277,15 @@
     "error_code": "BANK_API_5XX",
     "true_category": "systemic",
     "predicted_category": "systemic",
-    "diagnosis_confidence": 0.95,
-    "diagnosis_reasoning": "Bank API returned a 503 error, indicating a server-side outage or timeout, which is a technical issue beyond the customer's control.",
+    "diagnosis_confidence": 0.9,
+    "diagnosis_reasoning": "The 503 Service Unavailable indicates an issue with the issuer bank’s API, not the customer's actions.",
     "resolved": true,
     "resolution_reason": "14 failures in prior window, 0 in recent window — likely resolved",
     "action": "escalate",
-    "intervention_reasoning": "High-value cart, systemic issue resolved; human follow‑up recommended",
+    "intervention_reasoning": "Systemic issue resolved and cart value high—notify and request escalation",
     "final_status": "escalate",
-    "message": "Namaste! Aapka ₹10,636 ka payment ab theek ho gaya hai. Kripya is link par click karke checkout complete karein: [RETRY_LINK] — dhanyavaad!"
+    "message": "Hi! ₹10636 ka payment pehle fail hua kyunki bank API me 503 error aaya tha. Ab issue solve ho gaya hai. Click yaha aur order complete karo: https://rzp.io/rzp/3tn9Gxg Enjoy shopping!",
+    "retry_link": "https://rzp.io/rzp/3tn9Gxg"
   },
   {
     "event_id": "49beaf9f-9914-481f-936a-5563adf74130",
@@ -290,14 +294,15 @@
     "error_code": "GATEWAY_TIMEOUT_5003",
     "true_category": "systemic",
     "predicted_category": "systemic",
-    "diagnosis_confidence": 0.95,
-    "diagnosis_reasoning": "The error indicates a gateway timeout, a technical issue in the payment infrastructure, not the customer's fault.",
+    "diagnosis_confidence": 0.9,
+    "diagnosis_reasoning": "Timeout indicates a server-side issue",
     "resolved": true,
     "resolution_reason": "11 failures in prior window, 0 in recent window — likely resolved",
     "action": "notify",
-    "intervention_reasoning": "Systemic issue resolved with high confidence; safe to auto-notify the customer.",
+    "intervention_reasoning": "Systemic issue resolved, safe to notify",
     "final_status": "notify",
-    "message": "Namaste! Aapka payment gateway timeout se fail hua tha, ab sab theek ho gaya hai. Kripya is link se dobara try karein aur apna ₹8454 ka order confirm karein: [RETRY_LINK] — Shukriya!"
+    "message": "Hey! Payment timeout issue solved. Your ₹8454 cart is ready. Click to complete: https://rzp.io/rzp/NkETsCq Thanks!",
+    "retry_link": "https://rzp.io/rzp/NkETsCq"
   },
   {
     "event_id": "69a8e3e4-26ef-43e5-83c8-6e35a37720a8",
@@ -306,14 +311,14 @@
     "error_code": "GATEWAY_TIMEOUT_5003",
     "true_category": "systemic",
     "predicted_category": "systemic",
-    "diagnosis_confidence": 0.95,
-    "diagnosis_reasoning": "Timeout indicates a gateway/infrastructure issue, not customer error",
+    "diagnosis_confidence": 0.9,
+    "diagnosis_reasoning": "Gateway timeout indicates infrastructure issue",
     "resolved": true,
     "resolution_reason": "11 failures in prior window, 0 in recent window — likely resolved",
     "action": "notify",
-    "intervention_reasoning": "Systemic issue resolved with high confidence, safe to inform customer",
+    "intervention_reasoning": "Systemic issue resolved with high confidence",
     "final_status": "notify",
-    "message": "Namaste! Aapka ₹9448 ka payment ab successfully process ho raha hai. Kripya is link pe click karke purchase complete karein: [RETRY_LINK] — Dhanyavaad!"
+    "message": "Payment issue solved! Your cart of ₹9448 is ready. Tap here to finish: [RETRY_LINK] 👍 Happy shopping!"
   },
   {
     "event_id": "42d7800a-aa02-47c1-917e-664b0fb984ca",
@@ -322,14 +327,15 @@
     "error_code": "GATEWAY_TIMEOUT_5003",
     "true_category": "systemic",
     "predicted_category": "systemic",
-    "diagnosis_confidence": 0.95,
-    "diagnosis_reasoning": "Timeout indicates a payment gateway/network issue, not the customer's fault",
+    "diagnosis_confidence": 0.9,
+    "diagnosis_reasoning": "Gateway timeout indicates an infrastructure or network issue, not a customer fault.",
     "resolved": true,
     "resolution_reason": "11 failures in prior window, 0 in recent window — likely resolved",
     "action": "notify",
-    "intervention_reasoning": "Systemic issue resolved with high confidence; safe to notify customer",
+    "intervention_reasoning": "Systemic issue resolved with high confidence, cart value acceptable.",
     "final_status": "notify",
-    "message": "Namaste! Aapka ₹519 ka order ab ready hai—pehle network timeout ki wajah se payment fail hua tha, ab sab theek ho gaya hai. Kripya is link se phir se try karein: [RETRY_LINK]  \n\nShubh shopping!"
+    "message": "Hey! Your ₹519 order got a timeout glitch, but it’s sorted now. Just tap the link to finish checkout. Happy shopping! https://rzp.io/rzp/el6IpMyH",
+    "retry_link": "https://rzp.io/rzp/el6IpMyH"
   },
   {
     "event_id": "804ad94c-d1e8-488d-bdb1-ae492015fce4",
@@ -338,14 +344,15 @@
     "error_code": "BANK_API_5XX",
     "true_category": "systemic",
     "predicted_category": "systemic",
-    "diagnosis_confidence": 0.95,
-    "diagnosis_reasoning": "Bank's API returned a 5xx error, indicating a technical issue on the payment side",
+    "diagnosis_confidence": 0.9,
+    "diagnosis_reasoning": "Issuer bank API returned 503 Service Unavailable, indicating a server-side failure.",
     "resolved": true,
     "resolution_reason": "14 failures in prior window, 0 in recent window — likely resolved",
     "action": "notify",
-    "intervention_reasoning": "Systemic issue resolved with high confidence and moderate cart value, safe to notify",
+    "intervention_reasoning": "Systemic issue resolved with high confidence.",
     "final_status": "notify",
-    "message": "Namaste! Aapka ₹8442 ka payment ab theek ho gaya hai. Kripya is link se dubara try karein: [RETRY_LINK] – aapka order turant process ho jayega. Dhanyavaad!"
+    "message": "Hey! Apke payment me thoda delay hua, but ab sab sahi ho gaya. ₹8442 ka order complete karne ke liye yahan click karein: https://rzp.io/rzp/zMzYJVSq – quick and easy. Thanks!",
+    "retry_link": "https://rzp.io/rzp/zMzYJVSq"
   },
   {
     "event_id": "a7f93c6d-d5a9-4cb0-a916-09bf798b1b00",
@@ -354,14 +361,15 @@
     "error_code": "NPCI_UPI_TIMEOUT",
     "true_category": "systemic",
     "predicted_category": "systemic",
-    "diagnosis_confidence": 0.95,
-    "diagnosis_reasoning": "Timeout from NPCI indicates a payment network/gateway issue, not a customer action.",
+    "diagnosis_confidence": 0.9,
+    "diagnosis_reasoning": "The timeout indicates a failure in the payment infrastructure (NPCI gateway timeout), not an issue with the customer.",
     "resolved": true,
     "resolution_reason": "5 failures in prior window, 0 in recent window — likely resolved",
     "action": "escalate",
-    "intervention_reasoning": "Systemic issue resolved, high cart value warrants human follow-up",
+    "intervention_reasoning": "Systemic issue resolved, high cart value, auto-notify and human follow-up.",
     "final_status": "escalate",
-    "message": "Namaste! Aapke ₹12,486 ke order ka payment ab theek ho gaya hai. Kripya yahan se dubara try karein: [RETRY_LINK] – sab set hai, aapka checkout ready hai!"
+    "message": "Hi! Payment glitch ho gaya tha NPCI gateway timeout ki wajah se. Ab sab set hai. ₹12,486 ka order complete karein: https://rzp.io/rzp/QZ8pVC0Q Enjoy shopping!",
+    "retry_link": "https://rzp.io/rzp/QZ8pVC0Q"
   },
   {
     "event_id": "f902dd54-97a7-41b8-a23c-c0d990e24498",
@@ -370,14 +378,15 @@
     "error_code": "GATEWAY_TIMEOUT_5003",
     "true_category": "systemic",
     "predicted_category": "systemic",
-    "diagnosis_confidence": 0.93,
-    "diagnosis_reasoning": "Timeout indicates a payment gateway or infrastructure failure, not user error.",
+    "diagnosis_confidence": 0.9,
+    "diagnosis_reasoning": "Timeout indicates backend infrastructure issue",
     "resolved": true,
     "resolution_reason": "11 failures in prior window, 0 in recent window — likely resolved",
     "action": "escalate",
-    "intervention_reasoning": "high cart value, systemic issue resolved, recommend auto-notify with human follow‑up",
+    "intervention_reasoning": "Systemic issue resolved, high cart value—escalate for human follow-up",
     "final_status": "escalate",
-    "message": "Namaste! Aapka ₹10,964 ka payment ab theek ho gaya hai. Kripya is link se dobara try karein: [RETRY_LINK] — ab sab smooth hai! 🙏"
+    "message": "Hey! Payment ka timeout issue fix ho gaya hai. ₹10,964 ki cart ab complete kar sakte ho. Click yaha: https://rzp.io/rzp/y8zSJjx 👍",
+    "retry_link": "https://rzp.io/rzp/y8zSJjx"
   },
   {
     "event_id": "50508ad0-c9d1-40ce-9d94-ace8cd88cb66",
@@ -386,8 +395,8 @@
     "error_code": "CARD_EXPIRED",
     "true_category": "user_side",
     "predicted_category": "user_side",
-    "diagnosis_confidence": 0.96,
-    "diagnosis_reasoning": "An expired card indicates the customer's payment method is no longer valid, which is a user-related issue.",
+    "diagnosis_confidence": 0.95,
+    "diagnosis_reasoning": "Card has expired, which is a customer-side issue.",
     "final_status": "ignored"
   },
   {
@@ -397,14 +406,15 @@
     "error_code": "BANK_API_5XX",
     "true_category": "systemic",
     "predicted_category": "systemic",
-    "diagnosis_confidence": 0.95,
-    "diagnosis_reasoning": "The error is a 503 response from the issuer bank API, indicating a server-side outage, which is a technical issue beyond the customer's control.",
+    "diagnosis_confidence": 0.9,
+    "diagnosis_reasoning": "Bank API 503 indicates a server-side issue",
     "resolved": true,
     "resolution_reason": "14 failures in prior window, 0 in recent window — likely resolved",
     "action": "escalate",
-    "intervention_reasoning": "systemic issue resolved, high cart value warrants human follow-up",
+    "intervention_reasoning": "Systemic issue resolved, high cart value",
     "final_status": "escalate",
-    "message": "Namaste! Aapka ₹12,560 ka payment ab theek ho gaya hai. Kripya is link se dobara try karein: [RETRY_LINK] — Shukriya!"
+    "message": "Hey! 🎉 Payment hiccup hua tha bank side se, ab fix ho gaya hai. ₹12,560 ka order ab finalize kar sakte ho: https://rzp.io/rzp/UhbaBA0e – enjoy shopping! 🚀",
+    "retry_link": "https://rzp.io/rzp/UhbaBA0e"
   },
   {
     "event_id": "69e62f08-5586-4a52-900b-b6235d626210",
@@ -413,14 +423,14 @@
     "error_code": "NPCI_UPI_TIMEOUT",
     "true_category": "systemic",
     "predicted_category": "systemic",
-    "diagnosis_confidence": 0.95,
-    "diagnosis_reasoning": "The error indicates a timeout while contacting NPCI's UPI service, a technical issue in the payment infrastructure rather than a user mistake.",
+    "diagnosis_confidence": 0.9,
+    "diagnosis_reasoning": "Timeout on NPCI collect request indicates a payment gateway/system issue",
     "resolved": true,
     "resolution_reason": "5 failures in prior window, 0 in recent window — likely resolved",
     "action": "notify",
-    "intervention_reasoning": "systemic issue resolved, safe to inform",
+    "intervention_reasoning": "Payment system issue resolved, safe to notify customer.",
     "final_status": "notify",
-    "message": "Namaste! Aapka ₹9021 ka payment ab theek ho gaya hai. Kripya is link se dobara try karein: [RETRY_LINK] — ab aapka order confirm ho jayega. Shukriya!"
+    "message": "Hey! Payment timeout issue hua tha. Ab fix ho gaya. ₹9021 ka order complete karne ke liye click karo: [RETRY_LINK] Best, Team"
   },
   {
     "event_id": "9154526f-d7a5-40db-9a68-15d9488e926c",
@@ -430,13 +440,14 @@
     "true_category": "systemic",
     "predicted_category": "systemic",
     "diagnosis_confidence": 0.95,
-    "diagnosis_reasoning": "Bank's API returned a 503 error, indicating a server-side outage or timeout, not a user error",
+    "diagnosis_reasoning": "Bank API returned 503, indicating a server-side infrastructure issue.",
     "resolved": true,
     "resolution_reason": "14 failures in prior window, 0 in recent window — likely resolved",
-    "action": "notify",
-    "intervention_reasoning": "Systemic outage resolved, high-value cart; auto-notify and flag for human follow-up",
-    "final_status": "notify",
-    "message": "Namaste! Aapka ₹13,799 ka payment ab theek ho gaya hai. Kripya is link se phir se try karein: [RETRY_LINK] – sab ready hai, happy shopping!"
+    "action": "escalate",
+    "intervention_reasoning": "Systemic issue resolved, high cart value, so escalation recommended.",
+    "final_status": "escalate",
+    "message": "Hi! Payment ka error tha (bank API 503). Ab sab fix ho gaya. 13799₹ ka order complete karne ke liye yahan click karo: https://rzp.io/rzp/TdCiWp87 Cheers!",
+    "retry_link": "https://rzp.io/rzp/TdCiWp87"
   },
   {
     "event_id": "82381800-4974-461a-851f-277ef99c2b83",
@@ -445,14 +456,15 @@
     "error_code": "GATEWAY_TIMEOUT_5003",
     "true_category": "systemic",
     "predicted_category": "systemic",
-    "diagnosis_confidence": 0.95,
-    "diagnosis_reasoning": "Timeout from payment gateway indicates infrastructure issue, not customer error",
+    "diagnosis_confidence": 0.9,
+    "diagnosis_reasoning": "gateway timeout indicates infrastructure issue",
     "resolved": true,
     "resolution_reason": "11 failures in prior window, 0 in recent window — likely resolved",
     "action": "escalate",
-    "intervention_reasoning": "Systemic issue resolved, high cart value warrants human follow-up",
+    "intervention_reasoning": "Issue resolved, high cart value, escalation recommended",
     "final_status": "escalate",
-    "message": "Namaste! Aapka ₹10,303 ka payment gateway timeout ki wajah se pending tha, lekin ab sab theek ho gaya hai. Kripya is link se dubara payment complete karein: [RETRY_LINK] — dhanyavaad!"
+    "message": "Hey! Payment failed due to timeout, but it's fixed now. Your ₹10,303 cart is ready. Click to complete: https://rzp.io/rzp/VooZDEIV 👍",
+    "retry_link": "https://rzp.io/rzp/VooZDEIV"
   },
   {
     "event_id": "177a8b33-7a0a-4c55-aff2-9673bc6b216f",
@@ -461,14 +473,15 @@
     "error_code": "BANK_API_5XX",
     "true_category": "systemic",
     "predicted_category": "systemic",
-    "diagnosis_confidence": 0.95,
-    "diagnosis_reasoning": "Bank API returned a 503 Service Unavailable, indicating a server-side/network failure beyond the customer's control.",
+    "diagnosis_confidence": 0.9,
+    "diagnosis_reasoning": "503 Service Unavailable indicates a server-side failure from the bank's API, not user error.",
     "resolved": true,
     "resolution_reason": "14 failures in prior window, 0 in recent window — likely resolved",
     "action": "notify",
-    "intervention_reasoning": "Systemic issue resolved with high confidence, safe to notify.",
+    "intervention_reasoning": "Systemic issue resolved, cart under threshold.",
     "final_status": "notify",
-    "message": "Namaste! Aapka ₹7,944 ka payment ab theek ho gaya hai. Kripya is link se dobara try karein: [RETRY_LINK] — Ab aap asaani se checkout kar sakte hain. Dhanyavaad!"
+    "message": "Payment ke time server error ho gaya, ab fix ho gaya.  ₹7944 ka order complete karne ke liye yahan click kare: https://rzp.io/rzp/9Rj68HG9 — happy shopping!",
+    "retry_link": "https://rzp.io/rzp/9Rj68HG9"
   },
   {
     "event_id": "958a8efa-2336-460f-885d-6e7042a1f160",
@@ -478,7 +491,7 @@
     "true_category": "user_side",
     "predicted_category": "user_side",
     "diagnosis_confidence": 0.95,
-    "diagnosis_reasoning": "OTP mismatch indicates the customer entered an incorrect or expired code",
+    "diagnosis_reasoning": "OTP mismatch indicates user error",
     "final_status": "ignored"
   },
   {
@@ -489,13 +502,14 @@
     "true_category": "systemic",
     "predicted_category": "systemic",
     "diagnosis_confidence": 0.9,
-    "diagnosis_reasoning": "Timeout indicates a technical issue with the NPCI/U​PI gateway, not user error.",
+    "diagnosis_reasoning": "The timeout originates from the NPCI collect request, indicating an infrastructure or network issue on the payment gateway side rather than a user error.",
     "resolved": true,
     "resolution_reason": "5 failures in prior window, 0 in recent window — likely resolved",
     "action": "notify",
-    "intervention_reasoning": "Systemic issue resolved, safe to notify customer",
+    "intervention_reasoning": "Systemic issue resolved with high confidence, cart value below threshold, so send a recovery message.",
     "final_status": "notify",
-    "message": "Namaste! Aapka payment gateway ka timeout issue ab fix ho gaya hai. Cart ₹3802 ka checkout ab safe hai. Kripya is link se dubara try karein: [RETRY_LINK] — Shukriya!"
+    "message": "Hey! Payment issue solved. Your cart ₹3802 is ready. Just hit the link to complete: https://rzp.io/rzp/5ahZKr14 Happy shopping!",
+    "retry_link": "https://rzp.io/rzp/5ahZKr14"
   },
   {
     "event_id": "64a258a1-c29a-43b0-bd41-a57f6955a976",
@@ -504,14 +518,15 @@
     "error_code": "NPCI_UPI_TIMEOUT",
     "true_category": "systemic",
     "predicted_category": "systemic",
-    "diagnosis_confidence": 0.95,
-    "diagnosis_reasoning": "Timeout from NPCI indicates a gateway/network issue, not caused by the customer",
+    "diagnosis_confidence": 0.9,
+    "diagnosis_reasoning": "timeout from NPCI indicates a payment infrastructure issue",
     "resolved": true,
     "resolution_reason": "5 failures in prior window, 0 in recent window — likely resolved",
     "action": "notify",
-    "intervention_reasoning": "Systemic issue resolved with high confidence, safe to notify the customer",
+    "intervention_reasoning": "Systemic issue resolved with high confidence, cart value acceptable",
     "final_status": "notify",
-    "message": "Namaste! Aapka ₹8211 ka payment ab theek ho gaya hai. Kripya is link se dobara try karein: [RETRY_LINK] – ab aap asaani se purchase complete kar sakte hain. Dhanyavaad!"
+    "message": "Hi! Payment timeout hua tha NPCI se. Ab sab fix ho gaya. ₹8211 ka order complete karne ke liye click kare: https://rzp.io/rzp/En2dLDG9 Happy shopping!",
+    "retry_link": "https://rzp.io/rzp/En2dLDG9"
   },
   {
     "event_id": "092dc899-dbdd-4d04-b0e4-234fc60e6e2c",
@@ -521,7 +536,7 @@
     "true_category": "user_side",
     "predicted_category": "user_side",
     "diagnosis_confidence": 0.95,
-    "diagnosis_reasoning": "The error indicates an incorrect OTP entered by the customer, a typical user error.",
+    "diagnosis_reasoning": "OTP entered incorrectly by the customer",
     "final_status": "ignored"
   },
   {
@@ -531,14 +546,14 @@
     "error_code": "BANK_API_5XX",
     "true_category": "systemic",
     "predicted_category": "systemic",
-    "diagnosis_confidence": 0.95,
-    "diagnosis_reasoning": "The failure stems from a 503 Service Unavailable response from the issuer bank API, indicating a server-side outage or timeout, not a user action.",
+    "diagnosis_confidence": 0.9,
+    "diagnosis_reasoning": "The error indicates a 503 Service Unavailable from the issuer bank API, a typical gateway/server issue.",
     "resolved": true,
     "resolution_reason": "14 failures in prior window, 0 in recent window — likely resolved",
     "action": "escalate",
-    "intervention_reasoning": "Systemic issue resolved, high cart value warrants human follow‑up",
+    "intervention_reasoning": "Systemic issue resolved, high cart value.",
     "final_status": "escalate",
-    "message": "Namaste! Aapka ₹13,473 ka payment ab sahi ho gaya hai. Kripya is link pe click karke aapka order complete karein: [RETRY_LINK] — Shukriya!"
+    "message": "Hey! Apke ₹13473 ka payment pehle 503 error aaya tha, par ab sab thik ho gaya hai. Click the link to complete: [RETRY_LINK] – everything’s smooth now! 🚀"
   },
   {
     "event_id": "47488802-be3e-43cd-bbb6-e5336b016ca2",
@@ -547,8 +562,8 @@
     "error_code": "WRONG_OTP",
     "true_category": "user_side",
     "predicted_category": "user_side",
-    "diagnosis_confidence": 0.96,
-    "diagnosis_reasoning": "The error indicates an incorrect one‑time password entered by the customer, which is a user mistake.",
+    "diagnosis_confidence": 0.95,
+    "diagnosis_reasoning": "OTP incorrect entered by customer",
     "final_status": "ignored"
   },
   {
@@ -558,8 +573,8 @@
     "error_code": "CARD_EXPIRED",
     "true_category": "user_side",
     "predicted_category": "user_side",
-    "diagnosis_confidence": 0.98,
-    "diagnosis_reasoning": "The error indicates the card's expiration date has passed, which is a customer-provided issue, not a system fault.",
+    "diagnosis_confidence": 0.95,
+    "diagnosis_reasoning": "Card expired indicates the issue is with the customer's card, not the payment system.",
     "final_status": "ignored"
   },
   {
@@ -569,14 +584,15 @@
     "error_code": "GATEWAY_TIMEOUT_5003",
     "true_category": "systemic",
     "predicted_category": "systemic",
-    "diagnosis_confidence": 0.95,
-    "diagnosis_reasoning": "Timeout from gateway indicates infrastructure issue, not user error",
+    "diagnosis_confidence": 0.9,
+    "diagnosis_reasoning": "Gateway timeout indicates infrastructure issue",
     "resolved": true,
     "resolution_reason": "11 failures in prior window, 0 in recent window — likely resolved",
     "action": "notify",
-    "intervention_reasoning": "Systemic issue resolved with high confidence; safe to notify customer.",
+    "intervention_reasoning": "Systemic issue resolved, confidence high, cart below high-value threshold.",
     "final_status": "notify",
-    "message": "Hi! Aapki payment ka timeout issue fix ho gaya hai. Ab aap ₹1828 ka order asani se complete kar sakte hain. Jaldi se checkout karein: [RETRY_LINK] — Happy shopping!"
+    "message": "Hey! Payment hiccup due to gateway timeout. Problem solved. ₹1828 cart ready. Click here to finish: https://rzp.io/rzp/OWymHbOw Enjoy shopping!",
+    "retry_link": "https://rzp.io/rzp/OWymHbOw"
   },
   {
     "event_id": "ac9b331d-5c1c-44f2-8c07-cc9b6526d78d",
@@ -585,8 +601,8 @@
     "error_code": "WRONG_OTP",
     "true_category": "user_side",
     "predicted_category": "user_side",
-    "diagnosis_confidence": 0.96,
-    "diagnosis_reasoning": "OTP failure indicates the customer entered an incorrect or expired one, a user error",
+    "diagnosis_confidence": 0.95,
+    "diagnosis_reasoning": "OTP mismatch indicates user entered wrong OTP",
     "final_status": "ignored"
   },
   {
@@ -597,13 +613,14 @@
     "true_category": "systemic",
     "predicted_category": "systemic",
     "diagnosis_confidence": 0.9,
-    "diagnosis_reasoning": "The error indicates a gateway timeout, a technical issue in the payment infrastructure, not caused by the customer.",
+    "diagnosis_reasoning": "Gateway timeout indicates a backend issue.",
     "resolved": true,
     "resolution_reason": "11 failures in prior window, 0 in recent window — likely resolved",
     "action": "notify",
-    "intervention_reasoning": "Systemic payment issue resolved, safe to inform the customer",
+    "intervention_reasoning": "Systemic issue resolved with high confidence, cart value below threshold.",
     "final_status": "notify",
-    "message": "Namaste! Aapke ₹5,694 ka payment gateway timeout ki wajah se pending tha, ab sab theek ho gaya hai. Kripya is link se dobara checkout karein: [RETRY_LINK] – shukriya!"
+    "message": "Hey, payment timeout thoda error aa gaya tha ₹5694 ke liye. Ab sab fix ho gaya! Click https://rzp.io/rzp/CY0MxGz aur apni purchase complete karein. 😊",
+    "retry_link": "https://rzp.io/rzp/CY0MxGz"
   },
   {
     "event_id": "351c573d-5707-4f7b-a6ec-401218709d7b",
@@ -612,14 +629,15 @@
     "error_code": "BANK_API_5XX",
     "true_category": "systemic",
     "predicted_category": "systemic",
-    "diagnosis_confidence": 0.95,
-    "diagnosis_reasoning": "Bank's API returned a 503 error, indicating a server-side outage not caused by the user",
+    "diagnosis_confidence": 0.9,
+    "diagnosis_reasoning": "503 Service Unavailable from issuer bank API indicates a technical failure on the bank side",
     "resolved": true,
     "resolution_reason": "14 failures in prior window, 0 in recent window — likely resolved",
     "action": "notify",
-    "intervention_reasoning": "Systemic failure resolved with high confidence, so inform the customer.",
+    "intervention_reasoning": "Systemic issue resolved, low value cart, auto-notify.",
     "final_status": "notify",
-    "message": "Hi! Aapka ₹530 ka order ab payment ke liye ready hai. Pehle bank ki API down thi, ab sab theek hai. Click karein aur checkout complete karein: [RETRY_LINK]"
+    "message": "Hi! Your payment for ₹530 hiccuped due to a 503 error from the bank. We’ve fixed it now—just click the link to complete the purchase.  \nhttps://rzp.io/rzp/NRcdcUo",
+    "retry_link": "https://rzp.io/rzp/NRcdcUo"
   },
   {
     "event_id": "6970a712-7914-4b14-9a00-16381e30aeb0",
@@ -628,14 +646,15 @@
     "error_code": "BANK_API_5XX",
     "true_category": "systemic",
     "predicted_category": "systemic",
-    "diagnosis_confidence": 0.95,
-    "diagnosis_reasoning": "Bank API returned a 503, indicating a server-side outage beyond the user's control",
+    "diagnosis_confidence": 0.9,
+    "diagnosis_reasoning": "Issuer bank API returned 503",
     "resolved": true,
     "resolution_reason": "14 failures in prior window, 0 in recent window — likely resolved",
     "action": "notify",
-    "intervention_reasoning": "Systemic outage resolved with high confidence, safe to notify.",
+    "intervention_reasoning": "Systemic issue resolved, safe to notify customer.",
     "final_status": "notify",
-    "message": "Namaste! Aapka ₹5289 ka payment ab process ho sakta hai. Kripya is link pe click karein aur checkout complete karein: [RETRY_LINK] — shukriya!"
+    "message": "Hey! Your ₹5289 order faced a hiccup, but it's sorted now. Just tap the link to complete your payment: https://rzp.io/rzp/b2fvdqCU – easy peasy! Thanks for choosing us.",
+    "retry_link": "https://rzp.io/rzp/b2fvdqCU"
   },
   {
     "event_id": "ba81120a-8a9f-4319-b158-0d6909515b50",
@@ -644,14 +663,15 @@
     "error_code": "BANK_API_5XX",
     "true_category": "systemic",
     "predicted_category": "systemic",
-    "diagnosis_confidence": 0.95,
-    "diagnosis_reasoning": "Bank API returned 503, indicating a server-side outage not caused by the user",
+    "diagnosis_confidence": 0.9,
+    "diagnosis_reasoning": "Bank API returned 503, a server-side error indicating issuer bank infrastructure failure.",
     "resolved": true,
     "resolution_reason": "14 failures in prior window, 0 in recent window — likely resolved",
     "action": "escalate",
-    "intervention_reasoning": "Systemic outage resolved, high cart value; recommend human follow‑up.",
+    "intervention_reasoning": "High cart value, systemic issue resolved, auto-notify plus human follow-up advised",
     "final_status": "escalate",
-    "message": "Hey! Aapka payment thoda ruk gaya tha (bank side issue), ab sab theek hai. ₹10,628 ka order complete karne ke liye yahan click kare: [RETRY_LINK] Dhanyavaad!"
+    "message": "Hey, payment hiccup hua tha 503 error se, ab sab set hai. Apna order ₹10628 complete karne ke liye click karein: https://rzp.io/rzp/CRVnpEAw – order ready, just one click!",
+    "retry_link": "https://rzp.io/rzp/CRVnpEAw"
   },
   {
     "event_id": "c0b3a6a8-ba7d-45e0-aa49-735a54022f0d",
@@ -660,14 +680,14 @@
     "error_code": "BANK_API_5XX",
     "true_category": "systemic",
     "predicted_category": "systemic",
-    "diagnosis_confidence": 0.95,
-    "diagnosis_reasoning": "Bank's API responded with 503, indicating a server-side outage, not a user error.",
+    "diagnosis_confidence": 0.9,
+    "diagnosis_reasoning": "503 Service Unavailable indicates a server-side issue in the issuer bank's API.",
     "resolved": true,
     "resolution_reason": "14 failures in prior window, 0 in recent window — likely resolved",
     "action": "notify",
-    "intervention_reasoning": "Systemic issue resolved with high confidence; notify the customer.",
+    "intervention_reasoning": "Systemic issue resolved, safe to inform customer.",
     "final_status": "notify",
-    "message": "Namaste! Aapke ₹1062 ka payment ab theek ho gaya hai. Kripya is link se dobara try karein: [RETRY_LINK] — aapka order turant process ho jayega. Dhanyavaad!"
+    "message": "Hi! Payment failed due to a server issue (503). All set now! Complete ₹1062 purchase: [RETRY_LINK] Thanks!"
   },
   {
     "event_id": "ee7f7164-c6c1-41ce-a185-225a3675c2ac",
@@ -677,13 +697,14 @@
     "true_category": "systemic",
     "predicted_category": "systemic",
     "diagnosis_confidence": 0.95,
-    "diagnosis_reasoning": "Bank API returned a 503 error, indicating a server-side outage or timeout, which is a technical issue beyond the customer's control.",
+    "diagnosis_reasoning": "503 Service Unavailable indicates a server-side error from the issuer bank API, not a customer issue.",
     "resolved": true,
     "resolution_reason": "14 failures in prior window, 0 in recent window — likely resolved",
     "action": "notify",
-    "intervention_reasoning": "Systemic issue resolved, safe to notify.",
+    "intervention_reasoning": "Payment failed due to a server issue that has now been resolved.",
     "final_status": "notify",
-    "message": "Namaste! Aapka ₹7181 ka payment ab theek ho gaya hai. Kripya is link se dobara try karein: [RETRY_LINK] — sab set hai, happy shopping!"
+    "message": "Payment hiccup ho gaya tha, ab server sahi hai. ₹7181 ki purchase ko complete karein: https://rzp.io/rzp/l8wLAHy — sab set, enjoy!",
+    "retry_link": "https://rzp.io/rzp/l8wLAHy"
   },
   {
     "event_id": "c589581c-8cea-4eef-a858-f1617764d29f",
@@ -692,14 +713,15 @@
     "error_code": "GATEWAY_TIMEOUT_5003",
     "true_category": "systemic",
     "predicted_category": "systemic",
-    "diagnosis_confidence": 0.9,
-    "diagnosis_reasoning": "Timeout indicates payment infrastructure issue",
+    "diagnosis_confidence": 0.95,
+    "diagnosis_reasoning": "Timeout indicates a gateway/network issue rather than customer error",
     "resolved": true,
     "resolution_reason": "11 failures in prior window, 0 in recent window — likely resolved",
     "action": "notify",
-    "intervention_reasoning": "Systemic issue resolved with high confidence; notify to recover the ₹8157 cart.",
+    "intervention_reasoning": "Systemic issue resolved; notify customer.",
     "final_status": "notify",
-    "message": "Namaste! Aapka ₹8157 ka checkout ab ready hai—payment timeout ka issue fix ho gaya hai. Ab bas click karein aur purchase complete karein: [RETRY_LINK] . Shubh shopping!"
+    "message": "Hi! Payment timeout ho gaya, lekin ab fix ho gaya hai. 8157₹ ka order complete karne ke liye bas is link pe click kare: https://rzp.io/rzp/eWhRufV Thanks!",
+    "retry_link": "https://rzp.io/rzp/eWhRufV"
   },
   {
     "event_id": "354eafe8-1a20-45d7-99fa-9192a3944377",
@@ -709,13 +731,14 @@
     "true_category": "systemic",
     "predicted_category": "systemic",
     "diagnosis_confidence": 0.95,
-    "diagnosis_reasoning": "Timeouts in the payment gateway indicate a technical issue on the payment infrastructure side",
+    "diagnosis_reasoning": "Gateway timeout indicates infrastructure issue",
     "resolved": true,
     "resolution_reason": "11 failures in prior window, 0 in recent window — likely resolved",
     "action": "escalate",
-    "intervention_reasoning": "Systemic issue resolved with high confidence and high cart value, so notify customer and flag for human follow‑up",
+    "intervention_reasoning": "Systemic issue resolved, high cart value, escalation for human follow-up",
     "final_status": "escalate",
-    "message": "Namaste! Aapke ₹14,902 ke payment mein thoda glitch tha, lekin ab sab theek ho gaya hai. Kripya yahan se dubara checkout karein: [RETRY_LINK] — aapka order taiyaar hai!"
+    "message": "Hey! Payment for ₹14902 failed due to a timeout, but we’ve fixed it. Just tap the link to complete your order now: https://rzp.io/rzp/SQb9KERl 🚀 Your cart’s waiting!",
+    "retry_link": "https://rzp.io/rzp/SQb9KERl"
   },
   {
     "event_id": "6a1f039e-f103-4c52-8edd-8ee68e0257cf",
@@ -724,8 +747,8 @@
     "error_code": "INSUFFICIENT_FUNDS",
     "true_category": "user_side",
     "predicted_category": "user_side",
-    "diagnosis_confidence": 0.96,
-    "diagnosis_reasoning": "The message indicates the issuer declined the payment due to insufficient funds, which is a condition on the customer's account rather than a technical issue with the payment system.",
+    "diagnosis_confidence": 0.9,
+    "diagnosis_reasoning": "The issuer declined due to insufficient funds, indicating an issue on the customer's side.",
     "final_status": "ignored"
   },
   {
@@ -735,8 +758,8 @@
     "error_code": "INSUFFICIENT_FUNDS",
     "true_category": "user_side",
     "predicted_category": "user_side",
-    "diagnosis_confidence": 0.97,
-    "diagnosis_reasoning": "Message indicates the card issuer declined due to insufficient funds, which is a customer-related issue.",
+    "diagnosis_confidence": 0.95,
+    "diagnosis_reasoning": "Insufficient funds is a customer issue",
     "final_status": "ignored"
   },
   {
@@ -746,14 +769,15 @@
     "error_code": "NPCI_UPI_TIMEOUT",
     "true_category": "systemic",
     "predicted_category": "systemic",
-    "diagnosis_confidence": 0.95,
-    "diagnosis_reasoning": "Timeout contacting NPCI indicates a payment gateway/network issue, not user error",
+    "diagnosis_confidence": 0.9,
+    "diagnosis_reasoning": "Timeout from NPCI indicates a payment infrastructure issue.",
     "resolved": true,
     "resolution_reason": "5 failures in prior window, 0 in recent window — likely resolved",
     "action": "escalate",
-    "intervention_reasoning": "High cart value and issue resolved, recommend human follow‑up",
+    "intervention_reasoning": "Systemic failure resolved, high cart value, escalation recommended.",
     "final_status": "escalate",
-    "message": "Namaste! Aapka ₹10,750 ka payment ab theek ho gaya hai. Kripya is link se dobara try karein: [RETRY_LINK] — sab smooth hoga! 🙏"
+    "message": "Hey! Payment timeout hua tha NPCI se, lekin ab fix ho gaya hai. ₹10,750 ka order ab complete kar sakte ho. Click below and finish your purchase: https://rzp.io/rzp/vso3vYk 🚀",
+    "retry_link": "https://rzp.io/rzp/vso3vYk"
   },
   {
     "event_id": "e2097f4b-f96c-4ac2-b2ae-c80581c9ea9b",
@@ -763,13 +787,14 @@
     "true_category": "systemic",
     "predicted_category": "systemic",
     "diagnosis_confidence": 0.95,
-    "diagnosis_reasoning": "Timeout indicates payment gateway or network issue, not customer error",
+    "diagnosis_reasoning": "Gateway timeout indicates a server-side infrastructure issue, not a customer-related problem.",
     "resolved": true,
     "resolution_reason": "11 failures in prior window, 0 in recent window — likely resolved",
     "action": "notify",
-    "intervention_reasoning": "Systemic issue resolved with high confidence, safe to notify customer.",
+    "intervention_reasoning": "Systemic issue resolved, safe to notify customer.",
     "final_status": "notify",
-    "message": "Namaste! Aapka payment ab theek ho gaya hai. 🎉 Kripya is link se dobara try karein: [RETRY_LINK] – bas ₹3732 ka cart complete ho jayega. Dhanyavaad!"
+    "message": "Hey! Payment mein thodi delay ho gayi thi due to server timeout. Sab fix ho gaya! Click link to complete ₹3732 purchase: https://rzp.io/rzp/figH7dGv Happy shopping!",
+    "retry_link": "https://rzp.io/rzp/figH7dGv"
   },
   {
     "event_id": "f1fed94d-3b0a-417e-a7d6-f810e2575b70",
@@ -778,14 +803,14 @@
     "error_code": "BANK_API_5XX",
     "true_category": "systemic",
     "predicted_category": "systemic",
-    "diagnosis_confidence": 0.95,
-    "diagnosis_reasoning": "Bank's API returned a 503 error, indicating a server-side outage not caused by the user",
+    "diagnosis_confidence": 0.9,
+    "diagnosis_reasoning": "Issuer bank API error 503 indicates a server-side issue.",
     "resolved": true,
     "resolution_reason": "14 failures in prior window, 0 in recent window — likely resolved",
     "action": "escalate",
-    "intervention_reasoning": "systemic failure resolved, high cart value merits human follow-up",
+    "intervention_reasoning": "Systemic issue resolved, high cart value.",
     "final_status": "escalate",
-    "message": "Namaste! Aapka ₹12,753 ka payment ab theek ho gaya hai. Kripya is link se dubara checkout karein: [RETRY_LINK] — ab aapka order turant confirm ho jayega. Shubh shopping!"
+    "message": "Payment issue solved! Your ₹12,753 order is ready. Click below to complete the purchase.  \n[RETRY_LINK]  \nThanks for your patience!"
   },
   {
     "event_id": "560c3c5a-2f36-4b3a-9bfb-3b07f4d13515",
@@ -794,8 +819,8 @@
     "error_code": "INSUFFICIENT_FUNDS",
     "true_category": "user_side",
     "predicted_category": "user_side",
-    "diagnosis_confidence": 0.96,
-    "diagnosis_reasoning": "Message indicates issuer declined due to insufficient funds, a customer account issue.",
+    "diagnosis_confidence": 0.95,
+    "diagnosis_reasoning": "Issuer declined due to insufficient funds, indicating a customer-side issue.",
     "final_status": "ignored"
   },
   {
@@ -805,8 +830,8 @@
     "error_code": "CARD_EXPIRED",
     "true_category": "user_side",
     "predicted_category": "user_side",
-    "diagnosis_confidence": 0.99,
-    "diagnosis_reasoning": "The error indicates the card's expiration date has passed, which is a customer-side issue.",
+    "diagnosis_confidence": 0.95,
+    "diagnosis_reasoning": "Card expired indicates the customer’s card has passed its validity period, a user-side issue.",
     "final_status": "ignored"
   },
   {
@@ -816,8 +841,8 @@
     "error_code": "INSUFFICIENT_FUNDS",
     "true_category": "user_side",
     "predicted_category": "user_side",
-    "diagnosis_confidence": 0.96,
-    "diagnosis_reasoning": "Insufficient funds are a customer account issue, not a platform or gateway error.",
+    "diagnosis_confidence": 0.95,
+    "diagnosis_reasoning": "Insufficient funds is a customer balance issue",
     "final_status": "ignored"
   },
   {
@@ -827,8 +852,8 @@
     "error_code": "INSUFFICIENT_FUNDS",
     "true_category": "user_side",
     "predicted_category": "user_side",
-    "diagnosis_confidence": 0.96,
-    "diagnosis_reasoning": "The issuer declined due to insufficient funds, indicating the customer's account lacks enough balance.",
+    "diagnosis_confidence": 0.95,
+    "diagnosis_reasoning": "The issuer declined the payment due to insufficient funds, indicating the customer’s account balance was the issue.",
     "final_status": "ignored"
   },
   {
@@ -838,8 +863,8 @@
     "error_code": "UNKNOWN_DECLINE",
     "true_category": "unknown",
     "predicted_category": "user_side",
-    "diagnosis_confidence": 0.7,
-    "diagnosis_reasoning": "Issuer declined the transaction, which typically indicates issues like insufficient funds, card restrictions, or user authentication problems, placing the fault on the customer side despite the generic error code.",
+    "diagnosis_confidence": 0.8,
+    "diagnosis_reasoning": "Issuer declined the card, indicating a user-side issue such as insufficient funds or card restrictions, not a platform or gateway failure.",
     "final_status": "ignored"
   },
   {
@@ -849,8 +874,8 @@
     "error_code": "CARD_EXPIRED",
     "true_category": "user_side",
     "predicted_category": "user_side",
-    "diagnosis_confidence": 0.98,
-    "diagnosis_reasoning": "Card expiration is a customer-side issue, not a system fault",
+    "diagnosis_confidence": 0.95,
+    "diagnosis_reasoning": "The error message 'Card expired' indicates the card's validity period has lapsed, which is a customer-side issue.",
     "final_status": "ignored"
   },
   {
@@ -860,8 +885,8 @@
     "error_code": "UNKNOWN_DECLINE",
     "true_category": "unknown",
     "predicted_category": "user_side",
-    "diagnosis_confidence": 0.6,
-    "diagnosis_reasoning": "Issuer declined the transaction, which typically indicates a problem with the customer's card (e.g., insufficient funds, blocked card). However, the generic code \"UNKNOWN_DECLINE\" provides no specific technical details, making the cause somewhat ambiguous.",
+    "diagnosis_confidence": 0.85,
+    "diagnosis_reasoning": "The error message indicates the card issuer declined the transaction, which points to a customer-side issue such as insufficient funds or card restrictions.",
     "final_status": "ignored"
   },
   {
@@ -871,8 +896,8 @@
     "error_code": "INSUFFICIENT_FUNDS",
     "true_category": "user_side",
     "predicted_category": "user_side",
-    "diagnosis_confidence": 0.99,
-    "diagnosis_reasoning": "Insufficient funds is a customer financial issue, not a system error",
+    "diagnosis_confidence": 0.95,
+    "diagnosis_reasoning": "Decline due to insufficient funds is a customer-side issue.",
     "final_status": "ignored"
   },
   {
@@ -882,8 +907,8 @@
     "error_code": "INSUFFICIENT_FUNDS",
     "true_category": "user_side",
     "predicted_category": "user_side",
-    "diagnosis_confidence": 0.97,
-    "diagnosis_reasoning": "Insufficient funds is a cardholder issue, not a system error",
+    "diagnosis_confidence": 0.95,
+    "diagnosis_reasoning": "Insufficient funds is a customer balance issue",
     "final_status": "ignored"
   },
   {
@@ -893,8 +918,8 @@
     "error_code": "INSUFFICIENT_FUNDS",
     "true_category": "user_side",
     "predicted_category": "user_side",
-    "diagnosis_confidence": 0.98,
-    "diagnosis_reasoning": "The issuer declined due to insufficient funds, indicating the customer's account lacks enough balance, a user-related issue.",
+    "diagnosis_confidence": 0.95,
+    "diagnosis_reasoning": "Issuer declined due to insufficient funds, indicating a customer-side issue",
     "final_status": "ignored"
   },
   {
@@ -904,8 +929,8 @@
     "error_code": "WRONG_OTP",
     "true_category": "user_side",
     "predicted_category": "user_side",
-    "diagnosis_confidence": 0.96,
-    "diagnosis_reasoning": "Wrong OTP indicates user entered incorrect verification code, a user error",
+    "diagnosis_confidence": 0.9,
+    "diagnosis_reasoning": "OTP entered incorrectly by the customer",
     "final_status": "ignored"
   },
   {
@@ -915,8 +940,8 @@
     "error_code": "CARD_EXPIRED",
     "true_category": "user_side",
     "predicted_category": "user_side",
-    "diagnosis_confidence": 0.99,
-    "diagnosis_reasoning": "Card expiration is due to the customer's card being out of date, not a system fault.",
+    "diagnosis_confidence": 0.95,
+    "diagnosis_reasoning": "card expired indicates user issue",
     "final_status": "ignored"
   },
   {
@@ -926,8 +951,8 @@
     "error_code": "INSUFFICIENT_FUNDS",
     "true_category": "user_side",
     "predicted_category": "user_side",
-    "diagnosis_confidence": 0.97,
-    "diagnosis_reasoning": "Insufficient funds is a customer account issue, not a system error",
+    "diagnosis_confidence": 0.95,
+    "diagnosis_reasoning": "Insufficient funds indicates the customer does not have enough balance in their account.",
     "final_status": "ignored"
   },
   {
@@ -937,8 +962,8 @@
     "error_code": "INSUFFICIENT_FUNDS",
     "true_category": "user_side",
     "predicted_category": "user_side",
-    "diagnosis_confidence": 0.97,
-    "diagnosis_reasoning": "The issuer declined the transaction due to insufficient funds, which is a customer account issue, not a technical fault.",
+    "diagnosis_confidence": 0.95,
+    "diagnosis_reasoning": "The issuer declined the payment due to insufficient funds, indicating a customer-side issue.",
     "final_status": "ignored"
   },
   {
@@ -948,8 +973,8 @@
     "error_code": "WRONG_OTP",
     "true_category": "user_side",
     "predicted_category": "user_side",
-    "diagnosis_confidence": 0.95,
-    "diagnosis_reasoning": "OTP failure indicates the customer entered an incorrect or expired one, which is a user-side issue.",
+    "diagnosis_confidence": 0.9,
+    "diagnosis_reasoning": "OTP was entered incorrectly, indicating user error",
     "final_status": "ignored"
   },
   {
@@ -959,8 +984,8 @@
     "error_code": "UNKNOWN_DECLINE",
     "true_category": "unknown",
     "predicted_category": "user_side",
-    "diagnosis_confidence": 0.78,
-    "diagnosis_reasoning": "Issuer declined the transaction, typically indicating a card or account issue on the customer's side.",
+    "diagnosis_confidence": 0.9,
+    "diagnosis_reasoning": "Issuer declined the transaction, which indicates a user-side issue such as insufficient funds or card restrictions.",
     "final_status": "ignored"
   },
   {
@@ -970,8 +995,8 @@
     "error_code": "CARD_EXPIRED",
     "true_category": "user_side",
     "predicted_category": "user_side",
-    "diagnosis_confidence": 0.98,
-    "diagnosis_reasoning": "Card expiration is a condition of the customer's payment instrument, not a system fault.",
+    "diagnosis_confidence": 0.95,
+    "diagnosis_reasoning": "The error message 'Card expired' indicates that the card used by the customer has reached its expiration date, which is a customer-side issue.",
     "final_status": "ignored"
   }
 ]

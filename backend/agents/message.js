@@ -20,7 +20,7 @@ Respond with ONLY the message text, nothing else — no quotes, no JSON, no expl
   for (let attempt = 1; attempt <= retries; attempt++) {
     try {
       const completion = await groq.chat.completions.create({
-        model: "openai/gpt-oss-120b",
+        model: "openai/gpt-oss-20b",
         messages: [{ role: "user", content: prompt }],
         max_tokens: 400,
         reasoning_effort: "low"
