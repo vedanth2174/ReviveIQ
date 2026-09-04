@@ -1,0 +1,677 @@
+[
+  {
+    "id": "63f28e69-6684-48e4-a214-1b30077ed754",
+    "customer_id": "cust_455",
+    "cart_value": 3263,
+    "raw_error": "Card expired",
+    "error_code": "CARD_EXPIRED",
+    "timestamp": "2026-09-02T11:46:49.230Z",
+    "_true_category": "user_side"
+  },
+  {
+    "id": "cd51b52c-7e05-4e58-a822-95f3f6bc587a",
+    "customer_id": "cust_162",
+    "cart_value": 5288,
+    "raw_error": "Card expired",
+    "error_code": "CARD_EXPIRED",
+    "timestamp": "2026-09-02T12:04:33.626Z",
+    "_true_category": "user_side"
+  },
+  {
+    "id": "53782bb3-dcc7-4aeb-b745-ad3ffbc97b58",
+    "customer_id": "cust_711",
+    "cart_value": 10300,
+    "raw_error": "Issuer declined: insufficient funds",
+    "error_code": "INSUFFICIENT_FUNDS",
+    "timestamp": "2026-09-02T14:28:29.380Z",
+    "_true_category": "user_side"
+  },
+  {
+    "id": "f98ce9e0-8a62-4146-a930-c7a0c8211762",
+    "customer_id": "cust_125",
+    "cart_value": 13008,
+    "raw_error": "NPCI collect request timed out",
+    "error_code": "NPCI_UPI_TIMEOUT",
+    "timestamp": "2026-09-02T14:39:23.699Z",
+    "_true_category": "systemic"
+  },
+  {
+    "id": "1e7bfd00-841b-4331-ab6b-845af66132cf",
+    "customer_id": "cust_12",
+    "cart_value": 10761,
+    "raw_error": "Issuer declined: insufficient funds",
+    "error_code": "INSUFFICIENT_FUNDS",
+    "timestamp": "2026-09-02T15:51:55.686Z",
+    "_true_category": "user_side"
+  },
+  {
+    "id": "d18c61c9-dbfa-4562-a4f2-9667c63a667a",
+    "customer_id": "cust_848",
+    "cart_value": 8363,
+    "raw_error": "Issuer declined: insufficient funds",
+    "error_code": "INSUFFICIENT_FUNDS",
+    "timestamp": "2026-09-02T16:28:44.087Z",
+    "_true_category": "user_side"
+  },
+  {
+    "id": "c3fb24b6-6fb7-4bbd-b6a7-3bdb93d964c3",
+    "customer_id": "cust_116",
+    "cart_value": 2503,
+    "raw_error": "Issuer declined: insufficient funds",
+    "error_code": "INSUFFICIENT_FUNDS",
+    "timestamp": "2026-09-02T16:33:56.307Z",
+    "_true_category": "user_side"
+  },
+  {
+    "id": "178e6230-cf8a-4c33-bfe0-d2613614537b",
+    "customer_id": "cust_183",
+    "cart_value": 1836,
+    "raw_error": "Issuer declined: insufficient funds",
+    "error_code": "INSUFFICIENT_FUNDS",
+    "timestamp": "2026-09-02T16:40:46.951Z",
+    "_true_category": "user_side"
+  },
+  {
+    "id": "d4cef404-6de9-40a1-811b-19379d904eef",
+    "customer_id": "cust_742",
+    "cart_value": 10275,
+    "raw_error": "Issuer declined: insufficient funds",
+    "error_code": "INSUFFICIENT_FUNDS",
+    "timestamp": "2026-09-02T17:33:26.294Z",
+    "_true_category": "user_side"
+  },
+  {
+    "id": "667cd545-7170-4e26-a4a6-8ae4cbdb1c31",
+    "customer_id": "cust_82",
+    "cart_value": 9968,
+    "raw_error": "NPCI collect request timed out",
+    "error_code": "NPCI_UPI_TIMEOUT",
+    "timestamp": "2026-09-02T17:41:08.035Z",
+    "_true_category": "systemic"
+  },
+  {
+    "id": "50a15d45-3f26-464e-880d-7ab039b6b547",
+    "customer_id": "cust_34",
+    "cart_value": 9523,
+    "raw_error": "Issuer declined: insufficient funds",
+    "error_code": "INSUFFICIENT_FUNDS",
+    "timestamp": "2026-09-02T17:42:16.562Z",
+    "_true_category": "user_side"
+  },
+  {
+    "id": "d921769f-7128-4985-b0d2-e2a35d821fde",
+    "customer_id": "cust_393",
+    "cart_value": 2122,
+    "raw_error": "Issuer bank API returned 503 Service Unavailable",
+    "error_code": "BANK_API_5XX",
+    "timestamp": "2026-09-02T17:53:32.018Z",
+    "_true_category": "systemic"
+  },
+  {
+    "id": "96b8f904-ce64-4b83-8318-371459ccb86f",
+    "customer_id": "cust_318",
+    "cart_value": 8558,
+    "raw_error": "Issuer declined: insufficient funds",
+    "error_code": "INSUFFICIENT_FUNDS",
+    "timestamp": "2026-09-02T18:31:43.791Z",
+    "_true_category": "user_side"
+  },
+  {
+    "id": "3e559f01-45fb-472d-82fb-eacf15d6e601",
+    "customer_id": "cust_325",
+    "cart_value": 13244,
+    "raw_error": "Gateway timeout while processing transaction",
+    "error_code": "GATEWAY_TIMEOUT_5003",
+    "timestamp": "2026-09-02T20:04:19.795Z",
+    "_true_category": "systemic"
+  },
+  {
+    "id": "f3fee9d1-d7c6-4501-ba1b-b0fadfa41c82",
+    "customer_id": "cust_288",
+    "cart_value": 4945,
+    "raw_error": "NPCI collect request timed out",
+    "error_code": "NPCI_UPI_TIMEOUT",
+    "timestamp": "2026-09-02T20:19:45.279Z",
+    "_true_category": "systemic"
+  },
+  {
+    "id": "1c22f5a5-f75c-4ecd-ba3e-c9a571f25e98",
+    "customer_id": "cust_86",
+    "cart_value": 9584,
+    "raw_error": "Card expired",
+    "error_code": "CARD_EXPIRED",
+    "timestamp": "2026-09-02T20:50:57.389Z",
+    "_true_category": "user_side"
+  },
+  {
+    "id": "27cd30f9-e3a9-45c3-b32e-141aa5c5689e",
+    "customer_id": "cust_265",
+    "cart_value": 12103,
+    "raw_error": "Card expired",
+    "error_code": "CARD_EXPIRED",
+    "timestamp": "2026-09-02T21:40:51.820Z",
+    "_true_category": "user_side"
+  },
+  {
+    "id": "2193831b-d93f-488c-99a1-23097ffdc428",
+    "customer_id": "cust_592",
+    "cart_value": 4913,
+    "raw_error": "Transaction declined by issuer",
+    "error_code": "UNKNOWN_DECLINE",
+    "timestamp": "2026-09-02T21:59:43.940Z",
+    "_true_category": "unknown"
+  },
+  {
+    "id": "2cf42444-f01b-40f2-ac2b-0994c88770ed",
+    "customer_id": "cust_775",
+    "cart_value": 7126,
+    "raw_error": "Issuer declined: insufficient funds",
+    "error_code": "INSUFFICIENT_FUNDS",
+    "timestamp": "2026-09-02T22:40:15.716Z",
+    "_true_category": "user_side"
+  },
+  {
+    "id": "14e773f3-f732-4f4f-9ba3-d1fb6e487096",
+    "customer_id": "cust_235",
+    "cart_value": 1824,
+    "raw_error": "Gateway timeout while processing transaction",
+    "error_code": "GATEWAY_TIMEOUT_5003",
+    "timestamp": "2026-09-02T22:59:21.381Z",
+    "_true_category": "systemic"
+  },
+  {
+    "id": "1a9c61a3-eb29-417a-b68c-912efb7bb0ac",
+    "customer_id": "cust_551",
+    "cart_value": 1963,
+    "raw_error": "Issuer declined: insufficient funds",
+    "error_code": "INSUFFICIENT_FUNDS",
+    "timestamp": "2026-09-02T23:49:09.235Z",
+    "_true_category": "user_side"
+  },
+  {
+    "id": "e6bf58f4-28f2-48d8-89ac-f02433975d60",
+    "customer_id": "cust_28",
+    "cart_value": 10726,
+    "raw_error": "Transaction declined by issuer",
+    "error_code": "UNKNOWN_DECLINE",
+    "timestamp": "2026-09-03T00:20:33.684Z",
+    "_true_category": "unknown"
+  },
+  {
+    "id": "04507f02-5748-4136-afad-029ef56aea7e",
+    "customer_id": "cust_499",
+    "cart_value": 9740,
+    "raw_error": "Issuer declined: insufficient funds",
+    "error_code": "INSUFFICIENT_FUNDS",
+    "timestamp": "2026-09-03T03:40:52.526Z",
+    "_true_category": "user_side"
+  },
+  {
+    "id": "35d72ec2-f189-4b6d-ad6f-cfea4b151edd",
+    "customer_id": "cust_187",
+    "cart_value": 14016,
+    "raw_error": "Issuer declined: insufficient funds",
+    "error_code": "INSUFFICIENT_FUNDS",
+    "timestamp": "2026-09-03T03:59:12.027Z",
+    "_true_category": "user_side"
+  },
+  {
+    "id": "b1640413-b7fe-4756-b802-29f2416e5318",
+    "customer_id": "cust_481",
+    "cart_value": 4846,
+    "raw_error": "Issuer declined: insufficient funds",
+    "error_code": "INSUFFICIENT_FUNDS",
+    "timestamp": "2026-09-03T06:16:00.734Z",
+    "_true_category": "user_side"
+  },
+  {
+    "id": "adeab58b-d481-4c07-8afe-85ebf317245d",
+    "customer_id": "cust_271",
+    "cart_value": 534,
+    "raw_error": "Issuer declined: insufficient funds",
+    "error_code": "INSUFFICIENT_FUNDS",
+    "timestamp": "2026-09-03T07:03:30.678Z",
+    "_true_category": "user_side"
+  },
+  {
+    "id": "7490d23e-3698-4921-ad78-b346e36e7f31",
+    "customer_id": "cust_821",
+    "cart_value": 500,
+    "raw_error": "Issuer declined: insufficient funds",
+    "error_code": "INSUFFICIENT_FUNDS",
+    "timestamp": "2026-09-03T08:18:44.780Z",
+    "_true_category": "user_side"
+  },
+  {
+    "id": "d21ff85a-484d-44e3-8d7e-9af5cfb063c5",
+    "customer_id": "cust_836",
+    "cart_value": 5147,
+    "raw_error": "Issuer declined: insufficient funds",
+    "error_code": "INSUFFICIENT_FUNDS",
+    "timestamp": "2026-09-03T09:14:29.405Z",
+    "_true_category": "user_side"
+  },
+  {
+    "id": "49677e9c-6c95-466d-b889-71d55ffc902f",
+    "customer_id": "cust_795",
+    "cart_value": 14745,
+    "raw_error": "Gateway timeout while processing transaction",
+    "error_code": "GATEWAY_TIMEOUT_5003",
+    "timestamp": "2026-09-03T10:18:37.359Z",
+    "_true_category": "systemic"
+  },
+  {
+    "id": "716e4bf6-e7b6-4d9c-8b73-86ae7508dc92",
+    "customer_id": "cust_228",
+    "cart_value": 2737,
+    "raw_error": "NPCI collect request timed out",
+    "error_code": "NPCI_UPI_TIMEOUT",
+    "timestamp": "2026-09-03T11:18:22.736Z",
+    "_true_category": "systemic"
+  },
+  {
+    "id": "e6985c27-3097-41b7-87f6-63b5cbf1b8dd",
+    "customer_id": "cust_464",
+    "cart_value": 2170,
+    "raw_error": "Issuer declined: insufficient funds",
+    "error_code": "INSUFFICIENT_FUNDS",
+    "timestamp": "2026-09-03T11:47:26.682Z",
+    "_true_category": "user_side"
+  },
+  {
+    "id": "e868724d-1c1c-4a07-bb3e-91f4e9eae451",
+    "customer_id": "cust_476",
+    "cart_value": 4671,
+    "raw_error": "NPCI collect request timed out",
+    "error_code": "NPCI_UPI_TIMEOUT",
+    "timestamp": "2026-09-03T12:06:00.301Z",
+    "_true_category": "systemic"
+  },
+  {
+    "id": "648ea068-5408-4f9b-a673-676ce3650711",
+    "customer_id": "cust_21",
+    "cart_value": 12434,
+    "raw_error": "OTP verification failed",
+    "error_code": "WRONG_OTP",
+    "timestamp": "2026-09-03T15:49:43.804Z",
+    "_true_category": "user_side"
+  },
+  {
+    "id": "16de73ae-94c4-404e-b1cf-836de5a43ecc",
+    "customer_id": "cust_197",
+    "cart_value": 14560,
+    "raw_error": "Card expired",
+    "error_code": "CARD_EXPIRED",
+    "timestamp": "2026-09-03T16:08:24.906Z",
+    "_true_category": "user_side"
+  },
+  {
+    "id": "8cd56603-86c6-4d19-8a19-7987577b23eb",
+    "customer_id": "cust_211",
+    "cart_value": 890,
+    "raw_error": "Transaction declined by issuer",
+    "error_code": "UNKNOWN_DECLINE",
+    "timestamp": "2026-09-03T17:09:50.590Z",
+    "_true_category": "unknown"
+  },
+  {
+    "id": "994f65fd-bca9-462d-bda7-e260c9a72c24",
+    "customer_id": "cust_538",
+    "cart_value": 12298,
+    "raw_error": "Issuer declined: insufficient funds",
+    "error_code": "INSUFFICIENT_FUNDS",
+    "timestamp": "2026-09-03T17:26:25.825Z",
+    "_true_category": "user_side"
+  },
+  {
+    "id": "92536979-f5c8-4fd8-bed4-88a16bf63a4c",
+    "customer_id": "cust_263",
+    "cart_value": 7437,
+    "raw_error": "OTP verification failed",
+    "error_code": "WRONG_OTP",
+    "timestamp": "2026-09-03T20:03:52.733Z",
+    "_true_category": "user_side"
+  },
+  {
+    "id": "358c4ae5-da08-4fc1-872d-eec2d09f8ece",
+    "customer_id": "cust_336",
+    "cart_value": 11949,
+    "raw_error": "Card expired",
+    "error_code": "CARD_EXPIRED",
+    "timestamp": "2026-09-03T20:55:42.491Z",
+    "_true_category": "user_side"
+  },
+  {
+    "id": "3844faab-65a9-43fd-a655-a5bdaabac078",
+    "customer_id": "cust_364",
+    "cart_value": 9223,
+    "raw_error": "Card expired",
+    "error_code": "CARD_EXPIRED",
+    "timestamp": "2026-09-03T21:50:45.794Z",
+    "_true_category": "user_side"
+  },
+  {
+    "id": "7e9efc8a-3eb9-4080-8828-32f58d3956a1",
+    "customer_id": "cust_793",
+    "cart_value": 14544,
+    "raw_error": "Transaction declined by issuer",
+    "error_code": "UNKNOWN_DECLINE",
+    "timestamp": "2026-09-03T22:12:30.381Z",
+    "_true_category": "unknown"
+  },
+  {
+    "id": "400d4732-f857-4f8a-890f-b820bcb4b7fa",
+    "customer_id": "cust_644",
+    "cart_value": 4791,
+    "raw_error": "Issuer declined: insufficient funds",
+    "error_code": "INSUFFICIENT_FUNDS",
+    "timestamp": "2026-09-03T22:33:10.267Z",
+    "_true_category": "user_side"
+  },
+  {
+    "id": "a84b78e8-a9c0-4caf-b8f6-b47441be701b",
+    "customer_id": "cust_870",
+    "cart_value": 5181,
+    "raw_error": "OTP verification failed",
+    "error_code": "WRONG_OTP",
+    "timestamp": "2026-09-03T22:38:25.507Z",
+    "_true_category": "user_side"
+  },
+  {
+    "id": "eaa7c58f-6bcb-4999-aa50-43e08f30d885",
+    "customer_id": "cust_26",
+    "cart_value": 3743,
+    "raw_error": "OTP verification failed",
+    "error_code": "WRONG_OTP",
+    "timestamp": "2026-09-03T23:49:39.205Z",
+    "_true_category": "user_side"
+  },
+  {
+    "id": "4598a00f-d7cb-4405-bb8c-8af044ca68c7",
+    "customer_id": "cust_292",
+    "cart_value": 8845,
+    "raw_error": "OTP verification failed",
+    "error_code": "WRONG_OTP",
+    "timestamp": "2026-09-03T23:51:33.314Z",
+    "_true_category": "user_side"
+  },
+  {
+    "id": "65ba67cc-eea6-4e38-af57-c127d5e9c10d",
+    "customer_id": "cust_89",
+    "cart_value": 9278,
+    "raw_error": "NPCI collect request timed out",
+    "error_code": "NPCI_UPI_TIMEOUT",
+    "timestamp": "2026-09-04T01:50:59.746Z",
+    "_true_category": "systemic"
+  },
+  {
+    "id": "f90e9931-ef75-4cc6-b89b-4458d2cea5c1",
+    "customer_id": "cust_592",
+    "cart_value": 5563,
+    "raw_error": "OTP verification failed",
+    "error_code": "WRONG_OTP",
+    "timestamp": "2026-09-04T02:00:59.480Z",
+    "_true_category": "user_side"
+  },
+  {
+    "id": "ec49ec41-c093-40a7-8b93-3b7c9a76f29d",
+    "customer_id": "cust_329",
+    "cart_value": 13493,
+    "raw_error": "OTP verification failed",
+    "error_code": "WRONG_OTP",
+    "timestamp": "2026-09-04T02:36:35.788Z",
+    "_true_category": "user_side"
+  },
+  {
+    "id": "64580754-3704-43a9-b4bf-b191576b9a5e",
+    "customer_id": "cust_206",
+    "cart_value": 7415,
+    "raw_error": "Transaction declined by issuer",
+    "error_code": "UNKNOWN_DECLINE",
+    "timestamp": "2026-09-04T03:09:56.054Z",
+    "_true_category": "unknown"
+  },
+  {
+    "id": "3ff225e4-1af5-4f24-9309-d818037a0407",
+    "customer_id": "cust_607",
+    "cart_value": 942,
+    "raw_error": "Issuer declined: insufficient funds",
+    "error_code": "INSUFFICIENT_FUNDS",
+    "timestamp": "2026-09-04T03:44:58.425Z",
+    "_true_category": "user_side"
+  },
+  {
+    "id": "4da3e814-c960-4e80-8692-32fd750c313b",
+    "customer_id": "cust_992",
+    "cart_value": 2165,
+    "raw_error": "Gateway timeout while processing transaction",
+    "error_code": "GATEWAY_TIMEOUT_5003",
+    "timestamp": "2026-09-04T04:57:30.716Z",
+    "_true_category": "systemic"
+  },
+  {
+    "id": "48901787-9c0f-4df4-ba30-bfc6a6fd2f08",
+    "customer_id": "cust_600",
+    "cart_value": 3154,
+    "raw_error": "Issuer bank API returned 503 Service Unavailable",
+    "error_code": "BANK_API_5XX",
+    "timestamp": "2026-09-04T04:57:36.191Z",
+    "_true_category": "systemic"
+  },
+  {
+    "id": "2c5b18f7-3a30-4ffd-911e-89b9383003a9",
+    "customer_id": "cust_899",
+    "cart_value": 7457,
+    "raw_error": "Issuer bank API returned 503 Service Unavailable",
+    "error_code": "BANK_API_5XX",
+    "timestamp": "2026-09-04T04:58:13.085Z",
+    "_true_category": "systemic"
+  },
+  {
+    "id": "c842af93-5e0c-4431-b308-9404a82ccb9d",
+    "customer_id": "cust_531",
+    "cart_value": 5945,
+    "raw_error": "NPCI collect request timed out",
+    "error_code": "NPCI_UPI_TIMEOUT",
+    "timestamp": "2026-09-04T05:00:46.679Z",
+    "_true_category": "systemic"
+  },
+  {
+    "id": "1d122ee3-42aa-4dc5-a440-98ee75eef2e1",
+    "customer_id": "cust_194",
+    "cart_value": 9939,
+    "raw_error": "Gateway timeout while processing transaction",
+    "error_code": "GATEWAY_TIMEOUT_5003",
+    "timestamp": "2026-09-04T05:01:05.220Z",
+    "_true_category": "systemic"
+  },
+  {
+    "id": "3a888aec-bb06-4f31-90a4-e0f633afb4b9",
+    "customer_id": "cust_575",
+    "cart_value": 7006,
+    "raw_error": "NPCI collect request timed out",
+    "error_code": "NPCI_UPI_TIMEOUT",
+    "timestamp": "2026-09-04T05:28:05.450Z",
+    "_true_category": "systemic"
+  },
+  {
+    "id": "2abab298-310f-411e-b345-ddcc3c803d91",
+    "customer_id": "cust_359",
+    "cart_value": 367,
+    "raw_error": "Gateway timeout while processing transaction",
+    "error_code": "GATEWAY_TIMEOUT_5003",
+    "timestamp": "2026-09-04T05:30:44.935Z",
+    "_true_category": "systemic"
+  },
+  {
+    "id": "62d296a5-8b72-464c-87b8-0aca66492d69",
+    "customer_id": "cust_357",
+    "cart_value": 1959,
+    "raw_error": "NPCI collect request timed out",
+    "error_code": "NPCI_UPI_TIMEOUT",
+    "timestamp": "2026-09-04T05:33:14.829Z",
+    "_true_category": "systemic"
+  },
+  {
+    "id": "36bc1249-1abe-41b9-9d5e-95a946a01900",
+    "customer_id": "cust_546",
+    "cart_value": 3504,
+    "raw_error": "NPCI collect request timed out",
+    "error_code": "NPCI_UPI_TIMEOUT",
+    "timestamp": "2026-09-04T05:38:12.346Z",
+    "_true_category": "systemic"
+  },
+  {
+    "id": "3bd290b8-628e-48bb-adc3-c72d635b6499",
+    "customer_id": "cust_730",
+    "cart_value": 7212,
+    "raw_error": "Issuer bank API returned 503 Service Unavailable",
+    "error_code": "BANK_API_5XX",
+    "timestamp": "2026-09-04T05:39:07.240Z",
+    "_true_category": "systemic"
+  },
+  {
+    "id": "31832f08-e1c1-4be3-a550-cd42d39ab6e6",
+    "customer_id": "cust_973",
+    "cart_value": 4910,
+    "raw_error": "Gateway timeout while processing transaction",
+    "error_code": "GATEWAY_TIMEOUT_5003",
+    "timestamp": "2026-09-04T05:47:15.154Z",
+    "_true_category": "systemic"
+  },
+  {
+    "id": "ab6fc9a4-f033-4173-9f30-927b7ec5e64d",
+    "customer_id": "cust_981",
+    "cart_value": 11717,
+    "raw_error": "NPCI collect request timed out",
+    "error_code": "NPCI_UPI_TIMEOUT",
+    "timestamp": "2026-09-04T05:52:48.667Z",
+    "_true_category": "systemic"
+  },
+  {
+    "id": "2bdf55f4-ad8f-4b02-aac8-52547ae5e9e1",
+    "customer_id": "cust_24",
+    "cart_value": 13596,
+    "raw_error": "Issuer bank API returned 503 Service Unavailable",
+    "error_code": "BANK_API_5XX",
+    "timestamp": "2026-09-04T06:01:26.778Z",
+    "_true_category": "systemic"
+  },
+  {
+    "id": "dfcdf0fe-17e5-45a3-a23c-0350bed372e5",
+    "customer_id": "cust_389",
+    "cart_value": 8343,
+    "raw_error": "Gateway timeout while processing transaction",
+    "error_code": "GATEWAY_TIMEOUT_5003",
+    "timestamp": "2026-09-04T06:02:49.367Z",
+    "_true_category": "systemic"
+  },
+  {
+    "id": "967e994b-2858-493a-a765-72aab2f15597",
+    "customer_id": "cust_10",
+    "cart_value": 12900,
+    "raw_error": "NPCI collect request timed out",
+    "error_code": "NPCI_UPI_TIMEOUT",
+    "timestamp": "2026-09-04T06:04:47.182Z",
+    "_true_category": "systemic"
+  },
+  {
+    "id": "de67e576-58b4-40da-bc0c-d0fe8e9a5aaf",
+    "customer_id": "cust_336",
+    "cart_value": 1691,
+    "raw_error": "NPCI collect request timed out",
+    "error_code": "NPCI_UPI_TIMEOUT",
+    "timestamp": "2026-09-04T06:06:04.089Z",
+    "_true_category": "systemic"
+  },
+  {
+    "id": "d5266437-98c3-4444-b7f6-a0b112514812",
+    "customer_id": "cust_224",
+    "cart_value": 14730,
+    "raw_error": "Gateway timeout while processing transaction",
+    "error_code": "GATEWAY_TIMEOUT_5003",
+    "timestamp": "2026-09-04T06:10:40.350Z",
+    "_true_category": "systemic"
+  },
+  {
+    "id": "b1254959-6375-4ec1-8f19-5b7659e57a17",
+    "customer_id": "cust_340",
+    "cart_value": 11554,
+    "raw_error": "Gateway timeout while processing transaction",
+    "error_code": "GATEWAY_TIMEOUT_5003",
+    "timestamp": "2026-09-04T06:11:02.489Z",
+    "_true_category": "systemic"
+  },
+  {
+    "id": "b59ce414-321a-4460-aedf-e013a1156e05",
+    "customer_id": "cust_690",
+    "cart_value": 10954,
+    "raw_error": "Issuer bank API returned 503 Service Unavailable",
+    "error_code": "BANK_API_5XX",
+    "timestamp": "2026-09-04T06:12:50.320Z",
+    "_true_category": "systemic"
+  },
+  {
+    "id": "c2e69b18-2216-4866-9c9a-213bed788466",
+    "customer_id": "cust_15",
+    "cart_value": 8652,
+    "raw_error": "Issuer bank API returned 503 Service Unavailable",
+    "error_code": "BANK_API_5XX",
+    "timestamp": "2026-09-04T06:16:41.364Z",
+    "_true_category": "systemic"
+  },
+  {
+    "id": "087bd60a-429a-4bd1-ad36-53443b547ce7",
+    "customer_id": "cust_586",
+    "cart_value": 10893,
+    "raw_error": "Gateway timeout while processing transaction",
+    "error_code": "GATEWAY_TIMEOUT_5003",
+    "timestamp": "2026-09-04T06:18:18.962Z",
+    "_true_category": "systemic"
+  },
+  {
+    "id": "55f66dbe-d4a8-48f4-a6d9-d3c6ea4ec4d6",
+    "customer_id": "cust_249",
+    "cart_value": 10388,
+    "raw_error": "Issuer bank API returned 503 Service Unavailable",
+    "error_code": "BANK_API_5XX",
+    "timestamp": "2026-09-04T06:19:22.729Z",
+    "_true_category": "systemic"
+  },
+  {
+    "id": "83162e53-f81e-4dd9-8c87-f0d03186b45c",
+    "customer_id": "cust_126",
+    "cart_value": 4392,
+    "raw_error": "Issuer bank API returned 503 Service Unavailable",
+    "error_code": "BANK_API_5XX",
+    "timestamp": "2026-09-04T06:25:12.988Z",
+    "_true_category": "systemic"
+  },
+  {
+    "id": "83de0a8c-a2da-47da-a190-1caa90edca4c",
+    "customer_id": "cust_350",
+    "cart_value": 8469,
+    "raw_error": "NPCI collect request timed out",
+    "error_code": "NPCI_UPI_TIMEOUT",
+    "timestamp": "2026-09-04T06:34:02.315Z",
+    "_true_category": "systemic"
+  },
+  {
+    "id": "26e83125-2444-4af5-926c-49ed3606136b",
+    "customer_id": "cust_301",
+    "cart_value": 6515,
+    "raw_error": "Gateway timeout while processing transaction",
+    "error_code": "GATEWAY_TIMEOUT_5003",
+    "timestamp": "2026-09-04T06:35:40.776Z",
+    "_true_category": "systemic"
+  },
+  {
+    "id": "c9fac3b7-506c-4c51-bc08-09f5e014d182",
+    "customer_id": "cust_338",
+    "cart_value": 10492,
+    "raw_error": "Gateway timeout while processing transaction",
+    "error_code": "GATEWAY_TIMEOUT_5003",
+    "timestamp": "2026-09-04T06:45:00.636Z",
+    "_true_category": "systemic"
+  }
+]
