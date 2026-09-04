@@ -9,6 +9,7 @@ import { decideIntervention } from './agents/intervene.js';
 import { generateMessage } from './agents/message.js';
 import { canNotify, markNotified, getNotifiedCount } from './services/guardrails.js';
 import { sendWhatsAppMessage } from './services/whatsapp.js';
+import { createRetryLink } from './services/razorpay.js';
 
 const app = express();
 app.use(cors());
@@ -81,11 +82,9 @@ app.get('/metrics', (req, res) => {
 });
 
 app.post('/send-whatsapp/:eventId', async (req, res) => {
-    const results = JSON.parse(fs.readFileSync('./data/batch_results.json', 'utf-8'));
-    const event = results.find(r => r.event_id === req.params.eventId);
-    if (!event) return res.status(404).json({ error: 'Event not found' });
-  
-    const result = await sendWhatsAppMessage(process.env.WHATSAPP_TEST_RECIPIENT);
+    const { recipient } = req.body;
+    const toNumber = recipient || process.env.WHATSAPP_TEST_RECIPIENT; // fallback if not provided
+    const result = await sendWhatsAppMessage(toNumber);
     res.json(result);
   });
 
@@ -111,6 +110,45 @@ app.get('/batch-results', (req, res) => {
       ignored_count: ignored.length,
       revenue_recovered: revenueRecovered
     });
+  });
+
+  app.post('/live-process', async (req, res) => {
+    const { error_code, raw_error, cart_value, customer_id } = req.body;
+    const event = { id: `live_${Date.now()}`, customer_id: customer_id || 'demo_customer', cart_value, raw_error, error_code };
+  
+    try {
+      const diagnosis = await diagnoseError(event.raw_error, event.error_code);
+      const stages = { diagnosis };
+  
+      if (diagnosis.category !== 'systemic') {
+        return res.json({ ...stages, final_status: 'ignored' });
+      }
+  
+      const allEvents = JSON.parse(fs.readFileSync('./data/synthetic_events.json', 'utf-8'));
+      const resolution = checkResolution(allEvents, event.error_code);
+      stages.resolution = resolution;
+  
+      const intervention = await decideIntervention(diagnosis, resolution, event.cart_value);
+      stages.intervention = intervention;
+  
+      if (intervention.action === 'hold') {
+        return res.json({ ...stages, final_status: 'held' });
+      }
+  
+      const retryLink = await createRetryLink(event);
+      const message = await generateMessage(event, diagnosis);
+      const finalMessage = retryLink ? message.replace('[RETRY_LINK]', retryLink) : message;
+  
+      stages.message = finalMessage;
+      stages.retry_link = retryLink;
+      stages.final_status = intervention.action;
+      stages.event_id = event.id;
+  
+      res.json(stages);
+    } catch (err) {
+      console.error("Live process error:", err.message);
+      res.status(500).json({ error: err.message });
+    }
   });
 
 app.listen(process.env.PORT || 5000, () => console.log(`ReviveIQ running on port ${process.env.PORT || 5000}`));

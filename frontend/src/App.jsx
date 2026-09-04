@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './App.css';
+import LiveAgent from './Live_Agent';
 
 const API_BASE = 'http://localhost:5000';
 
@@ -285,6 +286,7 @@ function App() {
   const [expandedRow, setExpandedRow] = useState(null);
   const [filter, setFilter] = useState('all');
   const [replayKey, setReplayKey] = useState(0);
+  const [page, setPage] = useState('dashboard');
 
   // Fetch data on mount
   useEffect(() => {
@@ -367,7 +369,9 @@ function App() {
         </div>
 
         <div className="header-right">
-          <div className={`live-indicator ${isProcessing ? 'processing' : 'live'}`}>
+          <button className={`replay-btn ${page === 'dashboard' ? 'active' : ''}`} onClick={() => setPage('dashboard')}>Dashboard</button>
+          <button className={`replay-btn ${page === 'live' ? 'active' : ''}`} onClick={() => setPage('live')}>Live Agent</button>
+          {/* <div className={`live-indicator ${isProcessing ? 'processing' : 'live'}`}>
             <span className="live-dot" />
             <span className="live-label">{isProcessing ? 'Processing' : 'Live'}</span>
           </div>
@@ -377,7 +381,7 @@ function App() {
               <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10" />
             </svg>
             Replay
-          </button>
+          </button> */}
         </div>
       </header>
 
@@ -399,7 +403,8 @@ function App() {
       )}
 
       {/* Content */}
-      {!loading && !error && metrics && (
+      {/* Content */}
+      {page === 'dashboard' && !loading && !error && metrics && (
         <>
           <div className="metrics-row">
             <StatCard icon={TotalIcon} value={metrics.total ?? '\u2014'} label="Total Events" accent="#0d9488" />
@@ -455,6 +460,12 @@ function App() {
             </div>
           </div>
         </>
+      )}
+
+      {page === 'live' && (
+        <div style={{ marginTop: '20px' }}>
+          <LiveAgent />
+        </div>
       )}
     </div>
   );
