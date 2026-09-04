@@ -1,13 +1,10 @@
-import { GoogleGenerativeAI } from '@google/generative-ai';
+import Groq from 'groq-sdk';
 import 'dotenv/config';
 
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-const model = genAI.getGenerativeModel({ model: "gemini-flash-latest" });
+const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
 
 function extractJSON(text) {
-  // strip markdown fences if present
   let cleaned = text.replace(/```json|```/g, '').trim();
-  // find the first { and last } to grab just the JSON object
   const start = cleaned.indexOf('{');
   const end = cleaned.lastIndexOf('}');
   if (start === -1 || end === -1) throw new Error("no JSON object found in response");
@@ -31,14 +28,16 @@ Respond with ONLY a JSON object, nothing else before or after it:
 
   for (let attempt = 1; attempt <= retries; attempt++) {
     try {
-      const result = await model.generateContent(prompt);
-      const text = result.response.text();
+      const completion = await groq.chat.completions.create({
+        model: "openai/gpt-oss-120b",
+        messages: [{ role: "user", content: prompt }],
+        max_tokens: 300
+      });
+      const text = completion.choices[0].message.content;
       return extractJSON(text);
     } catch (err) {
-      const isOverloaded = err.message.includes('503') || err.message.includes('overloaded');
-      if (isOverloaded && attempt < retries) {
-        console.log(`  (retrying after 503, attempt ${attempt}/${retries})`);
-        await new Promise(r => setTimeout(r, 1500 * attempt)); // backoff
+      if (attempt < retries) {
+        await new Promise(r => setTimeout(r, 1500 * attempt));
         continue;
       }
       console.error("Diagnosis agent error:", err.message);

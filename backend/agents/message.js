@@ -1,10 +1,9 @@
-import { GoogleGenerativeAI } from '@google/generative-ai';
+import Groq from 'groq-sdk';
 import 'dotenv/config';
 
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-const model = genAI.getGenerativeModel({ model: "gemini-flash-latest" });
+const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
 
-export async function generateMessage(event, diagnosis, retries = 5) {
+export async function generateMessage(event, diagnosis, retries = 3) {
   const prompt = `Write a short recovery message to a customer whose payment failed and has now been fixed on our end.
 
 Context:
@@ -20,16 +19,20 @@ Respond with ONLY the message text, nothing else — no quotes, no JSON, no expl
 
   for (let attempt = 1; attempt <= retries; attempt++) {
     try {
-      const result = await model.generateContent(prompt);
-      return result.response.text().trim().replace(/^["']|["']$/g, '');
+      const completion = await groq.chat.completions.create({
+        model: "openai/gpt-oss-120b",
+        messages: [{ role: "user", content: prompt }],
+        max_tokens: 400,
+        reasoning_effort: "low"
+      });
+      return completion.choices[0].message.content.trim().replace(/^["']|["']$/g, '');
     } catch (err) {
-      const isOverloaded = err.message.includes('503') || err.message.includes('overloaded');
-      if (isOverloaded && attempt < retries) {
-        await new Promise(r => setTimeout(r, 2000 * attempt));
+      if (attempt < retries) {
+        await new Promise(r => setTimeout(r, 1500 * attempt));
         continue;
       }
       console.error("Message agent error:", err.message);
       return `Hi! Your order of ₹${event.cart_value} is ready — the payment issue is fixed now. Complete it here: [RETRY_LINK]`;
     }
   }
-}   
+}

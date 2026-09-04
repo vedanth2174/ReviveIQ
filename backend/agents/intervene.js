@@ -1,8 +1,7 @@
-import { GoogleGenerativeAI } from '@google/generative-ai';
+import Groq from 'groq-sdk';
 import 'dotenv/config';
 
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-const model = genAI.getGenerativeModel({ model: "gemini-flash-latest" });
+const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
 
 function extractJSON(text) {
   let cleaned = text.replace(/```json|```/g, '').trim();
@@ -12,7 +11,7 @@ function extractJSON(text) {
   return JSON.parse(cleaned.slice(start, end + 1));
 }
 
-export async function decideIntervention(diagnosis, resolution, cartValue, retries = 5) {
+export async function decideIntervention(diagnosis, resolution, cartValue, retries = 3) {
   const prompt = `You are deciding whether to reach out to a customer whose payment failed.
 
 Diagnosis of why it failed:
@@ -39,12 +38,16 @@ Respond with ONLY a JSON object, nothing else:
 
   for (let attempt = 1; attempt <= retries; attempt++) {
     try {
-      const result = await model.generateContent(prompt);
-      const text = result.response.text();
+      const completion = await groq.chat.completions.create({
+        model: "openai/gpt-oss-120b",
+        messages: [{ role: "user", content: prompt }],
+        max_tokens: 300
+      });
+      const text = completion.choices[0].message.content;
+      console.log("RAW INTERVENTION OUTPUT:", text); // temporary debug line
       return extractJSON(text);
     } catch (err) {
-      const isOverloaded = err.message.includes('503') || err.message.includes('overloaded');
-      if (isOverloaded && attempt < retries) {
+      if (attempt < retries) {
         await new Promise(r => setTimeout(r, 1500 * attempt));
         continue;
       }
