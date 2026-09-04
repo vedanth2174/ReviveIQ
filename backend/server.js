@@ -8,6 +8,7 @@ import { checkResolution } from './services/resolution.js';
 import { decideIntervention } from './agents/intervene.js';
 import { generateMessage } from './agents/message.js';
 import { canNotify, markNotified, getNotifiedCount } from './services/guardrails.js';
+import { sendWhatsAppMessage } from './services/whatsapp.js';
 
 const app = express();
 app.use(cors());
@@ -78,5 +79,38 @@ app.get('/metrics', (req, res) => {
     audit_entries: auditLog.length
   });
 });
+
+app.post('/send-whatsapp/:eventId', async (req, res) => {
+    const results = JSON.parse(fs.readFileSync('./data/batch_results.json', 'utf-8'));
+    const event = results.find(r => r.event_id === req.params.eventId);
+    if (!event) return res.status(404).json({ error: 'Event not found' });
+  
+    const result = await sendWhatsAppMessage(process.env.WHATSAPP_TEST_RECIPIENT);
+    res.json(result);
+  });
+
+app.get('/batch-results', (req, res) => {
+    const results = JSON.parse(fs.readFileSync('./data/batch_results.json', 'utf-8'));
+    res.json(results);
+  });
+  
+  app.get('/batch-metrics', (req, res) => {
+    const results = JSON.parse(fs.readFileSync('./data/batch_results.json', 'utf-8'));
+    const total = results.length;
+    const correctlyDiagnosed = results.filter(r => r.predicted_category === r.true_category).length;
+    const notified = results.filter(r => r.final_status === 'notify' || r.final_status === 'escalate');
+    const held = results.filter(r => r.final_status === 'held');
+    const ignored = results.filter(r => r.final_status === 'ignored');
+    const revenueRecovered = notified.reduce((sum, r) => sum + r.cart_value, 0);
+  
+    res.json({
+      total,
+      diagnosis_accuracy: Math.round((correctlyDiagnosed / total) * 1000) / 10,
+      notified_count: notified.length,
+      held_count: held.length,
+      ignored_count: ignored.length,
+      revenue_recovered: revenueRecovered
+    });
+  });
 
 app.listen(process.env.PORT || 5000, () => console.log(`ReviveIQ running on port ${process.env.PORT || 5000}`));
