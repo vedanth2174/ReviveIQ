@@ -19,6 +19,11 @@ const FILTERS = [
   { key: 'ignored', label: 'Ignored' },
 ];
 
+const RECIPIENTS = [
+  { label: "My Test Number", value: "919172870354" }, // your actual verified numbers
+  { label: "Backup Test Number", value: "919322799854" },
+];
+
 function matchesFilter(event, filter) {
   if (filter === 'all') return true;
   if (filter === 'notified') return ['notify', 'escalate'].includes(event.final_status);
@@ -122,6 +127,7 @@ function EventRow({ event, isExpanded, onToggle }) {
   const resolved = getResolvedValue(event.resolved);
   const [sending, setSending] = useState(false);
   const [sendResult, setSendResult] = useState(null);
+  const [recipient, setRecipient] = useState(RECIPIENTS[0].value); 
 
   const canSend = ['notify', 'escalate'].includes(event.final_status);
 
@@ -130,7 +136,11 @@ function EventRow({ event, isExpanded, onToggle }) {
     setSending(true);
     setSendResult(null);
     try {
-      const res = await fetch(`${API_BASE}/send-whatsapp/${event.event_id}`, { method: 'POST' });
+      const res = await fetch(`${API_BASE}/send-whatsapp/${event.event_id}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' }, // ADD
+        body: JSON.stringify({ recipient })                // ADD
+      });
       const data = await res.json();
       setSendResult(data.success ? { ok: true, text: 'Sent successfully' } : { ok: false, text: data.error || 'Failed' });
     } catch (err) {
@@ -249,13 +259,18 @@ function EventRow({ event, isExpanded, onToggle }) {
                   <div className="message-text">{event.message}</div>
 
                   {canSend && (
-                    <div style={{ marginTop: '10px', display: 'flex', alignItems: 'center', gap: '10px' }}>
-                      <button
-                        onClick={handleSendWhatsApp}
-                        disabled={sending}
-                        className="replay-btn"
-                        style={{ fontSize: '13px' }}
+                    <div style={{ marginTop: '10px', display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap' }}>
+                      <select
+                        value={recipient}
+                        onChange={(e) => { e.stopPropagation(); setRecipient(e.target.value); }}
+                        onClick={(e) => e.stopPropagation()}
+                        style={{ padding: '6px 10px', borderRadius: '6px', border: '1px solid var(--border)', fontSize: '13px' }}
                       >
+                        {RECIPIENTS.map(r => (
+                          <option key={r.value} value={r.value}>{r.label}</option>
+                        ))}
+                      </select>
+                      <button onClick={handleSendWhatsApp} disabled={sending} className="replay-btn" style={{ fontSize: '13px' }}>
                         {sending ? 'Sending…' : 'Send WhatsApp'}
                       </button>
                       {sendResult && (
@@ -287,6 +302,7 @@ function App() {
   const [filter, setFilter] = useState('all');
   const [replayKey, setReplayKey] = useState(0);
   const [page, setPage] = useState('dashboard');
+  
 
   // Fetch data on mount
   useEffect(() => {

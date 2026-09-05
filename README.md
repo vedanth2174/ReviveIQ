@@ -16,32 +16,30 @@ Most recovery approaches message every drop-off indiscriminately. ReviveIQ does 
 4. **Generates** a natural Hinglish recovery message, a real Razorpay retry link, and delivers it over WhatsApp.
 5. **Logs** every decision at every stage, so the reasoning behind every action (and every non-action) is inspectable.
 
+
+
+## User Interface
+
+
+
+### UI Snaps
+
+![ReviveIQ UI1](./UI1.png)
+![ReviveIQ UI2](./UI2.png)
+![ReviveIQ UI3](./UI3.png)
+
+### Payment Page Snap
+
+![ReviveIQ Payment Page](./Payment.png)
+
 ## Architecture
 
-```
-Payment failure event
-        |
-        v
- AI diagnosis agent  ---(not systemic)--->  Ignored
- (classifies failure type)
-        |
-        v
- Resolution detector (rule-based)
- (has the failure rate actually dropped?)
-        |
-        v
- AI intervention agent  ---(low confidence)--->  Held
- (decides notify / escalate / hold)
-        |
-        v
- Message & delivery
- (AI-generated text + Razorpay retry link + WhatsApp send)
-        |
-        v
- Audit log (every stage's decision, recorded)
-```
+![ReviveIQ architecture](./ARCHITECTURE.png)
+
+A failure event flows through the diagnosis agent, the resolution detector, and the intervention agent in sequence — with two deliberate exit points (Ignored, Held) where the agent does nothing rather than guess. Only a confidently-diagnosed, confidently-resolved, high-confidence case reaches message generation, Razorpay, and WhatsApp.
 
 **Why AI is used where it is — and not everywhere:**
+
 - **Diagnosis and intervention** use AI because they require judgment over messy, varied inputs (raw error strings, context-dependent tradeoffs like cart value vs. confidence) — a fixed rulebook can't do this robustly.
 - **Resolution detection is deliberately rule-based** — a statistical comparison of failure rates before and after a time window. This is a case where a reliable, auditable signal beats an LLM guessing at statistics.
 - **Message generation uses AI** to produce natural, localized (Hinglish) customer communication that a static template can't.
@@ -57,21 +55,28 @@ This split — AI for judgment, rules for reliability — is the core design dec
 - **Messaging:** WhatsApp Business Cloud API (Meta Graph API) — real message delivery, triggered from the dashboard
 - **Data:** JSON-based synthetic dataset and audit log
 
+
+
 ## Results (batch of 75 synthetic events)
 
-| Metric | Value |
-|---|---|
-| Diagnosis accuracy (vs. hidden ground truth) | 94.7% |
-| Notified / escalated | 30 events |
-| Correctly ignored (user-side / unknown) | 45 events |
-| Estimated revenue recovered | ₹2,51,960 |
-| Real Razorpay retry links generated | 25 of 30 (rest kept a safe placeholder after hitting API rate limits) |
+
+| Metric                                       | Value                                                                 |
+| -------------------------------------------- | --------------------------------------------------------------------- |
+| Diagnosis accuracy (vs. hidden ground truth) | 94.7%                                                                 |
+| Notified / escalated                         | 30 events                                                             |
+| Correctly ignored (user-side / unknown)      | 45 events                                                             |
+| Estimated revenue recovered                  | ₹2,51,960                                                             |
+| Real Razorpay retry links generated          | 25 of 30 (rest kept a safe placeholder after hitting API rate limits) |
+
 
 The 45 "correctly ignored" events are the number that matters most: the agent never messages a customer whose failure wasn't systemic. That restraint is the actual product, not a side effect.
 
 ## How to run
 
+
+
 ### Backend
+
 ```bash
 cd backend
 npm install
@@ -79,19 +84,27 @@ npm install
 node server.js
 ```
 
+
+
 ### Frontend
+
 ```bash
 cd frontend
 npm install
 npm run dev
 ```
 
+
+
 ### Regenerate synthetic data or rerun the batch
+
 ```bash
 cd backend
 npm run seed       # regenerates synthetic_events.json
 node run_batch.js  # reprocesses all events, regenerates metrics + Razorpay links
 ```
+
+
 
 ## What's honestly out of scope
 
@@ -99,6 +112,8 @@ node run_batch.js  # reprocesses all events, regenerates metrics + Razorpay link
 - Contact details in the demo dataset are placeholders, not real customer records.
 - SMS delivery is not wired to a live provider for this build.
 
+
+
 ## Team
 
-Built solo by Vedant.
+Built by Vedant.
