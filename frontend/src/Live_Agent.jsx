@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const API_BASE = 'http://localhost:5000';
+const API_BASE = 'https://reviveiq-six.vercel.app';
 
 const ERROR_PRESETS = {
     GATEWAY_TIMEOUT_5003: "Gateway timeout while processing transaction",

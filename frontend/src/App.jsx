@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import './App.css';
 import LiveAgent from './Live_Agent';
 
-const API_BASE = 'http://localhost:5000';
+const API_BASE = 'https://reviveiq-six.vercel.app';
 
 const STATUS_CONFIG = {
   notify: { label: 'Notify', color: '#16a34a', bg: '#dcfce7' },

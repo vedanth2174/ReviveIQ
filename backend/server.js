@@ -1,6 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import fs from 'fs';
+import path from "path";
 import 'dotenv/config';
 
 import { diagnoseError } from './agents/diagnose.js';
@@ -15,13 +16,20 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+const dataPath = path.join(
+    process.cwd(),
+    "backend",
+    "data",
+    "synthetic_events.json"
+);
+
 const auditLog = [];
 function logStage(eventId, stage, output) {
   auditLog.push({ event_id: eventId, stage, output, timestamp: new Date().toISOString() });
 }
 
 // load full dataset once — resolution detector needs the whole batch to compute rates
-const allEvents = JSON.parse(fs.readFileSync('./data/synthetic_events.json', 'utf-8'));
+const allEvents = JSON.parse(fs.readFileSync(dataPath, "utf8"));
 
 async function processEvent(event) {
   const trace = { event_id: event.id, customer_id: event.customer_id, cart_value: event.cart_value, error_code: event.error_code };
