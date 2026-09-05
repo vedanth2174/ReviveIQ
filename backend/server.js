@@ -151,4 +151,12 @@ app.get('/batch-results', (req, res) => {
     }
   });
 
-app.listen(process.env.PORT || 5000, () => console.log(`ReviveIQ running on port ${process.env.PORT || 5000}`));
+  const PORT = process.env.PORT || 5000;
+
+  if (process.env.NODE_ENV !== "production") {
+    app.listen(PORT, () => {
+      console.log(`Server running on port ${PORT}`);
+    });
+  }
+  
+  export default app;
