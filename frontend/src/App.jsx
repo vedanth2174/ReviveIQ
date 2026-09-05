@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import './App.css';
 import LiveAgent from './Live_Agent';
 
-const API_BASE = 'https://reviveiq-six.vercel.app';
+const API_BASE = 'http://localhost:5000';
 
 const STATUS_CONFIG = {
   notify: { label: 'Notify', color: '#16a34a', bg: '#dcfce7' },
@@ -139,7 +139,7 @@ function EventRow({ event, isExpanded, onToggle }) {
       const res = await fetch(`${API_BASE}/send-whatsapp/${event.event_id}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' }, // ADD
-        body: JSON.stringify({ recipient })                // ADD
+        body: JSON.stringify({ recipient, cartValue: event.cart_value, retryLink: event.retry_link })               // ADD
       });
       const data = await res.json();
       setSendResult(data.success ? { ok: true, text: 'Sent successfully' } : { ok: false, text: data.error || 'Failed' });

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const API_BASE = 'https://reviveiq-six.vercel.app';
+const API_BASE = 'http://localhost:5000';
 
 const ERROR_PRESETS = {
     GATEWAY_TIMEOUT_5003: "Gateway timeout while processing transaction",
@@ -80,7 +80,7 @@ export default function LiveAgent() {
           const res = await fetch(`${API_BASE}/send-whatsapp/${result.event_id}`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ recipient })
+            body: JSON.stringify({ recipient, cartValue, retryLink: result.retry_link })
           });
           const data = await res.json();
           setSendResult(data.success ? { ok: true, text: 'Sent successfully' } : { ok: false, text: data.error || 'Failed' });

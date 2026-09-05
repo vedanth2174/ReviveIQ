@@ -83,8 +83,24 @@ app.get('/metrics', (req, res) => {
 
 app.post('/send-whatsapp/:eventId', async (req, res) => {
     const { recipient } = req.body;
-    const toNumber = recipient || process.env.WHATSAPP_TEST_RECIPIENT; // fallback if not provided
-    const result = await sendWhatsAppMessage(toNumber);
+    const toNumber = recipient || process.env.WHATSAPP_TEST_RECIPIENT;
+  
+    let cartValue, retryLink;
+  
+    if (req.params.eventId.startsWith('live_')) {
+      // came from Live Agent page — use values passed in the request body
+      cartValue = req.body.cartValue;
+      retryLink = req.body.retryLink;
+    } else {
+      // came from the batch dashboard — look up the event
+      const results = JSON.parse(fs.readFileSync('./data/batch_results.json', 'utf-8'));
+      const event = results.find(r => r.event_id === req.params.eventId);
+      if (!event) return res.status(404).json({ error: 'Event not found' });
+      cartValue = event.cart_value;
+      retryLink = event.retry_link || 'https://rzp.io/placeholder';
+    }
+  
+    const result = await sendWhatsAppMessage(toNumber, cartValue, retryLink);
     res.json(result);
   });
 
