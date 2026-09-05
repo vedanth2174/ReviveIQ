@@ -17,10 +17,11 @@ app.use(cors());
 app.use(express.json());
 
 const dataPath = path.join(
-    __dirname,
+    process.cwd(),
+    "backend",
     "data",
     "synthetic_events.json"
-  );
+);
 
 const auditLog = [];
 function logStage(eventId, stage, output) {
